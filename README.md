@@ -30,7 +30,7 @@ SITE=https://<user>.github.io BASE=/<repo-name> npm run build
 - Per-agent build pages (W-Engine ranking, Drive Disc sets, Disc 4/5/6 main stats, substats, skill priority)
 - "Ranked on" agent chips on the W-Engine and Drive Disc pages. On the Drive Disc page, hovering a chip shows that agent's recommended main stats and substats.
 
-Builds are written for fifty-three agents (see `PLACEHOLDERS.md` for the list). Every other agent shows as WIP.
+Builds are written for all 62 agents. Agent lists show in-game names; agent pages show full names (`src/i18n/en/character-short-names.json`).
 Agent images are bundled in `src/assets/character-assets/` (nothing is hotlinked).
 See `PLACEHOLDERS.md` for everything that is missing and where to fill it in.
 

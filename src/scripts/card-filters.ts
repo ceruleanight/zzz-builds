@@ -165,7 +165,8 @@ if (kind) {
             });
             const visible =
                 matches &&
-                (!search || card.dataset.name?.toLowerCase().includes(search));
+                (!search || (card.dataset.name?.toLowerCase().includes(search) ||
+                    card.dataset.fullName?.toLowerCase().includes(search)));
 
             card.hidden = !visible;
             if (visible) visibleCount += 1;

@@ -2,22 +2,9 @@
 
 Everything that could not be sourced is listed here, with the file to edit. Data was gathered on 3 to 4 November 2026 (game version 3.3).
 
-## 1. Agent builds (9 of 62 agents are WIP)
+## 1. Agent builds
 
-Builds exist for 53 agents: Hoshimi Miyabi, Phoenix Reffaella, Alice Thymefield, Roxy, Claret, Remielle Dan, Velina Airgid, Yixuan, Ye Shunguang, Promeia, Astra Yao, Aria, Soldier 0 - Anby, Anton, Anby, Cissia, Burnice, Starlight Billy, Banyue, Billy Kid, Ben Bigger, Caesar King, Dialyn, Norma, Corin, Severian Lowell, Ellen Joe, Evelyn Chevalier, Grace Howard, Asaba Harumasa, Hugo Vlad and Jane Doe, Nangong Yu, Komano Manato, Von Lycaon, Luciana de Montefio, Lucia Elowen, Lighter, Koleda Belobog and Ju Fufu, Alexandrina Sebastiane, Nekomiya Mana, Nicole Demara, Piper Wheel, Soldier 11, Qingyi, Seth Lowell, Pulchra Fellini, Pan Yinhu, Seed, Orphie Magnusson & Magus, Pyrois, Sigrid de L'Azur.
-To publish an agent, add a build folder next to its `metadata.json` (copy `content-guides/json-base/`) and set `last_updated` to a version number.
-
-| Agent | Rank | Attribute | Specialty | Folder |
-| --- | --- | --- | --- | --- |
-| Soukaku | A | ice | support | `src/content/ice/4/soukaku` |
-| Zhu Yuan | S | ether | attack | `src/content/ether/5/zhu-yuan` |
-| Tsukishiro Yanagi | S | electric | anomaly | `src/content/electric/5/yanagi` |
-| Trigger | S | electric | stun | `src/content/electric/5/trigger` |
-| Vivian Banshee | S | ether | anomaly | `src/content/ether/5/vivian` |
-| Ukinami Yuzuha | S | physical | support | `src/content/physical/5/yuzuha` |
-| Yidhari Murphy | S | ice | rupture | `src/content/ice/5/yidhari` |
-| Zhao | S | ice | defense | `src/content/ice/5/zhao` |
-| Sunna | S | physical | support | `src/content/physical/5/sunna` |
+All 62 agents have builds. To publish a new agent, add a build folder next to its `metadata.json` (copy `content-guides/json-base/`) and set `last_updated` to a version number. An agent without a build folder shows as WIP.
 
 ## 2. Gaps inside the finished builds
 

@@ -26,7 +26,8 @@ Use:
 
 - `wengines.json` for wengine names. WEngine stats and passive data live in `src/data/wengines`.
 - `disc-sets.json` for disc set names. Disc set effects live in `src/data/discs/disc_sets.json`.
-- `characters.json` for character names.
+- `characters.json` for full character names (agent pages).
+- `character-short-names.json` for the names shown in agent lists and "ranked on" chips, as they appear in game. Only list agents whose in-game name differs; others fall back to `characters.json`.
 - `stats.json` for stats and stat-like labels, such as `er`, `atk%`, `em-set`,
   or `atk-set`.
 - `elements.json` for elements and reactions, such as `pyro`, `melt`,

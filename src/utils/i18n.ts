@@ -5,6 +5,7 @@ type LocaleBundle = {
   wengine: LocaleCategory;
   disc: LocaleCategory;
   character: LocaleCategory;
+  characterShort: LocaleCategory;
   stat: LocaleCategory;
   element: LocaleCategory;
   ability: LocaleCategory;
@@ -16,6 +17,7 @@ const localeFiles = {
   wengine: 'wengines',
   disc: 'disc-sets',
   character: 'characters',
+  characterShort: 'character-short-names',
   stat: 'stats',
   element: 'elements',
   ability: 'abilities',

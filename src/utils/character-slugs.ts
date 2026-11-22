@@ -27,3 +27,17 @@ export function getPublicCharacterName(
 ) {
   return locale?.character?.[character] ?? character;
 }
+
+/**
+ * Builds the name shown in agent lists, matching how the agent appears in game.
+ * Falls back to the full name when no short name is defined.
+ */
+export function getShortCharacterName(
+  locale: any,
+  { character, element }: CharacterSlugParts,
+) {
+  return (
+    locale?.characterShort?.[character] ??
+    getPublicCharacterName(locale, { character, element })
+  );
+}

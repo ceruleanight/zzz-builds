@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import {
   getPublicCharacterName,
+  getShortCharacterName,
   getPublicCharacterSlug,
 } from './character-slugs';
 import { resolveCharacterImageUrl } from './character-assets';
@@ -96,7 +97,11 @@ export function getHomePageData(lang = 'en') {
         character,
         characterPath,
       };
-      const name = getPublicCharacterName(locale, {
+      const fullName = getPublicCharacterName(locale, {
+        character,
+        element,
+      });
+      const name = getShortCharacterName(locale, {
         character,
         element,
       });
@@ -123,6 +128,7 @@ export function getHomePageData(lang = 'en') {
 
       return {
         name,
+        fullName,
         slug: getPublicCharacterSlug({
           character,
           element,

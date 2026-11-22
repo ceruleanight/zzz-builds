@@ -1,5 +1,5 @@
 import {
-  getPublicCharacterName,
+  getShortCharacterName,
   getPublicCharacterSlug,
 } from './character-slugs';
 import { loadJSON } from './content';
@@ -61,7 +61,7 @@ export function getBestBuildUsage(
   const usageByItem = new Map<string, BuildUsage[]>();
 
   for (const character of getContentCharacters()) {
-    const characterName = getPublicCharacterName(locale, character);
+    const characterName = getShortCharacterName(locale, character);
     const characterHref = localizedPath(
       lang,
       getPublicCharacterSlug(character),
