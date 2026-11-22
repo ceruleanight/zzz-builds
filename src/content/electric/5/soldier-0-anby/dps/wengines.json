@@ -1,0 +1,59 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "severed-innocence",
+                    "refinement": 1,
+                    "note": {
+                        "en": "Her signature and clear best choice. It gives an obscene amount of CRIT DMG from its passive and conditional effects, which she can keep active at all times, plus some Electric DMG%."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "cordis-germina",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 95%. Seed's signature is one of her best choices. It raises CRIT Rate by a lot, adds Electric DMG and gives 20% DEF ignore on Basic Attacks and Ultimates at max Electric DMG buffs. It is easy to hit the 100% CRIT Rate cap with it."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "heartstring-nocturne",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 88%. Evelyn's signature is a solid choice thanks to its generic CRIT Rate and CRIT DMG. She cannot use its in-combat effect."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "marcato-desire",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 76%. A reasonable option for CRIT agents in teams that apply Anomalies fairly consistently."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "starlight-engine",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 72%. A solid all-round free-to-play option for Attack agents. It gives 25% unconditional Basic ATK and a further 19.2% Combat ATK at S5 for 12 seconds after a Dodge Counter or Quick Assist."
+                    }
+                }
+            ]
+        }
+    ]
+}

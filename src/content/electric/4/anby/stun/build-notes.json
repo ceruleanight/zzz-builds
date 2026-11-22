@@ -1,0 +1,20 @@
+{
+    "name": {
+        "en": "Stun"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "[[character:anby]] mainly wants to deal Daze, and her personal damage is not that high, so pick the W-Engine with the highest Daze output. The percentages show damage first and Daze second."
+        },
+        {
+            "en": "Target stats at level 60: Impact 169 to 190+, ATK 1,700 to 2,000+ (optional), HP 9,500+, DEF 800+, CRIT Rate 50%+ (needed for King of the Summit) and CRIT DMG 100 to 120%+ (optional)."
+        },
+        {
+            "en": "[[character:harumasa]] and [[character:zhu-yuan]] both get a great free-to-play stunner in her. Her quick Daze application fills their downtime, and she can replace [[character:qingyi]] if you do not have her."
+        },
+        {
+            "en": "[[character:nicole]] works well because the Demara sisters activate each other's Additional Abilities. This boosts Anby's Energy Regen and gives Nicole extra Ether DMG for the party. Anby creates Stun windows quickly, which makes Nicole's DEF shred more effective."
+        }
+    ]
+}

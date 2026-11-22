@@ -1,0 +1,118 @@
+{
+    "disc_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "dawns-bloom",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "woodpecker-electro",
+                            "pieces": 4,
+                            "note": {
+                                "en": "About 96.8% of the best 4-piece set's damage."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "hormone-punk",
+                            "pieces": 4,
+                            "note": {
+                                "en": "About 94.75% of the best 4-piece set's damage."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "two_piece_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "woodpecker-electro",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended with [[set:dawns-bloom]], [[set:hormone-punk]]."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "branch-and-blade-song",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended with [[set:woodpecker-electro]]."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "puffer-electro",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "thunder-metal",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "astral-voice",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "hormone-punk",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "dawns-bloom",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

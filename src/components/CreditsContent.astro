@@ -1,0 +1,64 @@
+---
+import credits from '../content/site/credits.json';
+type LocalizedText = { en: string; [lang: string]: string };
+
+type CreditsData = {
+  text: Record<string, LocalizedText>;
+  translators: Record<string, string[]>;
+  sections: {
+    title: LocalizedText;
+    names: string[];
+  }[];
+};
+
+const { lang = 'en' } = Astro.props as {
+  lang?: string;
+};
+
+const creditsData = credits as CreditsData;
+const localized = (value: LocalizedText) => value[lang]?.trim() || value.en;
+const text = creditsData.text;
+const translators = creditsData.translators[lang] ?? [];
+---
+
+<section class="card credits-card credits-legal-card">
+  <h2>{localized(text.legalTitle)}</h2>
+  <p>{localized(text.unofficial)}</p>
+  <p>
+    Build recommendations on this site are compiled by the site maintainers
+    from the sources listed below and are general guidance only. Rankings
+    reflect the game at the time of the last update and can change between
+    versions.
+  </p>
+  <p>{localized(text.ownership)}</p>
+  <p class="credits-legal-declaration">
+    &copy; All rights reserved by COGNOSPHERE. Other properties belong to their
+    respective owners.
+  </p>
+</section>
+
+{
+  translators.length > 0 && (
+    <section class="card credits-card">
+      <h2>{localized(text.translatorTitle)}</h2>
+      <ul class="credits-list">
+        {translators.map((name) => (
+          <li>{name}</li>
+        ))}
+      </ul>
+    </section>
+  )
+}
+
+{
+  creditsData.sections.map((section) => (
+    <section class="card credits-card">
+      <h2>{localized(section.title)}</h2>
+      <ul class="credits-list">
+        {section.names.map((name) => (
+          <li>{name}</li>
+        ))}
+      </ul>
+    </section>
+  ))
+}

@@ -1,0 +1,51 @@
+{
+    "disc_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "king-of-the-summit",
+                            "pieces": 4,
+                            "note": {
+                                "en": "The de facto best Stunner set. Using it is easy for her, since she builds CRIT Rate and meets the 50% threshold, and her low-cost EX Specials keep it up constantly."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "two_piece_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "woodpecker-electro",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended when below 100% CRIT Rate."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "swing-jazz",
+                            "pieces": 2,
+                            "note": {
+                                "en": "The better choice once you reach 100% CRIT Rate."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

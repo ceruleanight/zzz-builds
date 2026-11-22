@@ -1,0 +1,23 @@
+{
+    "name": {
+        "en": "DPS"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "[[character:anton]]'s Additional Ability partly triggers any Shock on the target every 4th critical hit he deals, so he gains a lot from agents who apply Shock."
+        },
+        {
+            "en": "Target stats at level 60: ATK 2,300 to 2,800+, HP 9,000+, DEF 800+, CRIT Rate 70 to 100% and CRIT DMG 120 to 160%+."
+        },
+        {
+            "en": "[[character:trigger]] and [[character:qingyi]] activate his Additional Ability and create many Stun windows. Both add Stun DMG multiplier debuffs. Qingyi deals more Daze but needs more field time, while Trigger is almost always off-field."
+        },
+        {
+            "en": "[[character:grace]] activates his Additional Ability by herself and inflicts good Shock damage that he can exploit. [[character:astra-yao]] and [[character:nicole]] are generalist supports that fit any team."
+        },
+        {
+            "en": "W-Engine percentages are relative to The Brimstone at S1."
+        }
+    ]
+}

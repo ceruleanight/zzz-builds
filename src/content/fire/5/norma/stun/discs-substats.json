@@ -1,0 +1,22 @@
+{
+    "substats_priority": [
+        {
+            "name": "cr",
+            "note": {
+                "en": "Counts until 100% in combat."
+            }
+        },
+        {
+            "items": [
+                {
+                    "name": "cd"
+                },
+                {
+                    "name": "atk%"
+                }
+            ]
+        },
+        "pen-flat",
+        "atk"
+    ]
+}

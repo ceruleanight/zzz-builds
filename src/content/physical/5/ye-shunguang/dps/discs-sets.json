@@ -1,0 +1,80 @@
+{
+    "disc_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "white-water-ballad",
+                            "pieces": 4,
+                            "note": {
+                                "en": "Her dedicated set. It gives 10% Combat ATK and up to 20% CRIT Rate, no other set comes close to its stat value, and she can keep the 4-piece effect up at all times. It makes her build easier or harder depending on whether the W-Engine has CRIT Rate."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "two_piece_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "branch-and-blade-song",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "puffer-electro",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "astral-voice",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "hormone-punk",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "fanged-metal",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "woodpecker-electro",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": {
+        "en": "Stun"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "Target stats at level 60: ATK 2,200 to 2,500+, HP 9,500+, DEF 750+, Anomaly Proficiency 280 to 350+, Anomaly Mastery 173 to 211."
+        },
+        {
+            "en": "Partners Prydwen lists for this agent (each group is one entry in its synergy list): [[character:aria]], [[character:alice]], [[character:jane-doe]], [[character:piper]], [[character:grace]], [[character:burnice]], [[character:miyabi]], [[character:yanagi]]; [[character:sunna]], [[character:yuzuha]], [[character:nicole]]."
+        },
+        {
+            "en": "The W-Engine ranking was calculated with [[character:sunna]] (Thoughtbop) and [[character:aria]] (Angel in the Shell) as teammates. Percentages are relative to the first-listed W-Engine at the refinement Prydwen marks as 100%."
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "name": {
+        "en": "DPS"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "[[character:severian]] works best with high CRIT Rate. His Additional Ability's ATK bonus is hard to max out without plenty of substats or a 2-piece CRIT Rate set, even with his signature."
+        },
+        {
+            "en": "Target stats at level 60: ATK 2,800 to 3,200+, HP 9,500+, DEF 750+, CRIT Rate 79.4% with the signature W-Engine (100% in combat) and CRIT DMG 150 to 210%+. The W-Engine main stat and Disc 4 pick give the CRIT DMG a large range."
+        },
+        {
+            "en": "[[character:norma]] is a very competitive Stunner. Her passive playstyle gives him plenty of opportunities to counter, and her extra resources and Decibels make it easier to set up Ultimates and enhanced Basics for burst. There is little room for her Chain Attack conversion in stuns."
+        },
+        {
+            "en": "[[character:roxy]], as a Wind agent, meets the Wind DMG Bonus condition on his Core Passive, which greatly increases her buffs. Severian cannot keep his Core Passive up through every burst on his own."
+        },
+        {
+            "en": "[[character:dialyn]]'s Ultimate conversion helps him sustain more enhanced Basics (an Ultimate gives 100 Flow versus 35 from a Chain Attack), and her presence enables a 4-piece Puffer Electro."
+        },
+        {
+            "en": "[[character:lycaon]] with [[character:rina]] is a strong and accessible Victoria Housekeeping core. [[character:rina]] is a very competitive support for him because PEN Ratio is so valuable. Ideally she is M1 with Weeping Cradle."
+        },
+        {
+            "en": "[[character:sunna]], [[character:astra-yao]] and [[character:rina]] are all great supports. Astra's Chain Attack conversion gives him even more Flow for enhanced Basics. [[character:zhao]] and [[character:nicole]] work as free-to-play options, but Nicole's DEF shred needs the team to stay in Stun."
+        },
+        {
+            "en": "The W-Engine ranking was calculated with [[character:norma]] (Chief Sidekick) and [[character:sunna]] (Thoughtbop) as teammates. Percentages are relative to his signature at S1."
+        }
+    ]
+}

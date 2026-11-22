@@ -1,0 +1,59 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "hellfire-gears",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 112.18% damage and 100% Daze at S5. At S1: about 100% damage and 100% Daze."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "precious-fossilized-core",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 104.21% damage and 99.84% Daze at S5."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "blazing-laurel",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 103.05% damage and 100.84% Daze at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "steam-oven",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 93.29% damage and 99.84% Daze at S5."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "chief-sidekick",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 89.78% damage and 111.38% Daze at S1."
+                    }
+                }
+            ]
+        }
+    ]
+}

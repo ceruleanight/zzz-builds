@@ -1,0 +1,605 @@
+{
+    "angel-in-the-shell": {
+        "rarity": 5,
+        "passive": {
+            "en": "Energetic Strike: Increases the equipper's Anomaly Proficiency by {{value}}. When the equipper is an Ether character, and comes on-field or uses a Special Attack or EX Special Attack, they gain a buff: DMG dealt to enemies afflicted with Attribute Anomalies increases by {{value}}%, and all Attribute Anomaly DMG they trigger increases by {{value}}%, lasting 15s. Repeated triggers reset the duration, and the effect is removed when switching off-field."
+        },
+        "r1": [
+            90,
+            20,
+            10
+        ],
+        "r2": [
+            103,
+            23,
+            11.5
+        ],
+        "r3": [
+            117,
+            26,
+            13
+        ],
+        "r4": [
+            130,
+            29,
+            14.5
+        ],
+        "r5": [
+            144,
+            32,
+            16
+        ],
+        "substat": "am",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "30%"
+        }
+    },
+    "flamemaker-shaker": {
+        "rarity": 5,
+        "passive": {
+            "en": "Fuel on the Rocks: While off-field, the equipper's Energy Regen increases by {{value}} per second. When hitting an enemy with an EX Special Attack or Assist Attack, the equipper's DMG increases by {{value}}%, stacking up to 10 times and lasting for 6s. This effect can trigger once every 0.3s. While off-field, the stack effect is doubled. Repeated triggers reset the duration. Upon obtaining the DMG increase effect, if the number of current stacks is greater than or equal to 5, then the equipper's Anomaly Proficiency increases by {{value}}. This Anomaly Proficiency increase does not stack and lasts for 6s."
+        },
+        "r1": [
+            0.6,
+            3.5,
+            50
+        ],
+        "r2": [
+            0.75,
+            4.4,
+            62
+        ],
+        "r3": [
+            0.9,
+            5.2,
+            75
+        ],
+        "r4": [
+            1.05,
+            6.1,
+            87
+        ],
+        "r5": [
+            1.2,
+            7,
+            100
+        ],
+        "substat": "atk%",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "30%"
+        }
+    },
+    "flight-of-fancy": {
+        "rarity": 5,
+        "passive": {
+            "en": "Silver Spiked Feathers: Increases Anomaly Buildup Rate by {{value}}%. When the equipper deals Ether DMG, their Anomaly Proficiency increases by {{value}} for 5s, stacking up to 6 times. This effect can trigger once every 0.5s, and repeated triggers reset the duration."
+        },
+        "r1": [
+            40,
+            20
+        ],
+        "r2": [
+            46,
+            23
+        ],
+        "r3": [
+            52,
+            26
+        ],
+        "r4": [
+            58,
+            29
+        ],
+        "r5": [
+            64,
+            32
+        ],
+        "substat": "ap",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "90"
+        }
+    },
+    "frostfall-sickle": {
+        "rarity": 5,
+        "passive": {
+            "en": "Terminating Verdict: When an Ice attribute equipper uses a Special Attack or EX Special Attack, their Ice DMG is increased by {{value}}% for 40s, stacking up to 2 times, once per use of a skill. Repeated triggers refresh the duration. At 2 stacks, the equipper's Abloom DMG dealt is increased by an additional {{value}}%."
+        },
+        "r1": [
+            20,
+            35
+        ],
+        "r2": [
+            23,
+            38.5
+        ],
+        "r3": [
+            26,
+            42
+        ],
+        "r4": [
+            29,
+            45.5
+        ],
+        "r5": [
+            32,
+            50
+        ],
+        "substat": "am",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "30%"
+        }
+    },
+    "fusion-compiler": {
+        "rarity": 5,
+        "passive": {
+            "en": "Data Flood: Increases ATK by {{value}}%. When using a Special Attack or EX Special Attack, the equipper's Anomaly Proficiency is increased by {{value}} for 8s, stacking up to 3 times. The duration of each stack is calculated separately."
+        },
+        "r1": [
+            12,
+            25
+        ],
+        "r2": [
+            15,
+            31
+        ],
+        "r3": [
+            18,
+            37
+        ],
+        "r4": [
+            21,
+            43
+        ],
+        "r5": [
+            24,
+            50
+        ],
+        "substat": "pen",
+        "level_max": {
+            "base_attack": 684,
+            "substat_value": "24%"
+        }
+    },
+    "hailstorm-shrine": {
+        "rarity": 5,
+        "passive": {
+            "en": "Frost-Stained Star: CRIT DMG increases by {{value}}%. When using an EX Special Attack or when any squad member applies an Attribute Anomaly to an enemy, the equipper's Ice DMG increases by {{value}}%, stacking up to 2 times and lasting 15s. The duration of each stack is calculated separately."
+        },
+        "r1": [
+            50,
+            20
+        ],
+        "r2": [
+            57,
+            23
+        ],
+        "r3": [
+            65,
+            26
+        ],
+        "r4": [
+            72,
+            29
+        ],
+        "r5": [
+            80,
+            32
+        ],
+        "substat": "cr",
+        "level_max": {
+            "base_attack": 743,
+            "substat_value": "24%"
+        }
+    },
+    "joyau-dore": {
+        "rarity": 5,
+        "passive": {
+            "en": "Flawless Etiquette: The equipper's Anomaly Proficiency increases by {{value}}. When the equipper's EX Special Attack deals Wind DMG, the DMG dealt by their Vortex and Windswept increases by {{value}}% for 40s, stacking up to 2 times. Repeated triggers reset the duration. This effect can trigger once per skill use. At 2 stacks, all squad members gain {{value}} Anomaly Proficiency. Only one instance of this effect can exist in the same squad."
+        },
+        "r1": [
+            70,
+            7,
+            60
+        ],
+        "r2": [
+            80,
+            8,
+            69
+        ],
+        "r3": [
+            90,
+            9,
+            78
+        ],
+        "r4": [
+            100,
+            10,
+            87
+        ],
+        "r5": [
+            110,
+            11,
+            96
+        ],
+        "substat": "er",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "60%"
+        }
+    },
+    "ode-of-resurrected-wings": {
+        "rarity": 5,
+        "passive": {
+            "en": "Paradise Lost: Increases Anomaly Proficiency by {{value}}. When the equipper triggers a Refringe reaction, they gain {{value}}% increased Anomaly DMG, and all squad members gain {{value}}% increased DMG dealt. Both effects last 30s. Repeated triggers reset the duration."
+        },
+        "r1": [
+            96,
+            20,
+            30
+        ],
+        "r2": [
+            105,
+            23,
+            34.5
+        ],
+        "r3": [
+            115,
+            26,
+            39
+        ],
+        "r4": [
+            125,
+            29,
+            43.5
+        ],
+        "r5": [
+            135,
+            32,
+            48
+        ],
+        "substat": "atk%",
+        "level_max": {
+            "base_attack": 743,
+            "substat_value": "36%"
+        }
+    },
+    "plume-of-rebirth": {
+        "rarity": 5,
+        "passive": {
+            "en": "Hatching Day: The equipper's Anomaly Proficiency increases by {{value}}. When Anomaly DMG dealt by any squad member to an enemy triggers a critical hit, the equipper's Fire DMG increases by {{value}}% for 20s. Repeated triggers reset the duration."
+        },
+        "r1": [
+            90,
+            40
+        ],
+        "r2": [
+            99,
+            44
+        ],
+        "r3": [
+            108,
+            48
+        ],
+        "r4": [
+            117,
+            52
+        ],
+        "r5": [
+            126,
+            56
+        ],
+        "substat": "am",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "30%"
+        }
+    },
+    "practiced-perfection": {
+        "rarity": 5,
+        "passive": {
+            "en": "Gift of Stardust: The equipper's Anomaly Mastery increases by {{value}}. When inflicting Assault, the equipper's Physical DMG increases by {{value}}% for 20s, stacking up to 2 times. Repeated triggers reset the duration. When the equipper enters combat, immediately gain 2 stacks."
+        },
+        "r1": [
+            60,
+            20
+        ],
+        "r2": [
+            69,
+            23
+        ],
+        "r3": [
+            78,
+            26
+        ],
+        "r4": [
+            87,
+            29
+        ],
+        "r5": [
+            96,
+            32
+        ],
+        "substat": "atk%",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "30%"
+        }
+    },
+    "sharpened-stinger": {
+        "rarity": 5,
+        "passive": {
+            "en": "Indulge in the Hunt: Upon activating a Dash Attack, gain 1 stack of Predatory Instinct. Each stack of Predatory Instinct increases the equipper's Physical DMG by {{value}}% for 10s, stacking up to 3 times. This effect can trigger once every 0.5s and repeated triggers reset the duration. When entering combat or triggering Perfect Dodge, gain 3 stacks of Predatory Instinct. While Predatory Instinct is at maximum stacks, the equipper's Anomaly Buildup Rate increases by {{value}}%."
+        },
+        "r1": [
+            12,
+            40
+        ],
+        "r2": [
+            15,
+            50
+        ],
+        "r3": [
+            18,
+            60
+        ],
+        "r4": [
+            21,
+            70
+        ],
+        "r5": [
+            24,
+            80
+        ],
+        "substat": "ap",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "90"
+        }
+    },
+    "timeweaver": {
+        "rarity": 5,
+        "passive": {
+            "en": "Time-Devouring Stratagem: The equipper's Electric Anomaly Buildup Rate increases by {{value}}%. When Special Attacks or EX Special Attacks hit enemies under Attribute Anomalies, the equipper's Anomaly Proficiency increases by {{value}} for 15s."
+        },
+        "r1": [
+            30,
+            75
+        ],
+        "r2": [
+            35,
+            85
+        ],
+        "r3": [
+            40,
+            95
+        ],
+        "r4": [
+            45,
+            105
+        ],
+        "r5": [
+            50,
+            115
+        ],
+        "substat": "atk%",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "30%"
+        }
+    },
+    "boisterous-echoes": {
+        "rarity": 4,
+        "passive": {
+            "en": "Resounding Drum: When the equipper triggers the Vortex effect, they gain {{value}} Energy. This effect can trigger once every 10s. When attacking enemies afflicted with an Attribute Anomaly, the equipper deals {{value}}% increased DMG."
+        },
+        "r1": [
+            2,
+            11.5
+        ],
+        "r2": [
+            2.3,
+            13.2
+        ],
+        "r3": [
+            2.6,
+            15
+        ],
+        "r4": [
+            2.9,
+            16.7
+        ],
+        "r5": [
+            3.2,
+            18.4
+        ],
+        "substat": "ap",
+        "level_max": {
+            "base_attack": 594,
+            "substat_value": "75"
+        }
+    },
+    "electro-lip-gloss": {
+        "rarity": 4,
+        "passive": {
+            "en": "Kiss of Death: When there are enemies inflicted with Attribute Anomaly on the field, the equipper's ATK increases by {{value}}% and they deal an additional {{value}}% more DMG to the target."
+        },
+        "r1": [
+            10,
+            15
+        ],
+        "r2": [
+            11.5,
+            17.5
+        ],
+        "r3": [
+            13,
+            20
+        ],
+        "r4": [
+            14.5,
+            22.5
+        ],
+        "r5": [
+            16,
+            25
+        ],
+        "substat": "ap",
+        "level_max": {
+            "base_attack": 594,
+            "substat_value": "75"
+        },
+        "source": "Battle Pass"
+    },
+    "rainforest-gourmet": {
+        "rarity": 4,
+        "passive": {
+            "en": "Dinner's Ready!: For every 10 Energy consumed, the equipper gains a buff that increases ATK by {{value}}% for 10s, stacking up to 10 times. The duration of each stack is calculated separately."
+        },
+        "r1": [
+            2.5
+        ],
+        "r2": [
+            2.8
+        ],
+        "r3": [
+            3.2
+        ],
+        "r4": [
+            3.6
+        ],
+        "r5": [
+            4
+        ],
+        "substat": "ap",
+        "level_max": {
+            "base_attack": 594,
+            "substat_value": "75"
+        },
+        "source": "Craftable"
+    },
+    "roaring-ride": {
+        "rarity": 4,
+        "passive": {
+            "en": "Collision Potential: When EX Special Attack hits an enemy, one of three possible effects is randomly triggered for 5 seconds. This effect can trigger once every 0.3s. The same types of effects cannot stack. Repeated triggers reset the duration allowing several effects to be active at once:"
+        },
+        "r1": [],
+        "r2": [],
+        "r3": [],
+        "r4": [],
+        "r5": [],
+        "substat": "atk%",
+        "level_max": {
+            "base_attack": 624,
+            "substat_value": "25%"
+        }
+    },
+    "weeping-gemini": {
+        "rarity": 4,
+        "passive": {
+            "en": "Lingering Cries: Whenever a squad member inflicts an Attribute Anomaly on an enemy, the equipper gains a buff that increases Anomaly Proficiency by {{value}}, stacking up to 4 times. This effect expires when the target recovers from Stun or is defeated. The duration of each stack is calculated separately."
+        },
+        "r1": [
+            30
+        ],
+        "r2": [
+            34
+        ],
+        "r3": [
+            38
+        ],
+        "r4": [
+            42
+        ],
+        "r5": [
+            46
+        ],
+        "substat": "atk%",
+        "level_max": {
+            "base_attack": 594,
+            "substat_value": "25%"
+        },
+        "source": "Craftable"
+    },
+    "magnetic-storm-alpha": {
+        "rarity": 3,
+        "passive": {
+            "en": "Disordered Current: Accumulating Anomaly Buildup increases the equipper's Anomaly Mastery by {{value}} for 10s. This effect can trigger once every 20s."
+        },
+        "r1": [
+            25
+        ],
+        "r2": [
+            28
+        ],
+        "r3": [
+            32
+        ],
+        "r4": [
+            36
+        ],
+        "r5": [
+            40
+        ],
+        "substat": "atk%",
+        "level_max": {
+            "base_attack": 475,
+            "substat_value": "20%"
+        }
+    },
+    "magnetic-storm-bravo": {
+        "rarity": 3,
+        "passive": {
+            "en": "High-Voltage Surge: Accumulating Anomaly Buildup increases the equipper's Anomaly Proficiency by {{value}} for 10s. This effect can only be triggered once every 20s."
+        },
+        "r1": [
+            25
+        ],
+        "r2": [
+            28
+        ],
+        "r3": [
+            32
+        ],
+        "r4": [
+            36
+        ],
+        "r5": [
+            40
+        ],
+        "substat": "ap",
+        "level_max": {
+            "base_attack": 475,
+            "substat_value": "60"
+        }
+    },
+    "magnetic-storm-charlie": {
+        "rarity": 3,
+        "passive": {
+            "en": "Charge Overload: Whenever a squad member inflicts an Attribute Anomaly on an enemy, the equipper generates {{value}} Energy. This effect can trigger once every 12s."
+        },
+        "r1": [
+            3.5
+        ],
+        "r2": [
+            4
+        ],
+        "r3": [
+            4.5
+        ],
+        "r4": [
+            5
+        ],
+        "r5": [
+            5.5
+        ],
+        "substat": "pen",
+        "level_max": {
+            "base_attack": 475,
+            "substat_value": "16%"
+        }
+    }
+}

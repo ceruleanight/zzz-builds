@@ -1,0 +1,59 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "frostfall-sickle",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 100% at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "fusion-compiler",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 99.31% at S5. At S1: about 92.32%."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "angel-in-the-shell",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 93.29% at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "electro-lip-gloss",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 91.41% at S5."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "weeping-gemini",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 90.57% at S5."
+                    }
+                }
+            ]
+        }
+    ]
+}

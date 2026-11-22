@@ -1,0 +1,23 @@
+{
+    "name": {
+        "en": "DPS"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "[[character:ellen]] needs high CRIT Rate for her Core Passive. Her Potential lets Chain Attacks and Ultimates benefit from that Core Passive, so an extra Ultimate from a partner adds a lot of damage."
+        },
+        {
+            "en": "Target stats at level 60: ATK 2,600 to 3,000+, HP 9,500+, DEF 780+, CRIT Rate 90 to 100% and CRIT DMG 120 to 180%+."
+        },
+        {
+            "en": "[[character:dialyn]] is the best partner: her Ultimate conversion gives Ellen an extra burst and builds setups around it. Outside of Dialyn, [[character:lighter]] is the best Stunner for her thanks to his large boosts to Ice DMG. [[character:trigger]], [[character:ju-fufu]] and [[character:lycaon]] also work, each with pros and cons."
+        },
+        {
+            "en": "[[character:astra-yao]], [[character:yuzuha]] and [[character:nicole]] are generalist supports for any team. [[character:soukaku]] is particularly good because both are Ice, so each activates the other's Additional Ability. [[character:sunna]] also works, since Ellen is often on-field, which keeps Cat's Gaze triggering."
+        },
+        {
+            "en": "The W-Engine ranking was calculated with [[character:dialyn]] (Yesterday Calls) and [[character:astra-yao]] (Kaboom the Cannon). Percentages are relative to her signature."
+        }
+    ]
+}

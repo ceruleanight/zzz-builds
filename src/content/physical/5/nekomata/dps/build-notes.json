@@ -1,0 +1,17 @@
+{
+    "name": {
+        "en": "DPS"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "Target stats at level 60: ATK 2,500 to 3,100+ (Optional), HP 9,500+, DEF 800+, CRIT Rate 70% to 80%+, CRIT DMG 140% to 160%+."
+        },
+        {
+            "en": "Partners Prydwen lists for this agent (each group is one entry in its synergy list): [[character:dialyn]]; [[character:seed]]; [[character:sunna]], [[character:rina]]; [[character:astra-yao]], [[character:nicole]]."
+        },
+        {
+            "en": "The W-Engine ranking was calculated with [[character:dialyn]] (Yesterday Calls) and [[character:sunna]] (Thoughtbop) as teammates. Percentages are relative to the first-listed W-Engine at the refinement Prydwen marks as 100%."
+        }
+    ]
+}

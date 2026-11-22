@@ -1,0 +1,116 @@
+{
+    "disc_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "king-of-the-summit",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "swing-jazz",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "proto-punk",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "shockstar-disco",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "two_piece_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "shockstar-disco",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended with [[set:king-of-the-summit]]."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "king-of-the-summit",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended with [[set:swing-jazz]], [[set:proto-punk]], [[set:shockstar-disco]]."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "woodpecker-electro",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "astral-voice",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "hormone-punk",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "swing-jazz",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

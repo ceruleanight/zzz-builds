@@ -1,0 +1,64 @@
+{
+    "disc_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "feathered-fate",
+                            "pieces": 4,
+                            "note": {
+                                "en": "The tailor-made set for her. The Anomaly Proficiency bonus is permanent, and the Attribute Anomaly DMG bonus lasts 15 seconds but stays active off-field and refreshes when she switches in, so it is effectively always up. If her ATK needs are met, a 2-piece Anomaly Proficiency set is best, otherwise use ATK% to make up the difference."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "two_piece_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "chaos-jazz",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "freedom-blues",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "astral-voice",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "hormone-punk",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

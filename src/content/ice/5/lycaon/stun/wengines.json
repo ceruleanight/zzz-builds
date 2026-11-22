@@ -1,0 +1,59 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "blazing-laurel",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 118.56% at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "precious-fossilized-core",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 115.85% at S5."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "steam-oven",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 108.39% at S5."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "hellfire-gears",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 102.98% at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "the-restrained",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 100% at S1."
+                    }
+                }
+            ]
+        }
+    ]
+}

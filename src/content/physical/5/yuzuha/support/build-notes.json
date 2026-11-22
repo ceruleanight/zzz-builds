@@ -1,0 +1,14 @@
+{
+    "name": {
+        "en": "Support"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "Target stats at level 60: ATK 3,000+, HP 11,000+, DEF 800+, Anomaly Proficiency 200+, Anomaly Mastery 171."
+        },
+        {
+            "en": "Partners Prydwen lists for this agent (each group is one entry in its synergy list): [[character:velina]]; [[character:nangong-yu]]; [[character:jane-doe]], [[character:piper]], [[character:promeia]]; [[character:miyabi]]; [[character:vivian]], [[character:burnice]]."
+        }
+    ]
+}

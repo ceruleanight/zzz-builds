@@ -1,0 +1,59 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "heartstring-nocturne",
+                    "refinement": 1,
+                    "note": {
+                        "en": "Her signature and clearly her best choice. It gives a tremendous amount of unconditional CRIT Rate and CRIT DMG, and an incredibly consistent combat buff."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "severed-innocence",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 85%. Soldier 0 - Anby's signature is a functional stat stick. With frequent Special use out of Stun she can keep 2 of its 3 stacks up."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "cordis-germina",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 85%. Seed's signature works as a stat stick. She has high Ultimate multipliers and can use it on most, if not all, Stuns thanks to high Decibel generation."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "starlight-engine",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 80%. The go-to A-rank option, better than event options like Marcato Desire or Gilded Blossom when managed well. It gives a sizeable Combat ATK gain."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "steel-cushion",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 76%. It has merit as an S-rank CRIT Rate main stat W-Engine, but it is worse than a well managed Starlight Engine."
+                    }
+                }
+            ]
+        }
+    ]
+}

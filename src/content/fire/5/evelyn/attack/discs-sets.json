@@ -1,0 +1,49 @@
+{
+    "disc_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "hormone-punk",
+                            "pieces": 4,
+                            "note": {
+                                "en": "Her best set when you can use its buff timers well. She is swapped in and out of the field a lot, which suits its short window."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "puffer-electro",
+                            "pieces": 4,
+                            "note": {
+                                "en": "Some use on her: her frequent Chain Attacks give high Decibel generation, which allows Ultimates in most Stuns, but the buff often comes late in a combo."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "astral-voice",
+                            "pieces": 4,
+                            "note": {
+                                "en": "She cannot sustain it alone, but with [[character:astra-yao]] you can run Moonlight Lullaby on Astra and Astral Voice on Evelyn, since Astra supplies Quick Assists."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

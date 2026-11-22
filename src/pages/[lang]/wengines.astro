@@ -1,0 +1,40 @@
+---
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import WEngineBrowser from '../../components/WEngineBrowser.astro';
+import '../../styles/base.css';
+import '../../styles/home.css';
+import '../../styles/theme.css';
+import '../../styles/wengines.css';
+import { t } from '../../utils/i18n';
+import { sitePath } from '../../utils/paths';
+import { getLanguageStaticPaths } from '../../utils/routes';
+import { getWEngineBrowserData } from '../../utils/wengine-browser';
+
+export const getStaticPaths = getLanguageStaticPaths;
+
+const lang = Array.isArray(Astro.params.lang)
+  ? Astro.params.lang[0]
+  : Astro.params.lang;
+const data = getWEngineBrowserData(lang ?? 'en');
+const { locale } = data;
+const title = t(locale, 'ui', 'WEngines');
+---
+
+<html lang={data.lang}>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href={sitePath('favicon.svg')} />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title} - ZZZ Builds</title>
+  </head>
+  <body data-element="base">
+    <Header locale={locale} lang={data.lang} page="wengines" />
+    <main class="wengine-page">
+      <h1>{title}</h1>
+      <WEngineBrowser data={data} locale={locale} />
+    </main>
+    <Footer lang={data.lang} />
+  </body>
+</html>

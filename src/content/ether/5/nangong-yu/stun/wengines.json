@@ -1,0 +1,59 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "neon-fantasies",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 100% damage and 100% Daze at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "hellfire-gears",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 84.49% damage and 99.33% Daze at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "the-simmering-pot",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 84.53% damage and 95.16% Daze at S5."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "precious-fossilized-core",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 84.19% damage and 101.89% Daze at S5."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "roaring-fur-nace",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 85.45% damage and 95.86% Daze at S1."
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "substats_priority": [
+        {
+            "name": "cr",
+            "note": {
+                "en": "Counts up to 80% CRIT Rate. Above that it is worth about the same as [[stat:cd]] and [[stat:atk%]]."
+            }
+        },
+        "cd",
+        "atk%"
+    ]
+}

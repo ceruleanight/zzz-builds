@@ -1,0 +1,48 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "elegant-vanity",
+                    "refinement": 1,
+                    "note": {
+                        "en": "Her signature and one of her top choices. It gives a lot of ATK% for her Core Skill buff, 5 extra Energy whenever a squad member uses a Quick Assist, Chain Attack, Defensive Assist or Evasive Assist (constant with her kit), and up to 20% team DMG that she can keep up indefinitely."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "bashful-demon",
+                    "refinement": 5,
+                    "note": {
+                        "en": "Soukaku's signature at S5 is very competitive. It gives ATK% for her Core Skill and up to 12.8% Combat ATK to the whole team. That buff is usually hard to keep up, but each Tremolo of hers builds a stack."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "kaboom-the-cannon",
+                    "refinement": 5,
+                    "note": {
+                        "en": "Lucy's signature at S5 is a solid option. It gives 50% Energy Regen and up to 12% Combat ATK to the team, but every squad member must hit the enemy once every 4 seconds to keep the full effect. Her Tremolo counts toward that."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "the-vault",
+                    "refinement": 5,
+                    "note": {
+                        "en": "Nicole's signature at S5 is usable but not perfect. It has everything she wants except ATK: 50% Energy Regen, and a trigger from her Chain Attack, Tremolo or Ultimate that adds 0.8 Energy Regen per second and 24% team damage against the struck target for 2 seconds."
+                    }
+                }
+            ]
+        }
+    ]
+}

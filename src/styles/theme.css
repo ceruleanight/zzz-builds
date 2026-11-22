@@ -1,0 +1,66 @@
+:root {
+  --bg: #14181f;
+  --text: hsla(0, 0%, 100%, 0.85);
+  --accent: rgb(255, 215, 128);
+  --element: #30d8a0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+body[data-element="electric"] {
+  --bg: #1c374c;
+  --element: #1a9bff;
+}
+
+body[data-element="ether"] {
+  --bg: #432a4c;
+  --element: #ae5ccf;
+}
+
+body[data-element="fire"] {
+  --bg: #4c281c;
+  --element: #ff5a1f;
+}
+
+body[data-element="ice"] {
+  --bg: #1d434c;
+  --element: #1ad8de;
+}
+
+body[data-element="lumiflux"] {
+  --bg: #4c3945;
+  --element: #fface1;
+}
+
+body[data-element="physical"] {
+  --bg: #4c3f1c;
+  --element: #f5b81a;
+}
+
+body[data-element="wind"] {
+  --bg: #333f4c;
+  --element: #93f8ff;
+}
+
+body[data-element="frost"] {
+  --bg: #29444c;
+  --element: #6bdcff;
+}
+
+body[data-element="auric-ink"] {
+  --bg: #4c3f27;
+  --element: #e9b45b;
+}
+
+body[data-element="honed-edge"] {
+  --bg: #32394c;
+  --element: #91adfe;
+}
+
+body[data-element="base"] {
+  --bg: #14181f;
+  --element: #f5c542;
+}

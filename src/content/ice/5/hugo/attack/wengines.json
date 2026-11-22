@@ -1,0 +1,59 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "myriad-eclipse",
+                    "refinement": 1,
+                    "note": {
+                        "en": "His signature perfectly complements his kit. Its huge CRIT Rate, CRIT DMG and DEF Ignore effects trigger for short periods when he casts his most important skills, which makes it by far his best option."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "cordis-germina",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 87% damage and 84% Daze. Seed's signature is a solid stat stick with a ridiculous amount of CRIT Rate that is easy to cap, which matters for him. Its DEF shred on the Ultimate applies to Totalizes."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "heartstring-nocturne",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 87% damage and 88% Daze. Evelyn's signature is the best CRIT stat stick for Attack agents, with even more CRIT DMG than Myriad Eclipse, but he cannot benefit from its other effects."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "steel-cushion",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 79% damage and 77% Daze. A particularly good Standard Banner option, since he can always get back attacks on his Totalizes and fully benefit from the 25% DMG bonus."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "marcato-desire",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 77% damage and 74% Daze. He always opens with Chain Attacks and has short Stuns, so at least half of its buff is up for the full Stun burst."
+                    }
+                }
+            ]
+        }
+    ]
+}

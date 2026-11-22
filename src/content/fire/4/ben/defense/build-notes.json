@@ -1,0 +1,29 @@
+{
+    "name": {
+        "en": "DPS"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "[[character:ben]] takes most of his damage from EX Specials and his Ultimate, and relies on a lot of HP and DEF. Percentages are team buffed calculations, relative to Tremor Trigram Vessel at S1."
+        },
+        {
+            "en": "Target stats at level 60: ATK 2,700 to 3,600+, HP 11,500+, DEF 1,400 to 2,600+, CRIT Rate 50 to 60%+ and CRIT DMG 100 to 120%+. Aim for 70%+ CRIT Rate if you run Inferno Metal."
+        },
+        {
+            "en": "[[character:orphie-magus]] is by far Ben's best teammate. She is more than a sub damage dealer, with numbers comparable to Ben's own depending on how her resources are managed. Her Zeroed In buff is strong and needs some management on Stun openers."
+        },
+        {
+            "en": "[[character:dialyn]] is a great option, especially with Orphie, since she can trigger Orphie's Additional Ability. Much of Ben's damage comes from his Ultimate, so her conversion mechanic helps a lot and enables Puffer Electro. [[character:lighter]], [[character:ju-fufu]] and [[character:trigger]] are also competitive."
+        },
+        {
+            "en": "[[character:koleda]], [[character:pulchra]], [[character:lucy]] and [[character:nicole]] are effective non-limited options. Lucy has swap techs for Chain management, and Nicole has strong DEF shred, fast animations and high resource generation."
+        },
+        {
+            "en": "[[character:yuzuha]] and [[character:burnice]] are alternatives that enable Inferno Metal. They should not be run together; a Stunner such as [[character:lighter]] or [[character:ju-fufu]] takes the remaining slot, and they exist only to contribute buffs and damage while building Anomaly."
+        },
+        {
+            "en": "The W-Engine calculation team was [[character:dialyn]] (Yesterday Calls) and [[character:orphie-magus]] (Bellicose Blaze)."
+        }
+    ]
+}

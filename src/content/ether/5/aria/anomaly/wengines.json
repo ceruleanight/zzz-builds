@@ -1,0 +1,59 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "angel-in-the-shell",
+                    "refinement": 1,
+                    "note": {
+                        "en": "Her signature is her best option. It has an Anomaly Mastery main stat for her Abloom scaling, as much Anomaly Proficiency as other S-rank Anomaly engines, and DMG% and Anomaly DMG% buffs, the latter with very little saturation."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "flight-of-fancy",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 88%. Vivian's signature is a fine alternative and can even be best in slot in Vortex teams. It gives high Anomaly Proficiency and she benefits fully from its effects. Anomaly Buildup Rate is not Anomaly Mastery, so it does not help her Abloom scaling."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "electro-lip-gloss",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 85%. A decent amount of Anomaly Proficiency, ATK% and DMG%. Her Ultimate and Chain Attack multipliers keep enemies under Corruption without extra Anomaly Mastery or buildup bonuses, so it has constant uptime."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "weeping-gemini",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 84%. Its Anomaly Proficiency can get very high and only expires when a target recovers from Stun, so it is up for all Anomaly built before and during Stun. She wants to Stun quickly, though, so its uptime can suffer."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "fusion-compiler",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 83%. It can work: she builds Fandom Power with her alternate Special and her EX Special is cheap. The 8-second uptime on separately counted stacks is hard to maintain, so it needs routing changes."
+                    }
+                }
+            ]
+        }
+    ]
+}

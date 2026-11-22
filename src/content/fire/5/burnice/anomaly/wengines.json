@@ -1,0 +1,48 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "flamemaker-shaker",
+                    "refinement": 1,
+                    "note": {
+                        "en": "Her best option in every scenario. The downside is some ramp-up time at the start of fights. It does more damage than all other options once fully ramped and gives extra Energy Regen while she is off-field, which helps her Heat management."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "practiced-perfection",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 99%. Alice's signature is almost as good, because the Anomaly Mastery it provides makes Energy Regen on Disc 6 an easy choice. Her Potential Awakenings depend on initial Energy Regen, so Flamemaker Shaker does not have a large edge."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "electro-lip-gloss",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 96%. She makes full use of its stats and easily avoids its usual downside of needing an Anomaly on all enemy targets, thanks to her quick and consistent Burn application. It is more consistent still in Disorder teams."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "weeping-gemini",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 96%. The best fully free-to-play A-rank option for many Anomaly agents. It gives a big Anomaly Proficiency boost when any squad member applies an Attribute Anomaly, and good permanent ATK from its main stats."
+                    }
+                }
+            ]
+        }
+    ]
+}

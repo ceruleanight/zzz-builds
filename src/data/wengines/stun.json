@@ -1,0 +1,586 @@
+{
+    "blazing-laurel": {
+        "rarity": 5,
+        "passive": {
+            "en": "Flowing Flame: Upon launching a Quick Assist or Perfect Assist, the equipper's Impact increases by {{value}}% for 8s. When the equipper launches and hits an enemy with a Basic Attack, apply Wilt to the target for 30s, stacking up to 20 times, repeated triggers reset the duration. When any squad member hits an enemy, for every stack of Wilt applied to the target, the CRIT DMG of the Ice DMG and Fire DMG dealt by that attack increases by {{value}}%. Only one of this effect can be active at a time in the same squad."
+        },
+        "r1": [
+            25,
+            1.5
+        ],
+        "r2": [
+            28.75,
+            1.72
+        ],
+        "r3": [
+            32.5,
+            1.95
+        ],
+        "r4": [
+            36.25,
+            2.17
+        ],
+        "r5": [
+            40,
+            2.4
+        ],
+        "substat": "impact",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "18%"
+        }
+    },
+    "chief-sidekick": {
+        "rarity": 5,
+        "passive": {
+            "en": "The Genius's Follower: The equipper's Impact increases by {{value}}, and their DMG ignores {{value}}% of the target's Fire RES. When the equipper is not the active character, Energy Regen increases by {{value}}/s. When the equipper deals Fire DMG with an EX Special Attack, all Agents' DMG increases by {{value}}% for 30s, stacking up to 2 times. Repeated triggers reset the duration. This effect can trigger once per skill. Only one instance of this effect can exist in the same squad."
+        },
+        "r1": [
+            30,
+            15,
+            0.4,
+            12.5
+        ],
+        "r2": [
+            33,
+            17.2,
+            0.46,
+            14.4
+        ],
+        "r3": [
+            36,
+            19.5,
+            0.52,
+            16.3
+        ],
+        "r4": [
+            39,
+            21.7,
+            0.58,
+            18.1
+        ],
+        "r5": [
+            42,
+            24,
+            0.64,
+            20
+        ],
+        "substat": "cr",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "24%"
+        }
+    },
+    "crimson-moon-casket": {
+        "rarity": 5,
+        "passive": {
+            "en": "Sleepless Eternal Night: The equipper's CRIT Rate increases by {{value}}%. DMG dealt ignores {{value}}% of the target's Wind RES. When the equipper uses an EX Special Attack to deal Wind DMG, Daze dealt increases by {{value}}%, and DMG dealt by all other squad members increases by {{value}}%, for 50s. Repeated triggers reset the duration. Only one instance of the DMG increase effect can exist in the same squad."
+        },
+        "r1": [
+            24,
+            15,
+            16,
+            20
+        ],
+        "r2": [
+            26,
+            17.3,
+            18.4,
+            23
+        ],
+        "r3": [
+            28,
+            19.5,
+            20.8,
+            26
+        ],
+        "r4": [
+            30,
+            21.8,
+            23.2,
+            29
+        ],
+        "r5": [
+            32,
+            24,
+            25.6,
+            32
+        ],
+        "substat": "er",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "60%"
+        }
+    },
+    "hellfire-gears": {
+        "rarity": 5,
+        "passive": {
+            "en": "Passionate Construction: When off-field, the equipper's Energy Regen increases by {{value}} per second. When using an EX Special Attack, the equipper's Impact is increased by {{value}}% for 10s, stacking up to 2 times. The duration of each stack is calculated separately."
+        },
+        "r1": [
+            0.6,
+            10
+        ],
+        "r2": [
+            0.75,
+            12.5
+        ],
+        "r3": [
+            0.9,
+            15
+        ],
+        "r4": [
+            1.05,
+            17.5
+        ],
+        "r5": [
+            1.2,
+            20
+        ],
+        "substat": "impact",
+        "level_max": {
+            "base_attack": 684,
+            "substat_value": "18%"
+        }
+    },
+    "ice-jade-teapot": {
+        "rarity": 5,
+        "passive": {
+            "en": "Ringing Melody: When a Basic Attack hits an enemy, gain 1 stack of Tea-riffic. Each stack of Tea-riffic increases the user's Impact by {{value}}%, stacking up to 30 times, and lasting for 8s. The duration of each stack is calculated separately. Upon acquiring Tea-riffic, if the equipper possesses stacks of Tea-riffic greater than or equal to 15, all squad members' DMG is increased by {{value}}% for 10s. Passive effects of the same name do not stack."
+        },
+        "r1": [
+            0.7,
+            20
+        ],
+        "r2": [
+            0.88,
+            23
+        ],
+        "r3": [
+            1.05,
+            26
+        ],
+        "r4": [
+            1.22,
+            29
+        ],
+        "r5": [
+            1.4,
+            32
+        ],
+        "substat": "impact",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "18%"
+        }
+    },
+    "neon-fantasies": {
+        "rarity": 5,
+        "passive": {
+            "en": "Disco Demon: The equipper's Anomaly Proficiency increases by {{value}}. When the equipper's EX Special Attack or Basic Attack deals Ether DMG, all squad members' DMG dealt increases by {{value}}% for 40s, stacking up to 2 times. This effect can trigger once per use of a skill and repeated triggers reset the duration. With 2 stacks, the equipper's Anomaly Proficiency increases by an additional {{value}}. Only one instance of this effect can exist in the same squad."
+        },
+        "r1": [
+            90,
+            15,
+            60
+        ],
+        "r2": [
+            103,
+            17,
+            69
+        ],
+        "r3": [
+            117,
+            19.5,
+            78
+        ],
+        "r4": [
+            130,
+            21,
+            87
+        ],
+        "r5": [
+            145,
+            24,
+            96
+        ],
+        "substat": "am",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "30%"
+        }
+    },
+    "roaring-fur-nace": {
+        "rarity": 5,
+        "passive": {
+            "en": "Tiger Spirit Rising: The Daze dealt by the equipper's EX Special Attack, Chain Attack, and Ultimate increases by {{value}}%."
+        },
+        "r1": [
+            28
+        ],
+        "r2": [
+            32.2
+        ],
+        "r3": [
+            36.4
+        ],
+        "r4": [
+            40.6
+        ],
+        "r5": [
+            44.8
+        ],
+        "substat": "atk%",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "30%"
+        }
+    },
+    "spectral-gaze": {
+        "rarity": 5,
+        "passive": {
+            "en": "Wind Seeker: When the equipper hits an enemy with an Aftershock, causing Electric DMG, the target's DEF is reduced by {{value}}% for 5s. Passive effects of the same name do not stack. When this effect is triggered, if the equipper is not the active character, they gain 1 stack of Spirit Lock, up to a maximum of 3 stacks. This can trigger only once per use of a skill. Each stack of Spirit Lock increases the equipper's Impact by {{value}}%, lasting 12s. The duration of each stack is calculated separately. At full stacks of Spirit Lock, the equipper's Impact increases by an additional {{value}}%."
+        },
+        "r1": [
+            25,
+            4,
+            8
+        ],
+        "r2": [
+            28.75,
+            4.6,
+            9.2
+        ],
+        "r3": [
+            32.5,
+            5.2,
+            10.4
+        ],
+        "r4": [
+            36.25,
+            5.8,
+            11.6
+        ],
+        "r5": [
+            40,
+            6.4,
+            12.8
+        ],
+        "substat": "cr",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "24%"
+        }
+    },
+    "the-restrained": {
+        "rarity": 5,
+        "passive": {
+            "en": "Binding Chains: When an attack hits an enemy, DMG and Daze from Basic Attacks increase by {{value}}% for 8s, stacking up to 5 times. This effect can trigger at most once during each skill. The duration of each stack is calculated separately."
+        },
+        "r1": [
+            6
+        ],
+        "r2": [
+            7.5
+        ],
+        "r3": [
+            9
+        ],
+        "r4": [
+            10.5
+        ],
+        "r5": [
+            12
+        ],
+        "substat": "impact",
+        "level_max": {
+            "base_attack": 684,
+            "substat_value": "18%"
+        }
+    },
+    "yesterday-calls": {
+        "rarity": 5,
+        "passive": {
+            "en": "24/7: While off-field, the equipper's Energy Regen increases by {{value}} per second. When the equipper deals Physical DMG with an EX Special Attack, the Daze dealt by the equipper's attacks increases by {{value}}% for 10s, stacking up to 3 times."
+        },
+        "r1": [
+            1.5,
+            9
+        ],
+        "r2": [
+            1.7,
+            10.3
+        ],
+        "r3": [
+            1.9,
+            11.7
+        ],
+        "r4": [
+            2.1,
+            13
+        ],
+        "r5": [
+            2.3,
+            14.5
+        ],
+        "substat": "cr",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "24%"
+        }
+    },
+    "box-cutter": {
+        "rarity": 4,
+        "passive": {
+            "en": "Watch Your Fingers: Upon launching an Aftershock, the equipper's Physical DMG increases by {{value}}%, and Daze inflicted increases by {{value}}%, lasting 10s."
+        },
+        "r1": [
+            15,
+            10
+        ],
+        "r2": [
+            17.3,
+            11.5
+        ],
+        "r3": [
+            19.5,
+            13
+        ],
+        "r4": [
+            21.8,
+            14.5
+        ],
+        "r5": [
+            24,
+            16
+        ],
+        "substat": "impact",
+        "level_max": {
+            "base_attack": 624,
+            "substat_value": "15%"
+        }
+    },
+    "demara-battery-mark-ii": {
+        "rarity": 4,
+        "passive": {
+            "en": "In a Flash of Light: Increases Electric DMG by {{value}}%. When the equipper hits an enemy with Dodge Counter or Assist Attack, their Energy Generation Rate increases by {{value}}% for 8s."
+        },
+        "r1": [
+            15,
+            18
+        ],
+        "r2": [
+            17.5,
+            20.5
+        ],
+        "r3": [
+            20,
+            23
+        ],
+        "r4": [
+            22,
+            25
+        ],
+        "r5": [
+            24,
+            27.5
+        ],
+        "substat": "impact",
+        "level_max": {
+            "base_attack": 624,
+            "substat_value": "15%"
+        }
+    },
+    "precious-fossilized-core": {
+        "rarity": 4,
+        "passive": {
+            "en": "Behemoth Hunter: When the target's HP is no lower than 50%, the equipper inflicts {{value}}% more Daze. When the target's HP is no lower than 75%, this bonus is further enhanced by {{value}}%."
+        },
+        "r1": [
+            10,
+            10
+        ],
+        "r2": [
+            11.5,
+            11.5
+        ],
+        "r3": [
+            13,
+            13
+        ],
+        "r4": [
+            14.5,
+            14.5
+        ],
+        "r5": [
+            16,
+            16
+        ],
+        "substat": "impact",
+        "level_max": {
+            "base_attack": 594,
+            "substat_value": "15%"
+        }
+    },
+    "six-shooter": {
+        "rarity": 4,
+        "passive": {
+            "en": "Fire!: The equipper gains a Charge stack every 3s, stacking up to 6 times. When launching an EX Special Attack, consumes all Charge stacks, and each stack increases the Daze inflicted by {{value}}%."
+        },
+        "r1": [
+            4
+        ],
+        "r2": [
+            4.6
+        ],
+        "r3": [
+            5.2
+        ],
+        "r4": [
+            5.8
+        ],
+        "r5": [
+            6.4
+        ],
+        "substat": "impact",
+        "level_max": {
+            "base_attack": 594,
+            "substat_value": "15%"
+        }
+    },
+    "steam-oven": {
+        "rarity": 4,
+        "passive": {
+            "en": "Thick Broth: For every 10 Energy accumulated, the equipper's Impact is increased by {{value}}%, stacking up to 8 times. After Energy is consumed, this bonus remains for 8 more seconds. The duration of each stack is calculated separately."
+        },
+        "r1": [
+            2
+        ],
+        "r2": [
+            2.3
+        ],
+        "r3": [
+            2.6
+        ],
+        "r4": [
+            2.9
+        ],
+        "r5": [
+            3.2
+        ],
+        "substat": "er",
+        "level_max": {
+            "base_attack": 594,
+            "substat_value": "50%"
+        }
+    },
+    "the-simmering-pot": {
+        "rarity": 4,
+        "passive": {
+            "en": "Red Chili Oil Hot Pot: When activating an Assist Follow-Up, the equipper's Daze inflicted on the target increases by {{value}}%, and DMG dealt increases by {{value}}% for 30s. Repeated triggers reset the duration."
+        },
+        "r1": [
+            7.2,
+            7.2
+        ],
+        "r2": [
+            8.2,
+            8.2
+        ],
+        "r3": [
+            9.2,
+            9.2
+        ],
+        "r4": [
+            10.2,
+            10.2
+        ],
+        "r5": [
+            11.5,
+            11.5
+        ],
+        "substat": "impact",
+        "level_max": {
+            "base_attack": 594,
+            "substat_value": "15%"
+        }
+    },
+    "vortex-arrow": {
+        "rarity": 3,
+        "passive": {
+            "en": "Tsunami: The equipper's attacks inflict {{value}}% more Daze on their main target."
+        },
+        "r1": [
+            8
+        ],
+        "r2": [
+            9
+        ],
+        "r3": [
+            10
+        ],
+        "r4": [
+            11
+        ],
+        "r5": [
+            12
+        ],
+        "substat": "impact",
+        "level_max": {
+            "base_attack": 475,
+            "substat_value": "12%"
+        }
+    },
+    "vortex-hatchet": {
+        "rarity": 3,
+        "passive": {
+            "en": "Riptide: Upon entering combat or switching in, the equipper's Impact increases by {{value}}% for 10s. This effect can trigger once every 20s."
+        },
+        "r1": [
+            9
+        ],
+        "r2": [
+            10
+        ],
+        "r3": [
+            11
+        ],
+        "r4": [
+            12
+        ],
+        "r5": [
+            13
+        ],
+        "substat": "er",
+        "level_max": {
+            "base_attack": 475,
+            "substat_value": "40%"
+        }
+    },
+    "vortex-revolver": {
+        "rarity": 3,
+        "passive": {
+            "en": "Undercurrent: EX Special Attacks inflict {{value}}% more Daze."
+        },
+        "r1": [
+            10
+        ],
+        "r2": [
+            11.5
+        ],
+        "r3": [
+            13
+        ],
+        "r4": [
+            14.5
+        ],
+        "r5": [
+            16
+        ],
+        "substat": "atk%",
+        "level_max": {
+            "base_attack": 475,
+            "substat_value": "20%"
+        }
+    }
+}

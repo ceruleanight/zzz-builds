@@ -1,0 +1,17 @@
+{
+    "name": {
+        "en": "Stun"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "Target stats at level 60: Impact 169 to 190+, ATK 2,000 to 2,200+ (Optional), HP 10,500+, DEF 850+, CRIT Rate 50%+ (Needed for King of the Summit), CRIT DMG 100% to 120%+ (Optional)."
+        },
+        {
+            "en": "Partners Prydwen lists for this agent (each group is one entry in its synergy list): [[character:rina]]; [[character:miyabi]], [[character:ellen]]; [[character:corin]]; [[character:astra-yao]], [[character:yuzuha]], [[character:nicole]]; [[character:soukaku]]; [[character:hugo]]; [[character:yidhari]]."
+        },
+        {
+            "en": "The W-Engine ranking was calculated with [[character:yidhari]] (Kraken's Cradle) and [[character:lucia]] (Dreamlit Hearth) as teammates. Percentages are relative to the first-listed W-Engine at the refinement Prydwen marks as 100%."
+        }
+    ]
+}

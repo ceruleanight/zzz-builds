@@ -1,0 +1,14 @@
+{
+    "name": {
+        "en": "Defense"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "Target stats at level 60: ATK 2,600 to 3,200+ (Shield Caps at 3,750 Initial ATK but this is hard to achieve), HP 11,000+, DEF 900+, Anomaly Proficiency 200 to 300+ (Optional)."
+        },
+        {
+            "en": "Partners Prydwen lists for this agent (each group is one entry in its synergy list): [[character:jane-doe]]; [[character:yanagi]]."
+        }
+    ]
+}

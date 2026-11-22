@@ -1,0 +1,87 @@
+{
+    "disc_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "puffer-electro",
+                            "pieces": 4,
+                            "note": {
+                                "en": "Usually behind other sets, but not with [[character:dialyn]] on the team. With her, Puffer's buff can always be up in critical burst periods, and staggering her Ultimate conversions can maintain 100% uptime in Stun despite the 12 second duration."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "hormone-punk",
+                            "pieces": 4,
+                            "note": {
+                                "en": "A volatile option with big ups and downs depending on the encounter, the team and how well you play around its effect. Corin's damage is concentrated in several key abilities, so she can make good use of it."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "two_piece_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "woodpecker-electro",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "branch-and-blade-song",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "fanged-metal",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "astral-voice",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "hormone-punk",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

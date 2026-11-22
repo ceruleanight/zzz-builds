@@ -1,0 +1,59 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "practiced-perfection",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 116.65% damage and 114.56% Daze at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "sharpened-stinger",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 113.36% damage and 104.35% Daze at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "weeping-gemini",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 102.02% damage and 92.82% Daze at S5."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "roaring-ride",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 100% damage and 100% Daze at S5."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "electro-lip-gloss",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 98.1% damage and 92.84% Daze at S5."
+                    }
+                }
+            ]
+        }
+    ]
+}

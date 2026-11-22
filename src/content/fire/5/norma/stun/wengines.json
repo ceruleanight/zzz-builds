@@ -1,0 +1,59 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "chief-sidekick",
+                    "refinement": 1,
+                    "note": {
+                        "en": "Her signature is incredibly strong, one of the most important for a supportive slot. She relies on her Core Passive for both Daze and damage, and its CRIT Rate helps with that. At S5 it reaches about 113% damage and 108% Daze, which matters since her investment is lacklustre past M2."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "hellfire-gears",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 85% damage and 108% Daze at S5. Far behind in team damage, but its Daze is similar to her S5 signature, and the extra Stun potential and front-loaded Daze can make it competitive (about 84% and 90% at S1)."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "steam-oven",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 85% damage and 92% Daze. The best A-rank option. The Energy Regen helps build her resources through EX Special casts, and she can use an Energy Regen Disc 6 to keep its effect up, but it falls behind on Daze and damage."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "blazing-laurel",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 84% damage and 94% Daze. Lighter's signature is her second best choice with Fire or Ice agents. Her Basic Attack and Hat Trick build 17 stacks of Wilt, so full uptime of the CRIT DMG bonus is easy."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "the-simmering-pot",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 83% damage and 90% Daze. It can be used, but performs worse than Hellfire Gears and the craftable Steam Oven, so it is not recommended if you have alternatives."
+                    }
+                }
+            ]
+        }
+    ]
+}

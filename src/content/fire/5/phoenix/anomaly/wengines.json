@@ -1,0 +1,59 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "plume-of-rebirth",
+                    "refinement": 1,
+                    "note": {
+                        "en": "Her signature gives her everything she needs: Anomaly Mastery as its main stat for her passive, unconditional Anomaly Proficiency and a 40% Fire DMG bonus, which she has no other source of. S5 is about 109% of S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "angel-in-the-shell",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 88% of her signature. It has an Anomaly Mastery main stat for her passive and unconditional Anomaly Proficiency, which makes it the best stat stick when her signature is not available."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "electro-lip-gloss",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 84%. Her kit has few DMG Dealt bonuses, and this Battle Pass W-Engine's bonuses are effectively always active. At S5 it is the best A-rank option, ahead of some limited engines."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "flight-of-fancy",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 82%. Its Anomaly Proficiency main stat is useful and the extra Anomaly buildup can add Vortexes, but that does nothing for her CRIT passive. It can fall behind [[wengine:weeping-gemini]] depending on the route."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "weeping-gemini",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 82%. The craftable free-to-play option. Its high Anomaly Proficiency still works well, since Windswept and frequent Burn Vortexes let her ramp up quickly."
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,202 @@
+---
+import { rankLabel } from '../utils/rank';
+import RowNoteAction from './RowNoteAction.astro';
+import WEngineInfoPopover from './WEngineInfoPopover.astro';
+import { t } from '../utils/i18n';
+import type {
+  WEnginePassiveText,
+  WEnginePassiveValue,
+} from '../utils/wengine-passive';
+import { isFreeWEngineSource } from '../utils/wengine-source';
+
+type WEngineItem = {
+  id?: string;
+  name: string;
+  rarity: number;
+  info?: {
+    rarity: number;
+    source?: string;
+    passive?: WEnginePassiveText;
+    r1?: WEnginePassiveValue[];
+    r2?: WEnginePassiveValue[];
+    r3?: WEnginePassiveValue[];
+    r4?: WEnginePassiveValue[];
+    r5?: WEnginePassiveValue[];
+    substat?: string;
+    level_1?: {
+      base_attack?: number;
+      substat_value?: string;
+    };
+    level_max?: {
+      base_attack?: number;
+      substat_value?: string;
+    };
+  };
+  refinement?: number | string;
+  note?: string;
+  noteId?: string;
+};
+
+type WEngineRank = {
+  items: WEngineItem[];
+};
+
+type WEngineRecommendations = {
+  wengines: WEngineRank[];
+  conditional?: WEngineItem[];
+};
+
+const {
+  wengines,
+  locale,
+  lang = 'en',
+} = Astro.props as {
+  wengines: WEngineRecommendations;
+  locale: any;
+  lang?: string;
+};
+
+/**
+ * Formats a refinement value for display beside a wengine name.
+ *
+ * @param refinement Optional wengine refinement value.
+ * @returns Formatted refinement suffix.
+ */
+const formatRefinement = (refinement?: number | string) =>
+  refinement ? ` [S${refinement}]` : '';
+
+const hasNoteMarker = (item: WEngineItem) => Boolean(item.noteId || item.note);
+const isFreeWEngine = (item: WEngineItem) =>
+  isFreeWEngineSource(item.info?.source) || item.rarity <= 3;
+const conditionalWEngines = wengines.conditional ?? [];
+const rankedWEngineGroups = wengines.wengines.map(
+  (position: WEngineRank, index: number) => ({
+    rank: index + 1,
+    mainItem: position.items[0],
+    alternativeItems: position.items.slice(1),
+  }),
+);
+const hasFreeWEngine =
+  rankedWEngineGroups.some(
+    (position) =>
+      Boolean(position.mainItem && isFreeWEngine(position.mainItem)) ||
+      position.alternativeItems.some((wengine) => isFreeWEngine(wengine)),
+  ) || conditionalWEngines.some((wengine) => isFreeWEngine(wengine));
+---
+
+<div class="card recommendation-card wengine-card">
+  <h2>{t(locale, 'ui', 'WEngines')}</h2>
+
+  <div class="recommendation-card-body">
+    {
+      hasFreeWEngine && (
+        <p class="free-wengine-note">
+          <span class="free-wengine-note-mark" aria-hidden="true" />
+          {t(locale, 'ui', 'Highlighted wengines are free options.')}
+        </p>
+      )
+    }
+    {
+      /* Ranked wengine groups. Extra items in one rank render as approximate ties. */
+    }
+    <div class="rank-list">
+      {
+        rankedWEngineGroups.map((position) => {
+          const mainItem = position.mainItem;
+          const mainItemIsFree = mainItem && isFreeWEngine(mainItem);
+          const mainItemHasNote = mainItem && hasNoteMarker(mainItem);
+
+          return (
+            <div class="rank-group">
+              {mainItem && (
+                <div
+                  class={`rank-row${mainItemIsFree ? ' is-free-wengine' : ''}${mainItemHasNote ? ' has-row-note' : ''}`}
+                >
+                  <strong class="rank-number">{position.rank}</strong>
+                  <span class="rank-content">
+                    <span class="inline-info-label">
+                      <WEngineInfoPopover
+                        wengine={mainItem}
+                        locale={locale}
+                        lang={lang}
+                      />
+                      <span class="bold">
+                        ({rankLabel(mainItem.rarity)}){formatRefinement(mainItem.refinement)}
+                      </span>
+                    </span>
+                  </span>
+                  {mainItemHasNote && <RowNoteAction items={[mainItem]} />}
+                </div>
+              )}
+
+              {position.alternativeItems.map((wengine) => {
+                const isFree = isFreeWEngine(wengine);
+                const hasNote = hasNoteMarker(wengine);
+
+                return (
+                  <div
+                    class={`rank-row alt${isFree ? ' is-free-wengine' : ''}${hasNote ? ' has-row-note' : ''}`}
+                  >
+                    <span class="rank-approx">&asymp;</span>
+                    <span class="rank-content">
+                      <span class="inline-info-label">
+                        <WEngineInfoPopover
+                          wengine={wengine}
+                          locale={locale}
+                          lang={lang}
+                        />
+                        <span class="bold">
+                          ({rankLabel(wengine.rarity)}){formatRefinement(wengine.refinement)}
+                        </span>
+                      </span>
+                    </span>
+                    {hasNote && <RowNoteAction items={[wengine]} />}
+                  </div>
+                );
+              })}
+            </div>
+          );
+        })
+      }
+    </div>
+
+    {/* Optional unranked recommendations that depend on build notes. */}
+    {
+      conditionalWEngines.length > 0 && (
+        <div class="conditional-list">
+          <div class="conditional-heading">
+            {t(locale, 'ui', 'Conditional (See Notes):')}
+          </div>
+
+          <div class="rank-list">
+            {conditionalWEngines.map((wengine: WEngineItem) => {
+              const isFree = isFreeWEngine(wengine);
+              const hasNote = hasNoteMarker(wengine);
+
+              return (
+                <div
+                  class={`rank-row conditional-row${isFree ? ' is-free-wengine' : ''}${hasNote ? ' has-row-note' : ''}`}
+                >
+                  <span class="rank-marker" aria-hidden="true" />
+                  <span class="rank-content">
+                    <span class="inline-info-label">
+                      <WEngineInfoPopover
+                        wengine={wengine}
+                        locale={locale}
+                        lang={lang}
+                      />
+                      <span class="bold">
+                        ({rankLabel(wengine.rarity)}){formatRefinement(wengine.refinement)}
+                      </span>
+                    </span>
+                  </span>
+                  {hasNote && <RowNoteAction items={[wengine]} />}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )
+    }
+  </div>
+</div>

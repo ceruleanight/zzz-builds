@@ -1,0 +1,59 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "joyau-dore",
+                    "refinement": 1,
+                    "note": {
+                        "en": "Her signature is incredibly strong. Its Energy Regen main stat is what she needs to max her Core Passive, and its Vortex DMG bonus and team-wide Anomaly Proficiency help the whole team. S5 is about 114%."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "flamemaker-shaker",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 78%. Burnice's signature can have uptime issues, since it triggers on Assists or EX Specials, and its Energy Regen does nothing for her Core Passive. If it stays up, its damage boosts keep it close to the stat sticks."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "kaboom-the-cannon",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 77%. With Energy Regen giving her both Wind DMG and Anomaly Mastery, it is one of the best non-signature picks. The extra Energy also means more EX Specials and Daze. Any Energy Regen W-Engine works the same way."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "weeping-gemini",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 77%. The craftable free-to-play option. Its Anomaly Proficiency is surprisingly helpful in Abloom teams, but without Energy Regen her routing is harder."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "boisterous-echoes",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 75%. It is tailor-made for her, but the Energy it gives does not help her passives and its bonus is lower than other options, so it is not worth the investment."
+                    }
+                }
+            ]
+        }
+    ]
+}

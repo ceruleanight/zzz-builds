@@ -1,0 +1,9 @@
+{
+    "substats_priority": [
+        "cr",
+        "cd",
+        "atk%",
+        "atk",
+        "pen-flat"
+    ]
+}

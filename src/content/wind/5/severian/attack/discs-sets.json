@@ -1,0 +1,112 @@
+{
+    "disc_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "dawns-bloom",
+                            "pieces": 4,
+                            "note": {
+                                "en": "The best and most reliable set for him. Most of his damage comes from Basic Attacks, so its big DMG% bonus gives the largest increase. He rarely struggles to keep the 4-piece up, but be careful with the hold EX Special variant so it does not overwrite the effect."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "woodpecker-electro",
+                            "pieces": 4,
+                            "note": {
+                                "en": "About 99%. An option if you lack good [[set:dawns-bloom]] pieces. His Basic focus and low EX Special Energy cost let him keep at least 2 stacks, but it needs management and can perform worse than listed. His counter Basic Attack is not a Dodge Counter."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "hormone-punk",
+                            "pieces": 4,
+                            "note": {
+                                "en": "About 98%. Viable and can do quite well if his enhanced Basics fit the 10 second window. His long animations, especially with the Ultimate, make it hard to align, so it can fall behind."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "puffer-electro",
+                            "pieces": 4,
+                            "note": {
+                                "en": "The go-to option for teams with [[character:dialyn]]. It will not apply to all of his burst damage, since Stuns usually open with an enhanced Basic, but it is still his best set alongside her."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "two_piece_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "puffer-electro",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended with [[set:dawns-bloom]], [[set:woodpecker-electro]] and [[set:hormone-punk]]."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "branch-and-blade-song",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended with a 4-piece [[set:puffer-electro]]."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "wuthering-salon",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "woodpecker-electro",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

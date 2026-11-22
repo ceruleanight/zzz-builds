@@ -1,0 +1,59 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "practiced-perfection",
+                    "refinement": 1,
+                    "note": {
+                        "en": "Her signature gives up to 60 Anomaly Mastery, which becomes 96 Anomaly Proficiency through her Core Passive (more than a main stat), plus 30% ATK and 40% Physical DMG. Her best choice by a wide margin."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "sharpened-stinger",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 86% of her signature. Jane Doe's signature varies with how many Dodge Counters you trigger, and Alice enjoys Dodge Counters and on-field play in her best teams. It gives Physical DMG, Anomaly Buildup and Anomaly Proficiency."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "fusion-compiler",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 79% at full stacks (about 73% at an average of 1.8 stacks). It gives 24% PEN Ratio, high Base ATK and ATK%, and extra Anomaly Proficiency from Special and EX Special Attacks. Weave in her Special Attacks instead of some Dodge Counters to keep the stacks up."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "weeping-gemini",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 78%. The best fully free-to-play A-rank option for Anomaly agents. It gives a large Anomaly Proficiency boost when any squad member applies an Anomaly, and she usually keeps full stacks up."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "electro-lip-gloss",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 74%. It gives Anomaly Proficiency, Combat ATK and DMG%, but performs about the same as or slightly worse than the free Weeping Gemini, so it is a pricier alternative."
+                    }
+                }
+            ]
+        }
+    ]
+}

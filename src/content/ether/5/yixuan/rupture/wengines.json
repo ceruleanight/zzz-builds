@@ -1,0 +1,70 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "qingming-birdcage",
+                    "refinement": 1,
+                    "note": {
+                        "en": "Her signature gives a huge amount of Base ATK, HP% and CRIT Rate, plus a buff on EX Specials and at battle start that raises Ether DMG and Ether Sheer DMG from EX Specials and Ultimates. It fits her kit perfectly."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "cauldron-of-clarity",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 86%. The clear runner-up. It needs an EX Special every 20 seconds, which she does constantly, and one Ink Manifestation combo maxes its stacks. The HP% main stat, DMG bonus and CRIT Rate are all strong."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "radiowave-journey",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 72%. A Battle Pass W-Engine that adds Sheer Force for 12 seconds, up to 3 times, from Chain Attacks and Ultimates. Strong because she scales off its HP, but only barely better than [[wengine:puzzle-sphere]]."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "puzzle-sphere",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 71%. A strong craftable option that raises CRIT DMG after EX Specials and boosts EX Special damage against targets under 50% HP. It is much worse in Deadly Assault but suits any Rupture agent."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "krakens-cradle",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 70%. Not a good option for her. The main stat is strong, but none of its unique bonuses apply to her."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "grill-owisp",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 69%. No synergy with her, and only the HP% main stat does anything. It works even at S1 because its special effect is useless to her, but it is not worth using."
+                    }
+                }
+            ]
+        }
+    ]
+}

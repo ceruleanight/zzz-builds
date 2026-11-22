@@ -1,0 +1,48 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "roaring-fur-nace",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 100% damage and 100% Daze at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "blazing-laurel",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 107.82% damage and 81.29% Daze at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "hellfire-gears",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 99.54% damage and 73.1% Daze at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "precious-fossilized-core",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 99.12% damage and 70.12% Daze at S5."
+                    }
+                }
+            ]
+        }
+    ]
+}

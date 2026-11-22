@@ -1,0 +1,29 @@
+{
+    "name": {
+        "en": "Anomaly"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "[[character:velina]] needs [[stat:er]] to max out her Core Passive, and she gets both Wind DMG and Anomaly Mastery from it. Any 2-piece set that gives Energy Regen is ideal."
+        },
+        {
+            "en": "Target stats at level 60: ATK 2,400 to 2,600+, HP 9,500+, DEF 750+, Anomaly Proficiency 330 to 420+ and Energy Regen 2.88."
+        },
+        {
+            "en": "[[character:yuzuha]] is the biggest value add to any Wind team. Vortex needs fast Anomaly buildup, and the other supports lead to significant score losses."
+        },
+        {
+            "en": "[[character:phoenix]] is a top Anomaly driver for Vortex teams, and Velina is a must-have for her. [[character:aria]] is arguably even better with Velina than with her bandmates, since Vortexes become a bigger share of her damage."
+        },
+        {
+            "en": "[[character:jane-doe]]'s Core Passive lets Assault DMG crit, and Vortex counts as Assault, so Jane is a far better partner than Alice or Nangong. [[character:burnice]] can spam enhanced Basics and [[character:grace]] can loop Shocks."
+        },
+        {
+            "en": "[[character:piper]], [[character:promeia]], [[character:vivian]] and [[character:nangong-yu]] also work well. [[character:yanagi]], [[character:alice]] and [[character:miyabi]] work for raw damage but are anti-synergistic: Wind has a poor Disorder multiplier for Polarities."
+        },
+        {
+            "en": "The W-Engine ranking was calculated with [[character:burnice]] (Flamemaker Shaker) and [[character:remielle]] (Ode of Resurrected Wings) as teammates."
+        }
+    ]
+}

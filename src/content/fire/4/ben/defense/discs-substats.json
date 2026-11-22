@@ -1,0 +1,28 @@
+{
+    "substats_priority": [
+        {
+            "items": [
+                {
+                    "name": "cr",
+                    "note": {
+                        "en": "Aim for 70%+ CRIT Rate."
+                    }
+                },
+                {
+                    "name": "cd"
+                }
+            ]
+        },
+        "atk%",
+        {
+            "items": [
+                {
+                    "name": "pen-flat"
+                },
+                {
+                    "name": "atk"
+                }
+            ]
+        }
+    ]
+}

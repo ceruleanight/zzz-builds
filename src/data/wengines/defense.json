@@ -1,0 +1,323 @@
+{
+    "half-sugar-bunny": {
+        "rarity": 5,
+        "passive": {
+            "en": "Fragile Sweetness: The equipper's Energy Regen increases by {{value}} per sec. All squad members gain 10/11.5/13./14.5/16% ATK and 10/11.5/13./14.5/16% Max HP. Only one instance of this effect can exist in the same squad. When the equipper activates or extends an Ether Veil, the whole squad gains {{value}}% CRIT DMG for 60s. Repeated triggers reset the duration."
+        },
+        "r1": [
+            0.46,
+            30
+        ],
+        "r2": [
+            0.53,
+            34.5
+        ],
+        "r3": [
+            6,
+            39
+        ],
+        "r4": [
+            0.67,
+            43.5
+        ],
+        "r5": [
+            0.76,
+            48
+        ],
+        "substat": "hp%",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "30%"
+        }
+    },
+    "tusks-of-fury": {
+        "rarity": 5,
+        "passive": {
+            "en": "Invincible Rider: The Shield value provided by the equipper increases by {{value}}%. When any squad member triggers Interrupt or Perfect Dodge, all squad members' DMG increases by {{value}}% and Daze dealt increases by {{value}}% for 20s. Passive effects of the same name do not stack."
+        },
+        "r1": [
+            30,
+            18,
+            12
+        ],
+        "r2": [
+            38,
+            22.5,
+            15
+        ],
+        "r3": [
+            46,
+            27,
+            18
+        ],
+        "r4": [
+            52,
+            31.5,
+            21
+        ],
+        "r5": [
+            60,
+            36,
+            24
+        ],
+        "substat": "impact",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "18%"
+        }
+    },
+    "big-cylinder": {
+        "rarity": 4,
+        "passive": {
+            "en": "Ten Ton Top: Reduces DMG taken by {{value}}%. After being attacked, the next attack to hit an enemy will trigger a critical hit and deal {{value}}% of the equipper's DEF as additional DMG. This effect can be triggered once every 7.5s."
+        },
+        "r1": [
+            7.5,
+            600
+        ],
+        "r2": [
+            8.5,
+            690
+        ],
+        "r3": [
+            9.5,
+            780
+        ],
+        "r4": [
+            10.5,
+            870
+        ],
+        "r5": [
+            12,
+            960
+        ],
+        "substat": "def%",
+        "level_max": {
+            "base_attack": 624,
+            "substat_value": "40%"
+        }
+    },
+    "bunny-band": {
+        "rarity": 4,
+        "passive": {
+            "en": "Pet the Bunny: Increases Max HP by {{value}}%. Increases the equipper's ATK by {{value}}% when they are shielded."
+        },
+        "r1": [
+            8,
+            10
+        ],
+        "r2": [
+            9.2,
+            11.5
+        ],
+        "r3": [
+            10.4,
+            13
+        ],
+        "r4": [
+            11.6,
+            14.5
+        ],
+        "r5": [
+            12.8,
+            16
+        ],
+        "substat": "def%",
+        "level_max": {
+            "base_attack": 594,
+            "substat_value": "40%"
+        }
+    },
+    "original-transmorpher": {
+        "rarity": 4,
+        "passive": {
+            "en": "Starlight Knight Flying Kick: Increases Max HP by {{value}}%. When attacked, the equipper's Impact is increased by {{value}}% for 12s."
+        },
+        "r1": [
+            8,
+            10
+        ],
+        "r2": [
+            9,
+            11.5
+        ],
+        "r3": [
+            10,
+            13
+        ],
+        "r4": [
+            11,
+            14.5
+        ],
+        "r5": [
+            12.5,
+            16
+        ],
+        "substat": "hp%",
+        "level_max": {
+            "base_attack": 594,
+            "substat_value": "25%"
+        }
+    },
+    "peacekeeper-specialized": {
+        "rarity": 4,
+        "passive": {
+            "en": "Standard Blocking Technique: While Shielded, the equipper's Energy Regen increases by 0.4/s. The Anomaly Buildup of EX Special Attacks and Assist Follow-Ups increase by 36%."
+        },
+        "r1": [],
+        "r2": [],
+        "r3": [],
+        "r4": [],
+        "r5": [],
+        "substat": "atk%",
+        "level_max": {
+            "base_attack": 624,
+            "substat_value": "25%"
+        }
+    },
+    "reel-projector": {
+        "rarity": 4,
+        "passive": {
+            "en": "Flash Engraving: When a squad member's HP is greater than or equal to 50%, they take {{value}}% less DMG, and {{value}}% less Miasma Contamination. Only one instance of this effect can exist in the same squad."
+        },
+        "r1": [
+            7.5,
+            10
+        ],
+        "r2": [
+            8.6,
+            11.5
+        ],
+        "r3": [
+            9.7,
+            13
+        ],
+        "r4": [
+            10.8,
+            14.5
+        ],
+        "r5": [
+            12,
+            16
+        ],
+        "substat": "impact",
+        "level_max": {
+            "base_attack": 594,
+            "substat_value": "15%"
+        }
+    },
+    "spring-embrace": {
+        "rarity": 4,
+        "passive": {
+            "en": "Hot Spring Soup: Reduces DMG taken {{value}}%. When attacked, the equipper's Energy Generation Rate increased by {{value}}% for 12s. When the equipper switches off-field, this buff will be transferred to the new on-field character with its duration refreshed. Passive effects of the same name do not stack."
+        },
+        "r1": [
+            7.5,
+            10
+        ],
+        "r2": [
+            8.5,
+            11.5
+        ],
+        "r3": [
+            9.5,
+            13
+        ],
+        "r4": [
+            10.5,
+            14.5
+        ],
+        "r5": [
+            12,
+            16
+        ],
+        "substat": "atk%",
+        "level_max": {
+            "base_attack": 594,
+            "substat_value": "25%"
+        }
+    },
+    "tremor-trigram-vessel": {
+        "rarity": 4,
+        "passive": {
+            "en": "Meridian Mapping: The equipper's EX Special Attack and Ultimate DMG increases by {{value}}%. Whenever any squad member takes DMG or heals, the equipper gains {{value}} Energy. This effect can trigger once every 5s."
+        },
+        "r1": [
+            25,
+            2
+        ],
+        "r2": [
+            28.7,
+            2.3
+        ],
+        "r3": [
+            32.5,
+            2.6
+        ],
+        "r4": [
+            36.2,
+            2.9
+        ],
+        "r5": [
+            40,
+            3.2
+        ],
+        "substat": "atk%",
+        "level_max": {
+            "base_attack": 624,
+            "substat_value": "25%"
+        }
+    },
+    "identity-base": {
+        "rarity": 3,
+        "passive": {
+            "en": "Sinking Strike: When attacked, the equipper's DEF increases by {{value}}% for 8s."
+        },
+        "r1": [
+            20
+        ],
+        "r2": [
+            23
+        ],
+        "r3": [
+            26
+        ],
+        "r4": [
+            29
+        ],
+        "r5": [
+            32
+        ],
+        "substat": "def%",
+        "level_max": {
+            "base_attack": 475,
+            "substat_value": "32%"
+        }
+    },
+    "identity-inflection": {
+        "rarity": 3,
+        "passive": {
+            "en": "Dazzle: When attacked, reduces the attacker's DMG by {{value}}% for 12s."
+        },
+        "r1": [
+            6
+        ],
+        "r2": [
+            7
+        ],
+        "r3": [
+            8
+        ],
+        "r4": [
+            9
+        ],
+        "r5": [
+            10
+        ],
+        "substat": "def%",
+        "level_max": {
+            "base_attack": 475,
+            "substat_value": "32%"
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "name": {
+        "en": "DPS"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "Target stats at level 60: ATK 2,800 to 3,000+, HP 9,500+, DEF 800+, CRIT Rate 80%+, CRIT DMG 140%+."
+        },
+        {
+            "en": "Partners Prydwen lists for this agent (each group is one entry in its synergy list): [[character:lighter]], [[character:koleda]]; [[character:trigger]], [[character:ju-fufu]], [[character:pulchra]]; [[character:orphie-magus]], [[character:seed]]; [[character:yuzuha]], [[character:astra-yao]], [[character:lucy]]; [[character:dialyn]]."
+        },
+        {
+            "en": "The W-Engine ranking was calculated with [[character:dialyn]] (Yesterday Calls) and [[character:orphie-magus]] (Bellicose Blaze) as teammates. Percentages are relative to the first-listed W-Engine at the refinement Prydwen marks as 100%."
+        }
+    ]
+}

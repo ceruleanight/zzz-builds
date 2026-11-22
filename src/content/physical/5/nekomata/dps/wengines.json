@@ -1,0 +1,59 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "steel-cushion",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 112.16% at S5. At S1: about 100%."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "heartstring-nocturne",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 99.64% at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "cordis-germina",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 96.62% at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "severed-innocence",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 92.97% at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "starlight-engine",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 87.23% at S5."
+                    }
+                }
+            ]
+        }
+    ]
+}

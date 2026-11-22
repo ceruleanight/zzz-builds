@@ -1,0 +1,48 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "crimson-thirst",
+                    "refinement": 1,
+                    "note": {
+                        "en": "Her signature offers all the right stats. Its CRIT Rate bonus makes up for the DEF% main stat, and it gives Electric DMG and Electric Sharp DMG, a distinct multiplier that sees little saturation. Its buff is easy to maintain. S5 is about 115%."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "bloodmarrow-coffer",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 82%. The Battle Pass W-Engine edges ahead of the craftable alternative when maxed. Its CRIT Rate main stat helps her reach the 200% cap and its buff is unconditional, but DMG% bonuses saturate."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "catty-luck",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 80% at S5 (about 76% at S1). The craftable W-Engine. It purely buffs DEF%, which does saturate it, and the lack of CRIT Rate makes her harder to build, but DEF% is valuable enough that it nearly matches the Battle Pass option."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "candlelit-scheme",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 75% at S1. A free W-Engine from the Spooky Funhouse Tales event. It gives CRIT Rate after an EX Special Attack and extra damage against enemies below 50% HP."
+                    }
+                }
+            ]
+        }
+    ]
+}

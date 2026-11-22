@@ -1,0 +1,26 @@
+{
+    "name": {
+        "en": "DPS"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "[[character:billy]] loops constant Basic Attacks, Dash Attacks and Dodge Counters, so sets and W-Engines that reward those do best. The percentages on the W-Engines are relative to his signature at S5."
+        },
+        {
+            "en": "Target stats at level 60: ATK 2,400 to 2,800+, HP 9,000+, DEF 800+, CRIT Rate 70 to 80% and CRIT DMG 140 to 160%+."
+        },
+        {
+            "en": "[[character:dialyn]] is easily the best Stunner for him. As a Physical agent she enables his Additional Ability, and she can supply extra Ultimates through her conversion. With [[character:astra-yao]] the team has huge damage buffs."
+        },
+        {
+            "en": "[[character:caesar]] can be another Support that activates his Additional Ability, since they share the Physical element. She provides extra Daze he cannot supply himself, with little field time and ATK buffs. [[character:sunna]] is also Physical and a good match, as her Cat's Gaze scales with the triggering agent's stats."
+        },
+        {
+            "en": "[[character:nicole]] is particularly useful because, as members of the Cunning Hares, they activate each other's Additional Abilities. He makes great use of her DEF shred and debuffs."
+        },
+        {
+            "en": "[[character:astra-yao]] and [[character:trigger]] work as universal Support agents (and Stun for Trigger) and give some of the biggest potential damage boosts. Pair them with [[character:nicole]]."
+        }
+    ]
+}

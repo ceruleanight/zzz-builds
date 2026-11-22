@@ -1,0 +1,48 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "tusks-of-fury",
+                    "refinement": 1,
+                    "note": {
+                        "en": "Her signature and by far her best option. It gives 18% Impact and a 30% increase to all Shields she triggers, which boosts her Aegis Shield size and her Daze nicely, plus a squad-wide combat buff when an Interrupt or Perfect Dodge is triggered."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "original-transmorpher",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 88% damage and 85% Daze. The only Daze-focused option among Defense W-Engines outside her signature. It gives a massive amount of HP% and Combat HP% unconditionally and a temporary Combat Impact boost after she is hit."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "spring-embrace",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 78% damage and 95% Daze. A W-Engine specialised for Energy, giving Energy Regen to an ally of your choice when played around, plus an ATK% boost. After taking damage she gains 16% Energy Regen for 12 seconds at max rank."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "peacekeeper-specialized",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 78% damage and 99% Daze. An Anomaly-themed option that increases her Anomaly buildup, handy for Anomaly teams that aim for Disorder. It costs some Daze and Shield strength, which makes it a trade-off."
+                    }
+                }
+            ]
+        }
+    ]
+}

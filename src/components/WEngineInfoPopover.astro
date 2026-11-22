@@ -1,0 +1,200 @@
+---
+import { rankLabel } from '../utils/rank';
+import { t } from '../utils/i18n';
+import {
+  formatWEnginePassive,
+  type WEnginePassiveText,
+  type WEnginePassiveValue,
+} from '../utils/wengine-passive';
+import { getWEngineSource } from '../utils/wengine-source';
+import { resolveWEngineAssetUrlById } from '../utils/item-assets';
+
+type WEngineInfo = {
+  rarity: number;
+  source?: string;
+  passive?: WEnginePassiveText;
+  r1?: WEnginePassiveValue[];
+  r2?: WEnginePassiveValue[];
+  r3?: WEnginePassiveValue[];
+  r4?: WEnginePassiveValue[];
+  r5?: WEnginePassiveValue[];
+  substat?: string;
+  level_1?: {
+    base_attack?: number;
+    substat_value?: string;
+  };
+  base_stat?: string;
+    level_max?: {
+    base_attack?: number;
+    substat_value?: string;
+  };
+};
+
+type Props = {
+  locale: any;
+  lang?: string;
+  wengine: {
+    id?: string;
+    name: string;
+    rarity: number;
+    info?: WEngineInfo;
+  };
+};
+
+const { locale, wengine, lang = 'en' } = Astro.props as Props;
+const info = wengine.info;
+const refinements = [1, 2, 3, 4, 5] as const;
+
+function escapeHtml(value: unknown) {
+  return String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+const passivePanels = info
+  ? refinements.map((refinement) => ({
+      refinement,
+      html: formatWEnginePassive(info, refinement, lang),
+    }))
+  : [];
+
+const substatName = info?.substat
+  ? t(locale, 'stat', info.substat, undefined, false)
+  : '';
+
+/**
+ * Formats wengine stat values as level 1 / max when both are available.
+ */
+const formatWEngineStatValue = (
+  level1Value?: number | string,
+  levelMaxValue?: number | string,
+) => {
+  if (level1Value === undefined || level1Value === null || level1Value === '') {
+    // Only the level 60 value is sourced for W-Engines, so show it alone.
+    return levelMaxValue === undefined || levelMaxValue === null
+      ? ''
+      : String(levelMaxValue);
+  }
+
+  if (
+    levelMaxValue === undefined ||
+    levelMaxValue === null ||
+    levelMaxValue === ''
+  ) {
+    return String(level1Value);
+  }
+
+  return `${level1Value} / ${levelMaxValue}`;
+};
+
+const baseAttackValue = formatWEngineStatValue(
+  info?.level_1?.base_attack,
+  info?.level_max?.base_attack,
+);
+const substatValue = formatWEngineStatValue(
+  info?.level_1?.substat_value,
+  info?.level_max?.substat_value,
+);
+const source = getWEngineSource(info?.source);
+const sourceTranslationKey = `WEngine source ${source}`;
+const translatedSourceName = sourceTranslationKey
+  ? t(locale, 'ui', sourceTranslationKey, undefined, false)
+  : '';
+const sourceName =
+  translatedSourceName && translatedSourceName !== sourceTranslationKey
+    ? translatedSourceName
+    : source;
+const sourceLabel = t(locale, 'ui', 'Source', undefined, false);
+const imageUrl = wengine.id ? resolveWEngineAssetUrlById(wengine.id) : '';
+const popoverCardHtml = info
+  ? [
+      '<span class="info-popover-header',
+      imageUrl ? ' has-image' : '',
+      '">',
+      imageUrl
+        ? [
+            '<span class="info-popover-image wengine-popover-image"><img src="',
+            escapeHtml(imageUrl),
+            '" alt="" loading="lazy" decoding="async"></span>',
+          ].join('')
+        : '',
+      '<span class="info-popover-name">',
+      escapeHtml(wengine.name),
+      '</span>',
+      '<span class="info-popover-rarity">',
+      escapeHtml(rankLabel(info.rarity)),
+      '</span>',
+      '</span>',
+      '<span class="info-popover-stat"><span>Base ',
+      info?.base_stat === 'def' ? 'DEF' : 'ATK',
+      '</span><strong>',
+      escapeHtml(baseAttackValue),
+      '</strong></span>',
+      substatName
+        ? [
+            '<span class="info-popover-stat"><span>',
+            escapeHtml(substatName),
+            '</span><strong>',
+            escapeHtml(substatValue),
+            '</strong></span>',
+          ].join('')
+        : '',
+      '<span class="wengine-popover-refinement">',
+      refinements
+        .map((refinement) =>
+          [
+            '<button class="wengine-popover-refinement-button" type="button" data-refinement="r',
+            refinement,
+            '" aria-pressed="',
+            refinement === 1 ? 'true' : 'false',
+            '">S',
+            refinement,
+            '</button>',
+          ].join(''),
+        )
+        .join(''),
+      '</span>',
+      '<span class="wengine-popover-passive">',
+      passivePanels
+        .map(({ refinement, html }) =>
+          [
+            '<span class="wengine-popover-passive-refinement" data-refinement-panel="r',
+            refinement,
+            '"',
+            refinement === 1 ? '' : ' hidden',
+            '>',
+            html,
+            '</span>',
+          ].join(''),
+        )
+        .join(''),
+      '</span>',
+      sourceName
+        ? [
+            '<span class="wengine-popover-source"><span>',
+            escapeHtml(sourceLabel),
+            '</span><strong>',
+            escapeHtml(sourceName),
+            '</strong></span>',
+          ].join('')
+        : '',
+    ].join('')
+  : '';
+---
+
+<span
+  class="info-popover wengine-popover"
+  data-info-popover-html={info ? popoverCardHtml : undefined}
+>
+  <span
+    class="info-popover-trigger"
+    role="button"
+    tabindex="0"
+    aria-expanded="false"
+  >
+    {wengine.name}
+  </span>
+</span>

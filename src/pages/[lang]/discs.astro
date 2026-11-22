@@ -1,0 +1,40 @@
+---
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import DiscSetBrowser from '../../components/DiscSetBrowser.astro';
+import '../../styles/base.css';
+import '../../styles/home.css';
+import '../../styles/theme.css';
+import '../../styles/disc-sets.css';
+import { t } from '../../utils/i18n';
+import { sitePath } from '../../utils/paths';
+import { getLanguageStaticPaths } from '../../utils/routes';
+import { getDiscSetBrowserData } from '../../utils/disc-browser';
+
+export const getStaticPaths = getLanguageStaticPaths;
+
+const lang = Array.isArray(Astro.params.lang)
+  ? Astro.params.lang[0]
+  : Astro.params.lang;
+const data = getDiscSetBrowserData(lang ?? 'en');
+const { locale } = data;
+const title = t(locale, 'ui', 'Discs Sets');
+---
+
+<html lang={data.lang}>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href={sitePath('favicon.svg')} />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title} - ZZZ Builds</title>
+  </head>
+  <body data-element="base">
+    <Header locale={locale} lang={data.lang} page="discs" />
+    <main class="disc-set-page">
+      <h1>{title}</h1>
+      <DiscSetBrowser data={data} locale={locale} />
+    </main>
+    <Footer lang={data.lang} />
+  </body>
+</html>

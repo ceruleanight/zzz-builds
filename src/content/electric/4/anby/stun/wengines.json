@@ -1,0 +1,59 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "hellfire-gears",
+                    "refinement": 1,
+                    "note": {
+                        "en": "94% damage, 104% Daze. Koleda's signature is an incredible option for any Stun agent that uses EX Specials at least occasionally. It needs at least 1 stack up consistently and gains value at 2. Energy Regen, strong base stats and a great combat buff make it a safe pick."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "steam-oven",
+                    "refinement": 5,
+                    "note": {
+                        "en": "89% damage, 102% Daze. A free-to-play craftable option that gives a lot of short-term Daze by raising Impact from total Energy. One of the best engines to open a fight with, but it falls behind in sustained Daze over long fights."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "precious-fossilized-core",
+                    "refinement": 5,
+                    "note": {
+                        "en": "89% damage, 101% Daze. An amazing craftable option, especially in Deadly Assault thanks to its large Daze boost against higher HP enemies. Often outperforms S-rank W-Engines there, but it is not as powerful in other endgame modes."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "the-restrained",
+                    "refinement": 1,
+                    "note": {
+                        "en": "The reference option (100% damage, 100% Daze). Lycaon's signature has high Basic Attack Daze and also boosts Basic Attack damage, so Daze output is usually slightly lower for higher damage. It is better the more personal damage your Stun agent deals."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "demara-battery-mark-ii",
+                    "refinement": 5,
+                    "note": {
+                        "en": "103% damage, 93% Daze. Her own signature is only great for personal damage. Since she mainly wants Daze, the engines above are preferable. Only use it if you want to play her for damage."
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "name": {
+        "en": "Anomaly"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "[[character:aria]] works best when she bursts during Stun, so she is ideally run with a Stunner. Few Stunners have an Additional Ability that matches her, so the stunner pick matters less than the Anomaly applying."
+        },
+        {
+            "en": "Target stats at level 60: ATK 2,600 to 2,900+, HP 9,500+, DEF 750+, Anomaly Proficiency 330 to 420+ and Anomaly Mastery 184 to 244."
+        },
+        {
+            "en": "[[character:sunna]] is a perfect match: strong buffs, Cat's Gaze scaling with Anomaly agents, frequent Ether Veil refreshes so Aria rarely lacks Fandom Power stacks, and a Stun DMG multiplier that suits her. [[character:yuzuha]] is also a top partner."
+        },
+        {
+            "en": "[[character:lycaon]] is one of the few Stunners that works, with a generic 30% DMG bonus and a higher Stun DMG multiplier. [[character:dialyn]] is decently strong even without her Additional Ability, thanks to her huge Daze and Ultimate conversion."
+        },
+        {
+            "en": "[[character:trigger]] and [[character:zhao]] are fine options. Trigger's Stun DMG multiplier and DEF shred do not need her Additional Ability, and Zhao is a competent universal support who can supply Ether Veils."
+        },
+        {
+            "en": "The W-Engine ranking was calculated with [[character:sunna]] (Thoughtbop) and [[character:yuzuha]] (Metanukimorphosis) as teammates. Percentages are relative to her signature."
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "substats_priority": [
+        {
+            "name": "cr",
+            "note": {
+                "en": "Counts until 75% on the stat screen."
+            }
+        },
+        {
+            "items": [
+                {
+                    "name": "cd"
+                },
+                {
+                    "name": "atk%"
+                }
+            ]
+        },
+        "pen-flat",
+        "atk"
+    ]
+}

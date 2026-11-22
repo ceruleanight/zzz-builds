@@ -1,0 +1,17 @@
+{
+    "name": {
+        "en": "Anomaly"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "Target stats at level 60: ATK 2,600 to 2,900+, HP 9,500+, DEF 750+, Anomaly Proficiency 287 to 350+ (add +90 to values if AP mainstat W-Engine), Anomaly Mastery 184 to 248."
+        },
+        {
+            "en": "Partners Prydwen lists for this agent (each group is one entry in its synergy list): [[character:nangong-yu]]; [[character:vivian]]; [[character:yuzuha]], [[character:sunna]]; [[character:lycaon]], [[character:astra-yao]], [[character:nicole]]."
+        },
+        {
+            "en": "The W-Engine ranking was calculated with [[character:nangong-yu]] (Neon Fantasies) and [[character:yuzuha]] (Metanukimorphosis) as teammates. Percentages are relative to the first-listed W-Engine at the refinement Prydwen marks as 100%."
+        }
+    ]
+}

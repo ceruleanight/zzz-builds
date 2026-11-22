@@ -1,0 +1,70 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "cordis-germina",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 100.4%. A near perfect match, since all of its universal Electric DMG bonuses apply to him in full. It does need Basics to keep up, but his aimed shot and Ha-Oto no Ya count. With CRIT Rate buffs such as from Nicole it overcaps after one substat roll, so it can underperform in practice."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "zanshin-herb-case",
+                    "refinement": 1,
+                    "note": {
+                        "en": "The reference option (100%). It gives fantastic CRIT Rate and CRIT DMG as permanent bonuses, an extra 40% Electric DMG on Dash Attacks and a CRIT Rate boost after any squad member applies an Anomaly or Stuns."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "the-brimstone",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 99%. His quiver hits count as Basic Attacks and he constantly uses Dash Attacks, so it can be very strong. It takes some ramp-up, but builds fast."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "heartstring-nocturne",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 95%. A great stat stick for most characters, with a tremendous amount of unconditional CRIT Rate and CRIT DMG."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "severed-innocence",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 92%. A decent stat stick with a significant amount of CRIT DMG, but that is all it offers. He cannot use non-EX Specials before combos."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "starlight-engine",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 90%. A solid free-to-play option for all Attack agents. It gives 25% unconditional Attack and a further 19.2% Combat Attack after a Dodge Counter or Quick Assist."
+                    }
+                }
+            ]
+        }
+    ]
+}

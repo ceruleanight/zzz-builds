@@ -1,0 +1,22 @@
+{
+    "groups": [
+        {
+            "version": "3.3",
+            "entries": [
+                {
+                    "date": "November 04, 2026",
+                    "changes": "Added Severian Lowell and builds for 53 of 62 agents, all from Prydwen. Drive Disc sets and W-Engines were refreshed from Prydwen (103 W-Engines, 30 sets) with bundled images. Off-specialty W-Engines are allowed as stat sticks, agents are sorted by release date, and substat PEN is now Flat PEN."
+                }
+            ]
+        },
+        {
+            "version": "3.1",
+            "entries": [
+                {
+                    "date": "November 03, 2026",
+                    "changes": "Initial release with the full agent roster, Drive Discs, W-Engines, and the Hoshimi Miyabi DPS build."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "ode-of-resurrected-wings",
+                    "refinement": 1,
+                    "note": {
+                        "en": "Her signature has the highest ATK% main stat of any W-Engine so far, tied for the highest Base ATK. It also buffs the team: higher Anomaly Proficiency means a stronger Refringe coefficient, and its 30% DMG bonus is always up. S5 is about 112%."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "weeping-gemini",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 81%. An accessible free-to-play option and the best alternative, even compared to other agents' signatures. Its ATK% main stat helps her thresholds and its high Anomaly Proficiency is her only other stat need. It still falls far behind her signature."
+                    }
+                }
+            ]
+        }
+    ]
+}

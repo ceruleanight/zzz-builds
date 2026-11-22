@@ -1,0 +1,20 @@
+{
+    "sections": [
+        {
+            "title": {
+                "en": "Data collection"
+            },
+            "content": {
+                "en": "This site does not collect personal data and has no accounts or forms."
+            }
+        },
+        {
+            "title": {
+                "en": "Local storage"
+            },
+            "content": {
+                "en": "Filter and sort choices may be stored in your browser only, so they are remembered on your next visit. This data never leaves your device."
+            }
+        }
+    ]
+}

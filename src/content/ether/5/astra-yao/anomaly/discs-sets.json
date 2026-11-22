@@ -1,0 +1,89 @@
+{
+    "disc_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "astral-voice",
+                            "pieces": 4,
+                            "note": {
+                                "en": "Her best set by a long shot, beating Swing Jazz in both buff and uptime. She stacks it quickly through the Quick Assists she grants and can keep it up indefinitely."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "moonlight-lullaby",
+                            "pieces": 4,
+                            "note": {
+                                "en": "Only use this if another agent is wielding [[set:astral-voice]]. The 2-piece gives 20% Energy Regen, and the 4-piece is the best set for every Support: it gives more DMG than Proto Punk or Swing Jazz (18%) for much longer (25 seconds) with an easier condition."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "two_piece_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "moonlight-lullaby",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended with [[set:astral-voice]]."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "swing-jazz",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended with a 4-piece [[set:moonlight-lullaby]]."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "hormone-punk",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "astral-voice",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Only listed as a 2-piece with [[set:moonlight-lullaby]]."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

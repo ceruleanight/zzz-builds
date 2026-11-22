@@ -1,0 +1,113 @@
+{
+    "disc_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "inferno-metal",
+                            "pieces": 4,
+                            "note": {
+                                "en": "Incredibly strong because of the sheer amount of CRIT Rate it gives, but niche. Even in full Fire teams it lacks the uptime to justify use, though it can work with agents that have especially good Anomaly buildup, such as [[character:yuzuha]] or [[character:burnice]]."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "woodpecker-electro",
+                            "pieces": 4,
+                            "note": {
+                                "en": "His best general option. It needs a little management by using Basic Attacks before EX Specials and Ultimates in Stun, but it gives a solid, consistent damage increase both in and out of Stun."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "puffer-electro",
+                            "pieces": 4,
+                            "note": {
+                                "en": "Reserved for [[character:dialyn]] teams. Early Chain Attacks on Ben get its buff up early, and his own Ultimate extends it during Stun. Outside of her teams its low uptime makes it a poor choice."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "two_piece_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "woodpecker-electro",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended with [[set:inferno-metal]] and [[set:puffer-electro]]."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "branch-and-blade-song",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended with [[set:woodpecker-electro]]."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "inferno-metal",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "puffer-electro",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "astral-voice",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "hormone-punk",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "name": {
+        "en": "DPS"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "CRIT is more valuable for [[character:soldier-0-anby]] than for most agents, because her Core Passive adds scaling and gives 30% CRIT DMG to Aftershock damage. Stack both CRIT stats."
+        },
+        {
+            "en": "Target stats at level 60: ATK 2,800 to 3,200+, HP 10,000+, DEF 800+, CRIT Rate 58 to 78% (before her Additional Ability and Shadow Harmony) and CRIT DMG 160 to 200%+ (before her Core Passive)."
+        },
+        {
+            "en": "Best Stun partners: [[character:trigger]] (a level above the others), [[character:ju-fufu]] (about equal to [[character:astra-yao]]) and [[character:pulchra]]. All can inflict Daze and Aftershock damage while inactive."
+        },
+        {
+            "en": "[[character:seed]] and [[character:orphie-magus]] want to be paired with another Attack agent as the main damage dealer. Generalist supports that fit any team are [[character:astra-yao]] (usually the best), [[character:nicole]] and [[character:lucy]]."
+        },
+        {
+            "en": "The W-Engine ranking was calculated with [[character:orphie-magus]] (Bellicose Blaze) and [[character:trigger]] (Spectral Gaze) as teammates. Percentages are relative to her signature."
+        }
+    ]
+}

@@ -1,0 +1,81 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "cordis-germina",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 100% damage and 100% Daze at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "heartstring-nocturne",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 87.04% damage and 87.54% Daze at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "myriad-eclipse",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 85.97% damage and 86.3% Daze at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "zanshin-herb-case",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 80.81% damage and 81.63% Daze at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "riot-suppressor-mark-vi",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 80.79% damage and 81.6% Daze at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "the-brimstone",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 76.58% damage and 81.43% Daze at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "marcato-desire",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 75.94% damage and 76.27% Daze at S5."
+                    }
+                }
+            ]
+        }
+    ]
+}

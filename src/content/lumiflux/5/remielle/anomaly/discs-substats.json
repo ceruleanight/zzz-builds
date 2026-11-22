@@ -1,0 +1,12 @@
+{
+    "substats_priority": [
+        {
+            "name": "atk%",
+            "note": {
+                "en": "Counts until about 4,000 ATK on the stat screen."
+            }
+        },
+        "ap",
+        "pen-flat"
+    ]
+}

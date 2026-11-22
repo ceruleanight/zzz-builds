@@ -1,0 +1,120 @@
+{
+    "disc_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "branch-and-blade-song",
+                            "pieces": 4,
+                            "note": {
+                                "en": "Made for [[character:miyabi]]. Gives large CRIT DMG that stays active and a 12% CRIT Rate boost most of the time. It pulls further ahead the harder CRIT Rate is for you to reach. Reach enough [[stat:am]] to unlock the 4-piece bonus; the extra CRIT Rate does not show on the character screen."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "woodpecker-electro",
+                            "pieces": 4,
+                            "note": {
+                                "en": "About 95% of the damage of [[set:branch-and-blade-song]]. A generic set that still gives CRIT Rate and some ATK%. She keeps at least one stack active when it counts, but rarely all of them."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "polar-metal",
+                            "pieces": 4,
+                            "note": {
+                                "en": "About 93% of the damage of [[set:branch-and-blade-song]]. Gives 10% DMG unconditionally and extra Basic Attack DMG when she Freezes or Shatters, which she does often. It has no CRIT, so make it up elsewhere to reach enough Anomaly buildup."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "two_piece_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "polar-metal",
+                            "pieces": 2,
+                            "note": {
+                                "en": "The recommended partner for [[set:branch-and-blade-song]] and [[set:woodpecker-electro]]."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "woodpecker-electro",
+                            "pieces": 2,
+                            "note": {
+                                "en": "The recommended partner for a 4-piece [[set:polar-metal]]."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "astral-voice",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "hormone-punk",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "puffer-electro",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "branch-and-blade-song",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Works as the 2-piece with a 4-piece [[set:woodpecker-electro]] or [[set:polar-metal]]."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

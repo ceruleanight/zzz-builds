@@ -1,0 +1,15 @@
+{
+    "main_stats": {
+        "disc4": [
+            "cr"
+        ],
+        "disc5": [
+            "pen",
+            "wind-dmg",
+            "atk%"
+        ],
+        "disc6": [
+            "er"
+        ]
+    }
+}

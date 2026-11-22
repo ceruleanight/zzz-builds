@@ -1,0 +1,28 @@
+{
+    "substats_priority": [
+        {
+            "name": "cr",
+            "note": {
+                "en": "Until 50% if using 4P King."
+            }
+        },
+        {
+            "items": [
+                {
+                    "name": "atk",
+                    "note": {
+                        "en": "Until max. 3400."
+                    }
+                },
+                {
+                    "name": "atk",
+                    "note": {
+                        "en": "Until max. 3400."
+                    }
+                }
+            ]
+        },
+        "cd",
+        "pen-flat"
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "name": {
+        "en": "DPS"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "[[character:miyabi]] builds and spends Fallen Frost charges on her enhanced Basic Attack, so CRIT Rate is the most important stat. Aim for at least 80% to get the full benefit of her Core Passive."
+        },
+        {
+            "en": "Her signature [[wengine:hailstorm-shrine]] is far ahead of every alternative. It needs teammates who apply Anomalies regularly, which all of her recommended teams do."
+        },
+        {
+            "en": "Target stats at level 60: ATK 2,500 to 3,600+ (depends on your Disc 4 and 5 choices), HP 10,000+, DEF 800+, Anomaly Mastery 116+, Anomaly Proficiency 240+, CRIT Rate 75 to 95% and CRIT DMG 150 to 190%."
+        },
+        {
+            "en": "Anomaly partners: [[character:yanagi]], [[character:vivian]], [[character:burnice]] and [[character:piper]]. Their Disorders feed Miyabi and refill Fallen Frost."
+        },
+        {
+            "en": "Stun partners: [[character:lighter]], [[character:lycaon]] and [[character:trigger]]. They lower Ice RES or boost Stun damage, and Miyabi spends her big bursts in the Stun window."
+        },
+        {
+            "en": "Supports that fit any team: [[character:astra-yao]], [[character:yuzuha]], [[character:nicole]], [[character:lucy]] and [[character:soukaku]]. [[character:lycaon]] with [[character:soukaku]] is currently the strongest expert-level team."
+        }
+    ]
+}

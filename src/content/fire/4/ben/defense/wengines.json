@@ -1,0 +1,59 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "tremor-trigram-vessel",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 102% at S5 and the reference (100%) at S1. Pan Yinhu's signature is arguably his best option, since much of his damage comes from EX Specials and Ultimates and its DMG bonus is significant. The Energy gain only works after taking HP damage, so it does not trigger on EX Special blocks, owing to the shield it grants."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "cloudcleave-radiance",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 101%. Its large Base ATK (743) and CRIT DMG main stat make it an effective stat stick."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "hailstorm-shrine",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 101%. It brings a high Base ATK (743) and a CRIT Rate main stat."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "severed-innocence",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 100%. A stat stick with a CRIT DMG main stat and plenty of Base ATK."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "heartstring-nocturne",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 100%. A stat stick with a CRIT Rate main stat."
+                    }
+                }
+            ]
+        }
+    ]
+}

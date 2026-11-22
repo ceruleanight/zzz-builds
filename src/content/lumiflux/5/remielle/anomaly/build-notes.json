@@ -1,0 +1,29 @@
+{
+    "name": {
+        "en": "Anomaly"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "[[character:remielle]] scales almost entirely from ATK% and [[stat:ap]]. Going above her ATK target adds no meaningful damage, so keep ATK% substats until about 4,000 ATK on the stat screen, then switch to Anomaly Proficiency."
+        },
+        {
+            "en": "Target stats at level 60: ATK about 4,000 (more adds little), HP 9,500+, DEF 750+ and Anomaly Proficiency 370 to 460+. The Anomaly Proficiency range depends on your Disc 4 and 2-piece choices."
+        },
+        {
+            "en": "[[character:velina]] is an indispensable partner. Remielle's long animations hurt Disorder teams, triple Anomaly teams cannot use Yuzuha, and Velina's Anomaly buildup RES reduction helps a lot."
+        },
+        {
+            "en": "[[character:aria]], [[character:promeia]] and [[character:burnice]] are the best drivers. Aria is the best, since her high Anomaly buildup gives Remielle plenty of Voidflares and she can give up some Stun time to Remielle."
+        },
+        {
+            "en": "[[character:jane-doe]] is not a great match at low Mindscapes, because Remielle's long animations make it hard to keep her W-Engine up and Luminizes do not benefit from Jane's CRIT. At M2 and above, Jane's damage in a Vortex team is high enough to ignore this."
+        },
+        {
+            "en": "Every other Anomaly agent still benefits from Remielle, who works well as a third Anomaly slot. [[character:alice]] is a standout because her Polarity Assaults generate Voidflares quickly."
+        },
+        {
+            "en": "The W-Engine ranking was calculated with [[character:promeia]] (Frostfall Sickle) and [[character:velina]] (Joyau Dore) as teammates. Percentages are relative to her signature."
+        }
+    ]
+}

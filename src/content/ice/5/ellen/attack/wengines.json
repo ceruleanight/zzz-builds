@@ -1,0 +1,70 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "deep-sea-visitor",
+                    "refinement": 1,
+                    "note": {
+                        "en": "Her signature and an excellent choice for any Ice Attack agent. It gives 24% CRIT Rate and 25% Ice DMG unconditionally, plus extra CRIT Rate after Basic Attack hits."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "myriad-eclipse",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 99%. An incredibly competitive option that often matches her signature. Its DEF shred is strong and lasts 3 seconds."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "cordis-germina",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 93%. Seed's signature has a ridiculous amount of CRIT Rate, only about 5% behind her signature's. DMG% bonuses saturate on her, so the stats matter most."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "heartstring-nocturne",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 92%. The best general CRIT stat stick for Attack agents. CRIT DMG can saturate on her, but the sheer amount of stats still gives value."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "steel-cushion",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 84%. It does fine, with a decent CRIT Rate main stat and up to 25% DMG from behind, although the back-attack buff depends on positioning."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "starlight-engine",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 77%. A solid free-to-play option for Attack agents that gives 25% unconditional Basic ATK and a further 19.2% Combat ATK at S5 after a Dodge Counter or Quick Assist."
+                    }
+                }
+            ]
+        }
+    ]
+}

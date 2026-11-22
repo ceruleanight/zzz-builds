@@ -1,0 +1,48 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "tusks-of-fury",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 1% at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "tremor-trigram-vessel",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 2% at S5."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "spring-embrace",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 3% at S5."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "peacekeeper-specialized",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 4% at S5."
+                    }
+                }
+            ]
+        }
+    ]
+}

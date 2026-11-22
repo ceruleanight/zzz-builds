@@ -1,0 +1,105 @@
+{
+    "disc_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "woodpecker-electro",
+                            "pieces": 4,
+                            "note": {
+                                "en": "About 102%. Its Combat ATK buff is strong and he can keep at least 2 stacks up easily. Crouching Fire and Rolling Shot are both Basic Attacks, and the constant Dodge Counters from his M2 Rolling Shots help keep the buff active."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "shadow-harmony",
+                            "pieces": 4,
+                            "note": {
+                                "en": "About 101%. Not his best set, but by far the most consistent. He loops 360 Dash Attacks constantly, which is much of his damage, so it is easy to sustain maximum stacks of the buff."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "puffer-electro",
+                            "pieces": 4,
+                            "note": {
+                                "en": "About 99%. The Ultimate DMG% bonus is not very attractive since his Additional Ability and Crouching state already give plenty, but the Combat ATK gains are appreciated, and agents like [[character:dialyn]] enable more Ultimates."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "two_piece_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "branch-and-blade-song",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended with [[set:woodpecker-electro]]."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "woodpecker-electro",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended with [[set:shadow-harmony]] and [[set:puffer-electro]]."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "puffer-electro",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "hormone-punk",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "astral-voice",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

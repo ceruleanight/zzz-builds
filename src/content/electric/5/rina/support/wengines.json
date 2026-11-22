@@ -1,0 +1,26 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "weeping-cradle",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 106.59% at S5. At S1: about 100%."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "kaboom-the-cannon",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 96.46% at S5."
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": {
+        "en": "DPS"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "Target stats at level 60: ATK 3,000+, HP 9,500+, DEF 800+, CRIT Rate 60% to 70% (90% to 100% with Add Ability; Max 55% with Nicole M6), CRIT DMG 160% to 180%+ (Without Chaotic Metal Buff)."
+        },
+        {
+            "en": "Partners Prydwen lists for this agent (each group is one entry in its synergy list): [[character:dialyn]]; [[character:qingyi]], [[character:anby]]; [[character:pulchra]], [[character:trigger]]; [[character:seed]]; [[character:nicole]], [[character:yuzuha]], [[character:astra-yao]]."
+        },
+        {
+            "en": "The W-Engine ranking was calculated with [[character:dialyn]] (Yesterday Calls) and [[character:nicole]] (The Vault) as teammates. Percentages are relative to the first-listed W-Engine at the refinement Prydwen marks as 100%."
+        }
+    ]
+}

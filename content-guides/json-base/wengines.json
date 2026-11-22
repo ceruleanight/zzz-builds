@@ -1,0 +1,56 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "hailstorm-shrine",
+                    "refinement": 1
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "fusion-compiler",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 20 to 25% behind [[wengine:hailstorm-shrine]], and it makes reaching 100% CRIT Rate harder."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "electro-lip-gloss",
+                    "refinement": 5,
+                    "note": {
+                        "en": "Battle Pass W-Engine. Even at S5 it is only about as strong as an S1 [[wengine:fusion-compiler]], so it is usually better used on another Anomaly agent."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "rainforest-gourmet",
+                    "refinement": 5,
+                    "note": {
+                        "en": "Craftable. Her best option after the S-rank choices, but it takes more care with her rotation."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "weeping-gemini",
+                    "refinement": 5,
+                    "note": {
+                        "en": "Craftable. Easier to play than [[wengine:rainforest-gourmet]] but with a slightly lower ceiling."
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "blazing-laurel",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 100% damage and 100% Daze at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "ice-jade-teapot",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 100.27% damage and 97.44% Daze at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "hellfire-gears",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 89.39% damage and 92.51% Daze at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "precious-fossilized-core",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 74.68% damage and 92.43% Daze at S5."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "the-restrained",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 85.37% damage and 90.8% Daze at S1."
+                    }
+                }
+            ]
+        }
+    ]
+}

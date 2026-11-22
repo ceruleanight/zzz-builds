@@ -1,0 +1,24 @@
+---
+import { SpeedDial } from 'webcoreui/astro';
+import type { SpeedDialProps } from 'webcoreui/astro';
+import { search } from 'webcoreui/icons';
+
+const iconWithTitle = (svg: string, title: string) =>
+  svg
+    .replace('<svg ', '<svg role="img" ')
+    .replace('>', `><title>${title}</title>`);
+const speedDialItems: SpeedDialProps['items'] = [
+  {
+    icon: iconWithTitle(search, 'Search'),
+    href: '#site-search-modal',
+    tooltip: 'Search',
+  },
+];
+---
+
+<SpeedDial
+  items={speedDialItems}
+  circular={true}
+  triggerOnClick={true}
+  className="speed-dial"
+/>

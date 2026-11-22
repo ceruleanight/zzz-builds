@@ -1,0 +1,20 @@
+{
+    "name": {
+        "en": "Anomaly"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "[[character:burnice]] was made as an off-field Anomaly applier, but she has surprisingly strong build-up when played on-field. Her EX Double Shot and hold Basic Attack are especially strong, and the hold Basic even counts for extra Afterburn triggers. Balancing Disorders can be hard."
+        },
+        {
+            "en": "Target stats at level 60: ATK 2,500 to 3,200+ (depends on your W-Engine and Disc main stats), HP 9,500 to 10,000+, DEF 800+, Anomaly Proficiency 350 to 400+ and Anomaly Mastery 153+."
+        },
+        {
+            "en": "[[character:velina]] and [[character:remielle]] are her best partners for Wind Anomaly (Vortex) teams. [[character:yuzuha]] and [[character:nangong-yu]] are a decent shell: Yuzuha makes up the Anomaly build-up gap and Nangong is effectively an Anomaly agent disguised as a Stunner."
+        },
+        {
+            "en": "The W-Engine ranking was calculated with [[character:alice]] (Practiced Perfection) and [[character:yuzuha]] (Metanukimorphosis) as teammates. Percentages are relative to her signature."
+        }
+    ]
+}

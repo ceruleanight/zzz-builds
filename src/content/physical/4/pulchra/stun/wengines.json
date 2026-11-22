@@ -1,0 +1,81 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "blazing-laurel",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 93.72% damage and 109.57% Daze at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "box-cutter",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 100% damage and 100% Daze at S5. At S1: about 95.75% damage and 95.89% Daze."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "steam-oven",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 86.98% damage and 99.77% Daze at S5."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "hellfire-gears",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 92.08% damage and 98.18% Daze at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "precious-fossilized-core",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 86.98% damage and 95.89% Daze at S5."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "vortex-arrow",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 80.24% damage and 95.16% Daze at S5."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "six-shooter",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 86.98% damage and 91.61% Daze at S5."
+                    }
+                }
+            ]
+        }
+    ]
+}

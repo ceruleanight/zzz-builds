@@ -1,0 +1,59 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "sharpened-stinger",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 128% at S5. One of the early W-Engines whose bonus values double from S1 to S5, which makes it absurdly strong. Not only are its buffs higher, they are also easier to keep up."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "practiced-perfection",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 103%. Alice's signature is the best limited W-Engine at S1. Its ATK% main stat can make it harder to reach her Anomaly Proficiency requirement compared with her own signature."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "sharpened-stinger",
+                    "refinement": 1,
+                    "note": {
+                        "en": "The reference option (100%). Her signature became much easier to use after her Potential Unlock: her Salchow Jump can trigger Perfect Dodges and her EX Specials count as Dash Attacks, so the Predatory Instinct stacks stay up more consistently."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "fusion-compiler",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 90%. A decently strong option whose PEN Ratio main stat is not saturated by team buffs like ATK would be. It can be tricky to maintain, since the calculation assumes 2 stacks throughout."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "weeping-gemini",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 89%. The best fully free-to-play A-rank option for many Anomaly agents. It grants a massive Anomaly Proficiency boost when any squad member inflicts an Attribute Anomaly."
+                    }
+                }
+            ]
+        }
+    ]
+}

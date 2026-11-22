@@ -1,0 +1,26 @@
+{
+    "substats_priority": [
+        {
+            "name": "hp%",
+            "note": {
+                "en": "Until 27000 Initial HP."
+            }
+        },
+        {
+            "name": "hp",
+            "note": {
+                "en": "Until 27000 Initial HP."
+            }
+        },
+        {
+            "items": [
+                {
+                    "name": "cr"
+                },
+                {
+                    "name": "cd"
+                }
+            ]
+        }
+    ]
+}

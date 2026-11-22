@@ -1,0 +1,70 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "wrathful-vajra",
+                    "refinement": 1,
+                    "note": {
+                        "en": "His signature is by far his best choice, since there are few useful A-rank alternatives. Its numbers are great: an HP% main stat and 20% CRIT Rate, one of the few options that makes him much easier to build."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "qingming-birdcage",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 86%. The second best option and fine as a stat stick. The HP% main stat is great, and the 20% CRIT Rate matches his signature and needs no upkeep."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "cauldron-of-clarity",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 84%. Especially good synergy, since his frequent EX Specials keep the DMG bonus and CRIT Rate gains at full uptime. With the HP% main stat, it is the best A-rank option."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "grill-owisp",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 83%. Lacklustre next to the S-rank W-Engines but the best A-rank alternative after Cauldron of Clarity. His HP loss happens once before a fight, so he cannot use the CRIT Rate buff, and its value is the HP% main stat and the unconditional Fire DMG bonus."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "puzzle-sphere",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 81%. A good match for the effect, because constant EX Specials give 100% uptime on the CRIT DMG bonus and a good part of his damage comes from EX Specials. The ATK% main stat is unlikely to be worthwhile in some endgame content such as Deadly Assault."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "radiowave-journey",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 80%. The worst of the Rupture W-Engines even at P5. He already gets flat Sheer bonuses from his passives, which dilutes it further, especially with Pan or Lucia. It needs Chain Attacks or Ultimates, but his combos weave EX Specials between them."
+                    }
+                }
+            ]
+        }
+    ]
+}

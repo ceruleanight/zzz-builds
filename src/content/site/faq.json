@@ -1,0 +1,31 @@
+{
+    "intro": {
+        "en": "Answers to common questions about this site."
+    },
+    "items": [
+        {
+            "question": {
+                "en": "What does WIP mean on an agent card?"
+            },
+            "answer": {
+                "en": "The build for that agent has not been written yet. The card is shown but cannot be opened until a build exists."
+            }
+        },
+        {
+            "question": {
+                "en": "What are the S1 to S5 buttons on W-Engines?"
+            },
+            "answer": {
+                "en": "They switch the W-Engine passive between its five superimposition levels."
+            }
+        },
+        {
+            "question": {
+                "en": "What does \"4-Piece ranked on\" mean?"
+            },
+            "answer": {
+                "en": "It lists the agents whose best build recommends that Drive Disc set as a 4-piece set. Hover an agent to see their recommended main stats and substats."
+            }
+        }
+    ]
+}

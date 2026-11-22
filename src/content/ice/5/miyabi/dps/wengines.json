@@ -1,0 +1,59 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "hailstorm-shrine",
+                    "refinement": 1,
+                    "note": {
+                        "en": "Gives a large amount of CRIT Rate and CRIT DMG with no conditions, plus up to 40% extra Ice DMG while teammates keep applying Anomalies. No other Anomaly W-Engine has the CRIT stats she scales with."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "fusion-compiler",
+                    "refinement": 1,
+                    "note": {
+                        "en": "Grace's signature and a strong all-round Anomaly choice. Special and EX Special Attacks each add stacks. About 20 to 25% behind [[wengine:hailstorm-shrine]], and it makes reaching 100% CRIT Rate harder."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "electro-lip-gloss",
+                    "refinement": 5,
+                    "note": {
+                        "en": "Battle Pass W-Engine. It can be very strong or fairly weak depending on the team, and only suits teams that apply an Anomaly before the wearer does or keep one up at all times."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "rainforest-gourmet",
+                    "refinement": 5,
+                    "note": {
+                        "en": "Craftable. Gives 75 Anomaly Proficiency with no conditions and a stackable ATK% buff, which suits agents that spend Energy quickly through EX Special Attacks."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "weeping-gemini",
+                    "refinement": 5,
+                    "note": {
+                        "en": "Craftable. Gives 25% ATK% with no conditions and stacking Anomaly Proficiency. It works best when your team keeps Anomalies up continuously."
+                    }
+                }
+            ]
+        }
+    ]
+}

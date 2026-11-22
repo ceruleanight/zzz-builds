@@ -1,0 +1,77 @@
+{
+    "disc_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "king-of-the-summit",
+                            "pieces": 4,
+                            "note": {
+                                "en": "The natural choice, especially since meeting the 50% CRIT Rate requirement is easy for her. She keeps it up easily with her low-cost EX Special."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "astral-voice",
+                            "pieces": 4,
+                            "note": {
+                                "en": "A great generalist Support set. The 2-piece gives 10% ATK (useful for her high personal damage), and the 4-piece buffs damage from agents entering via Quick Assist by up to 24%. It is one of the few Stunner options that give a big buff."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "two_piece_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "swing-jazz",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Prydwen's recommended pair."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "moonlight-lullaby",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Prydwen's recommended pair."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "woodpecker-electro",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Best if below 100% CRIT Rate."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

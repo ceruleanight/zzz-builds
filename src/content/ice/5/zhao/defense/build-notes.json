@@ -1,0 +1,14 @@
+{
+    "name": {
+        "en": "Defense"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "Target stats at level 60: ATK 1,900+, HP 25,000+, DEF 800+, CRIT Rate 30%+, CRIT DMG 50%+."
+        },
+        {
+            "en": "Partners Prydwen lists for this agent (each group is one entry in its synergy list): [[character:ye-shunguang]]; [[character:nekomata]], [[character:ellen]], [[character:seed]], [[character:yanagi]], [[character:alice]]."
+        }
+    ]
+}

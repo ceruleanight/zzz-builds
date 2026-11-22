@@ -1,0 +1,37 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "crimson-moon-casket",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 108.25% damage and 110.62% Daze at S5. At S1: about 100% damage and 100% Daze."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "steam-oven",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 85.84% damage and 97.66% Daze at S5."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "hellfire-gears",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 85.36% damage and 90.83% Daze at S1."
+                    }
+                }
+            ]
+        }
+    ]
+}

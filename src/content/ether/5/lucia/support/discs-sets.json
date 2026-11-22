@@ -1,0 +1,33 @@
+{
+    "disc_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "moonlight-lullaby",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "two_piece_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "yunkui-tales",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended with [[set:moonlight-lullaby]]."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

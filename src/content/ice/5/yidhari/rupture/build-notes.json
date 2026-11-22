@@ -1,0 +1,17 @@
+{
+    "name": {
+        "en": "Rupture DPS"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "Target stats at level 60: Sheer Force 2,400 to 2,600, HP 18,000 to 20,000+, CRIT Rate 58.6% to 65.8% (90.6% to 97.2% in-combat), CRIT DMG 120% to 150%."
+        },
+        {
+            "en": "Partners Prydwen lists for this agent (each group is one entry in its synergy list): [[character:lucia]]; [[character:pan-yinhu]]; [[character:dialyn]]; [[character:lycaon]]; [[character:ju-fufu]]; [[character:trigger]]; [[character:koleda]]."
+        },
+        {
+            "en": "The W-Engine ranking was calculated with [[character:ju-fufu]] (Roaring Fur-nace) and [[character:lucia]] (Dreamlit Hearth) as teammates. Percentages are relative to the first-listed W-Engine at the refinement Prydwen marks as 100%."
+        }
+    ]
+}

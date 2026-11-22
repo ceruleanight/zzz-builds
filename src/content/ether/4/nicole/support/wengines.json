@@ -1,0 +1,70 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "the-vault",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 1% at S5."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "weeping-cradle",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 2% at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "kaboom-the-cannon",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 3% at S5."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "slice-of-time",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 4% at S5."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "reverb-mark-ii",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 5% at S5."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "unfettered-game-ball",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 6% at S5."
+                    }
+                }
+            ]
+        }
+    ]
+}

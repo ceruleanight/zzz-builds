@@ -1,0 +1,773 @@
+{
+    "bellicose-blaze": {
+        "rarity": 5,
+        "passive": {
+            "en": "Flame-Devouring Choir: Increases CRIT Rate by {{value}}%. When the equipper triggers an Aftershock that deals Fire DMG, their attacks ignore {{value}}% of the target's DEF for 8s. Can stack once every 3s, up to 2 stacks. Repeated triggers reset the duration."
+        },
+        "r1": [
+            20,
+            15
+        ],
+        "r2": [
+            23,
+            17.2
+        ],
+        "r3": [
+            26,
+            19.5
+        ],
+        "r4": [
+            29,
+            21.7
+        ],
+        "r5": [
+            32,
+            24
+        ],
+        "substat": "er",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "60%"
+        }
+    },
+    "cloudcleave-radiance": {
+        "rarity": 5,
+        "passive": {
+            "en": "Jade Soul, Frozen Heart: The equipper's DMG ignores {{value}}% of the target's Physical RES. When the equipper activates an Ether Veil, the equipper's DMG increases by {{value}}% and CRIT DMG increases by {{value}}% for 40s. Repeated triggers reset the duration."
+        },
+        "r1": [
+            20,
+            25,
+            25
+        ],
+        "r2": [
+            22,
+            28.7,
+            28.7
+        ],
+        "r3": [
+            24,
+            32.5,
+            32.5
+        ],
+        "r4": [
+            26,
+            36.2,
+            36.2
+        ],
+        "r5": [
+            28,
+            40,
+            40
+        ],
+        "substat": "cd",
+        "level_max": {
+            "base_attack": 743,
+            "substat_value": "48%"
+        }
+    },
+    "cordis-germina": {
+        "rarity": 5,
+        "passive": {
+            "en": "Sprouting Core: Increases CRIT Rate by {{value}}%. When the equipper deals DMG with a Basic Attack or EX Special Attack, they gain 1 stack of a buff. Each stack increases the equipper's Electric DMG by {{value}}%, up to 2 stacks. Each stack lasts 40s. The duration of each stack is calculated separately. Can trigger once per use of a skill. At 2 stacks, the wearer's Basic Attack and Ultimate DMG ignore {{value}}% of enemy DEF."
+        },
+        "r1": [
+            15,
+            12.5,
+            20
+        ],
+        "r2": [
+            17,
+            14.5,
+            23
+        ],
+        "r3": [
+            19,
+            16.5,
+            26
+        ],
+        "r4": [
+            21,
+            18.5,
+            29
+        ],
+        "r5": [
+            23,
+            20,
+            32
+        ],
+        "substat": "cr",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "24%"
+        }
+    },
+    "deep-sea-visitor": {
+        "rarity": 5,
+        "passive": {
+            "en": "Lord of Seas: Increases Ice DMG by {{value}}%. Upon hitting an enemy with a Basic Attack, the equipper's CRIT Rate increases by {{value}}% for 8s. When dealing Ice DMG with a Dash Attack, the equipper's CRIT Rate increases by an additional {{value}}% for 15s. The duration of each effect is calculated separately."
+        },
+        "r1": [
+            25,
+            10,
+            10
+        ],
+        "r2": [
+            31.5,
+            12.5,
+            12.5
+        ],
+        "r3": [
+            38,
+            15,
+            15
+        ],
+        "r4": [
+            44.5,
+            17.5,
+            17.5
+        ],
+        "r5": [
+            50,
+            20,
+            20
+        ],
+        "substat": "cr",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "24%"
+        }
+    },
+    "heartstring-nocturne": {
+        "rarity": 5,
+        "passive": {
+            "en": "String & Melody: CRIT DMG increases by {{value}}%. When the equipper enters the battlefield, or activates a Chain Attack or Ultimate, they gain 1 stack of Heartstring. Each stack of Heartstring allows the equipper's Chain Attack and Ultimate to ignore {{value}}% of the target's Fire RES, stacking up to 2 times and lasting 30s. Repeated triggers reset the duration."
+        },
+        "r1": [
+            50,
+            12.5
+        ],
+        "r2": [
+            57.5,
+            14.5
+        ],
+        "r3": [
+            65,
+            16.5
+        ],
+        "r4": [
+            72.5,
+            18.5
+        ],
+        "r5": [
+            80,
+            20
+        ],
+        "substat": "cr",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "24%"
+        }
+    },
+    "incarcerating-grip": {
+        "rarity": 5,
+        "passive": {
+            "en": "The equipper's CRIT Rate increases by {{value}}%. When the equipper's Basic Attack hits an enemy, their ATK increases by {{value}}%, and their DMG ignores {{value}}% of the target's Wind RES for 16s."
+        },
+        "r1": [
+            20,
+            10,
+            15
+        ],
+        "r2": [
+            23,
+            11.5,
+            17.3
+        ],
+        "r3": [
+            26,
+            13,
+            19.5
+        ],
+        "r4": [
+            29,
+            14.5,
+            21.8
+        ],
+        "r5": [
+            32,
+            16,
+            24
+        ],
+        "substat": "cr",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "24%"
+        }
+    },
+    "knights-extolment": {
+        "rarity": 5,
+        "passive": {
+            "en": "Knight's Rite: When the equipper's Basic Attack or EX Special Attack's heavy attack hits an enemy, they gain 1 stack of Battle Edge. Battle Edge can stack up to 2 times, and each skill type can provide up to 1 stack. Each stack increases CRIT DMG by {{value}}% for 25s."
+        },
+        "r1": [
+            32
+        ],
+        "r2": [
+            36.8
+        ],
+        "r3": [
+            41.6
+        ],
+        "r4": [
+            46.4
+        ],
+        "r5": [
+            51.2
+        ],
+        "substat": "cd",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "48%"
+        }
+    },
+    "myriad-eclipse": {
+        "rarity": 5,
+        "passive": {
+            "en": "False Personas: Increases CRIT DMG by {{value}}%. When using an EX Special Attack, Chain Attack, or Ultimate to deal Ice DMG, the equipper gains the Absolute Zero Death Sentence effect for 3s. While Absolute Zero Death Sentence is active, the character ignores {{value}}% of the enemy's DEF when landing a hit."
+        },
+        "r1": [
+            45,
+            25
+        ],
+        "r2": [
+            51.75,
+            28.75
+        ],
+        "r3": [
+            58.5,
+            32.5
+        ],
+        "r4": [
+            65.25,
+            36.25
+        ],
+        "r5": [
+            72,
+            40
+        ],
+        "substat": "cr",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "24%"
+        }
+    },
+    "riot-suppressor-mark-vi": {
+        "rarity": 5,
+        "passive": {
+            "en": "Security Patrol: Increases CRIT Rate by 15%. Launching an EX Special Attack grants the equipper 8 Charge stacks, up to a maximum of 8 stacks. Whenever the equipper's Basic Attack deals Ether DMG, consumes a Charge stack and increases the skill's DMG by 35%."
+        },
+        "r1": [],
+        "r2": [],
+        "r3": [],
+        "r4": [],
+        "r5": [],
+        "substat": "cd",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "48%"
+        }
+    },
+    "serpentine-seeker": {
+        "rarity": 5,
+        "passive": {
+            "en": "Bioengineered Venom: CRIT Rate increases by {{value}}%. When the equipper consumes at least 20 Energy in a single instance, every 20 Energy consumed grants 3s of a buff: when dealing Electric DMG, ignore {{value}}% of the target's DEF. Repeated triggers extend the duration, up to a maximum of 30s. When entering combat, gain 10s of this buff. While the equipper is not the active character, the duration no longer decreases."
+        },
+        "r1": [
+            25,
+            28
+        ],
+        "r2": [
+            28.8,
+            31.5
+        ],
+        "r3": [
+            32.5,
+            35
+        ],
+        "r4": [
+            36.3,
+            38.5
+        ],
+        "r5": [
+            40,
+            42
+        ],
+        "substat": "er",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "60%"
+        }
+    },
+    "severed-innocence": {
+        "rarity": 5,
+        "passive": {
+            "en": "Tranquil Blossom: CRIT DMG is increased by {{value}}%. When the equipper lands a hit with a Basic Attack, Special Attack, or Aftershock, they gain 1 stack of a buff. Each stack increases the equipper's CRIT DMG by an additional {{value}}%, stacking up to 3 times. The effect lasts for 30s, with each stack's duration calculated separately, and can only be triggered once per use of a skill. With all 3 stacks, the equipper's Electric DMG increases by {{value}}%."
+        },
+        "r1": [
+            30,
+            10,
+            20
+        ],
+        "r2": [
+            34.5,
+            11.5,
+            23
+        ],
+        "r3": [
+            39,
+            13,
+            26
+        ],
+        "r4": [
+            43.5,
+            14.5,
+            29
+        ],
+        "r5": [
+            48,
+            16,
+            32
+        ],
+        "substat": "cd",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "48%"
+        }
+    },
+    "sol-exuvia": {
+        "rarity": 5,
+        "passive": {
+            "en": "Eclipse Effect: CRIT Rate increases by 20%. When the equipper is Pyrois, using an Ultimate grants the Eclipse effect. When the Eclipse effect is active, DMG dealt by the equipper ignores {{value}}% of Ether RES, lasting 45s. Repeated triggers reset the duration. When the equipper enters combat, they gain the Eclipse effect."
+        },
+        "r1": [
+            16
+        ],
+        "r2": [
+            17.5
+        ],
+        "r3": [
+            19
+        ],
+        "r4": [
+            20.5
+        ],
+        "r5": [
+            22
+        ],
+        "substat": "atk%",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "30%"
+        }
+    },
+    "steel-cushion": {
+        "rarity": 5,
+        "passive": {
+            "en": "Metal Cat Claws: Increases Physical DMG by {{value}}%. The equipper's DMG increases by {{value}}% when attacking the enemy from behind."
+        },
+        "r1": [
+            20,
+            25
+        ],
+        "r2": [
+            25,
+            31.5
+        ],
+        "r3": [
+            30,
+            38
+        ],
+        "r4": [
+            35,
+            44
+        ],
+        "r5": [
+            40,
+            50
+        ],
+        "substat": "cr",
+        "level_max": {
+            "base_attack": 684,
+            "substat_value": "24%"
+        }
+    },
+    "the-brimstone": {
+        "rarity": 5,
+        "passive": {
+            "en": "Scorching Breath: Upon hitting an enemy with a Basic Attack, Dash Attack, or Dodge Counter, the equipper's ATK increases by {{value}}% for 8s, stacking up to 8 times. This effect can trigger once every 0.5s. The duration of each stack is calculated separately."
+        },
+        "r1": [
+            3.5
+        ],
+        "r2": [
+            4.4
+        ],
+        "r3": [
+            5.2
+        ],
+        "r4": [
+            6
+        ],
+        "r5": [
+            7
+        ],
+        "substat": "atk%",
+        "level_max": {
+            "base_attack": 684,
+            "substat_value": "30%"
+        }
+    },
+    "zanshin-herb-case": {
+        "rarity": 5,
+        "passive": {
+            "en": "Growth Through Adversity: CRIT Rate increases by {{value}}%. Dash Attack Electric DMG increases by {{value}}%. When any squad member applies an Attribute Anomaly or Stuns an enemy, the equipper's CRIT Rate increases by an additional {{value}}% for 15s."
+        },
+        "r1": [
+            10,
+            40,
+            10
+        ],
+        "r2": [
+            11.5,
+            46,
+            11.5
+        ],
+        "r3": [
+            13,
+            52,
+            13
+        ],
+        "r4": [
+            14.5,
+            58,
+            14.5
+        ],
+        "r5": [
+            16,
+            64,
+            16
+        ],
+        "substat": "cd",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "48%"
+        }
+    },
+    "cannon-rotor": {
+        "rarity": 4,
+        "passive": {
+            "en": "Oversized Barrel: Increases ATK by {{value}}%. Attacks that land a CRIT on an enemy will inflict an additional 200% of ATK as DMG. This effect can only be triggered once every {{value}}s."
+        },
+        "r1": [
+            7.5,
+            8
+        ],
+        "r2": [
+            8.6,
+            7.5
+        ],
+        "r3": [
+            9.7,
+            7
+        ],
+        "r4": [
+            10.8,
+            6.5
+        ],
+        "r5": [
+            12,
+            6
+        ],
+        "substat": "cr",
+        "level_max": {
+            "base_attack": 594,
+            "substat_value": "20%"
+        }
+    },
+    "drill-rig-red-axis": {
+        "rarity": 4,
+        "passive": {
+            "en": "Hell's Generator: When launching an EX Special Attack or Chain Attack, Electric DMG from Basic Attacks and Dash Attacks increases by {{value}}% for 10s. This effect can trigger once every 15s."
+        },
+        "r1": [
+            50
+        ],
+        "r2": [
+            57.5
+        ],
+        "r3": [
+            65
+        ],
+        "r4": [
+            72.5
+        ],
+        "r5": [
+            80
+        ],
+        "substat": "er",
+        "level_max": {
+            "base_attack": 624,
+            "substat_value": "50%"
+        }
+    },
+    "gilded-blossom": {
+        "rarity": 4,
+        "passive": {
+            "en": "Extraordinary Anti-Theft Measures: ATK increases by {{value}}%, and DMG dealt by EX Special Attacks increases by {{value}}%."
+        },
+        "r1": [
+            6,
+            15
+        ],
+        "r2": [
+            6.9,
+            17.2
+        ],
+        "r3": [
+            7.8,
+            19.5
+        ],
+        "r4": [
+            8.7,
+            21.8
+        ],
+        "r5": [
+            9.6,
+            24
+        ],
+        "substat": "atk%",
+        "level_max": {
+            "base_attack": 594,
+            "substat_value": "25%"
+        }
+    },
+    "housekeeper": {
+        "rarity": 4,
+        "passive": {
+            "en": "Safe Household Saw: While off-field, Energy Regen increases by {{value}} per second. When an EX Special Attack hits an enemy, the equipper's Physical DMG increases by {{value}}%, stacking up to 15 times and lasting 1s. Retriggering refreshes duration."
+        },
+        "r1": [
+            0.45,
+            3
+        ],
+        "r2": [
+            0.52,
+            3.5
+        ],
+        "r3": [
+            0.58,
+            4
+        ],
+        "r4": [
+            0.65,
+            4.4
+        ],
+        "r5": [
+            0.72,
+            4.8
+        ],
+        "substat": "atk%",
+        "level_max": {
+            "base_attack": 624,
+            "substat_value": "25%"
+        }
+    },
+    "marcato-desire": {
+        "rarity": 4,
+        "passive": {
+            "en": "Get Everyone Fired Up: When an EX Special Attack or Chain Attack hits an enemy, the equipper's ATK increases by {{value}}% for 8s. While the target is under an Attribute Anomaly, this effect is increased by an additional {{value}}%."
+        },
+        "r1": [
+            6,
+            6
+        ],
+        "r2": [
+            6.9,
+            6.9
+        ],
+        "r3": [
+            7.8,
+            7.8
+        ],
+        "r4": [
+            8.7,
+            8.7
+        ],
+        "r5": [
+            9.6,
+            9.6
+        ],
+        "substat": "cr",
+        "level_max": {
+            "base_attack": 594,
+            "substat_value": "20%"
+        }
+    },
+    "starlight-engine": {
+        "rarity": 4,
+        "passive": {
+            "en": "Knight's Combo: Launching a Dodge Counter or Quick Assist increases the equipper's ATK by {{value}}% for 12s."
+        },
+        "r1": [
+            12
+        ],
+        "r2": [
+            13.8
+        ],
+        "r3": [
+            15.6
+        ],
+        "r4": [
+            17.4
+        ],
+        "r5": [
+            19.2
+        ],
+        "substat": "atk%",
+        "level_max": {
+            "base_attack": 594,
+            "substat_value": "25%"
+        }
+    },
+    "starlight-engine-replica": {
+        "rarity": 4,
+        "passive": {
+            "en": "Knight Beam: Increases the equipper's Physical DMG by {{value}}% for 8s upon hitting an enemy at least 6 meters away with a Basic Attack or Dash Attack."
+        },
+        "r1": [
+            36
+        ],
+        "r2": [
+            41
+        ],
+        "r3": [
+            46.5
+        ],
+        "r4": [
+            52
+        ],
+        "r5": [
+            57.5
+        ],
+        "substat": "atk%",
+        "level_max": {
+            "base_attack": 624,
+            "substat_value": "25%"
+        }
+    },
+    "street-superstar": {
+        "rarity": 4,
+        "passive": {
+            "en": "Flaming Bars: Whenever a squad member launches a Chain Attack, the equipper gains a Charge stack, stacking up to 3 times. Upon activating their own Ultimate, the equipper consumes all Charge stacks, and each stack increases the skill's DMG by {{value}}%."
+        },
+        "r1": [
+            15
+        ],
+        "r2": [
+            17.2
+        ],
+        "r3": [
+            19.5
+        ],
+        "r4": [
+            21.7
+        ],
+        "r5": [
+            24
+        ],
+        "substat": "atk%",
+        "level_max": {
+            "base_attack": 594,
+            "substat_value": "25%"
+        }
+    },
+    "lunar-decrescent": {
+        "rarity": 3,
+        "passive": {
+            "en": "Waning Moon: Launching a Chain Attack or Ultimate increases the equipper's DMG by {{value}}% for 6s."
+        },
+        "r1": [
+            15
+        ],
+        "r2": [
+            17.5
+        ],
+        "r3": [
+            20
+        ],
+        "r4": [
+            22.5
+        ],
+        "r5": [
+            25
+        ],
+        "substat": "atk%",
+        "level_max": {
+            "base_attack": 475,
+            "substat_value": "20%"
+        }
+    },
+    "lunar-noviluna": {
+        "rarity": 3,
+        "passive": {
+            "en": "New Moon: Launching an EX Special Attack generates {{value}} Energy for the equipper. This effect can trigger once every 12s."
+        },
+        "r1": [
+            3
+        ],
+        "r2": [
+            3.5
+        ],
+        "r3": [
+            4
+        ],
+        "r4": [
+            4.5
+        ],
+        "r5": [
+            5
+        ],
+        "substat": "cr",
+        "level_max": {
+            "base_attack": 475,
+            "substat_value": "16%"
+        }
+    },
+    "lunar-pleniluna": {
+        "rarity": 3,
+        "passive": {
+            "en": "Full Moon: Basic Attack, Dash Attack, and Dodge Counter DMG increase by {{value}}%."
+        },
+        "r1": [
+            12
+        ],
+        "r2": [
+            14
+        ],
+        "r3": [
+            16
+        ],
+        "r4": [
+            18
+        ],
+        "r5": [
+            20
+        ],
+        "substat": "atk%",
+        "level_max": {
+            "base_attack": 475,
+            "substat_value": "20%"
+        }
+    }
+}

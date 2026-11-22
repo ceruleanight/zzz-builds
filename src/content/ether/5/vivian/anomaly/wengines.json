@@ -1,0 +1,26 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "flight-of-fancy",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 100% at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "weeping-gemini",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 87.71% at S5."
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": {
+        "en": "Anomaly"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "Target stats at level 60: ATK 2,500-2,800+, HP 9,000+, DEF 800+, Anomaly Mastery 150+, Anomaly Proficiency 350 to 450+."
+        },
+        {
+            "en": "Partners Prydwen lists for this agent (each group is one entry in its synergy list): [[character:velina]], [[character:remielle]]; [[character:nangong-yu]], [[character:yuzuha]]; [[character:vivian]], [[character:burnice]]; [[character:astra-yao]], [[character:nicole]], [[character:lucy]]."
+        },
+        {
+            "en": "The W-Engine ranking was calculated with [[character:yuzuha]] (Kaboom the Cannon) and [[character:vivian]] (Weeping Gemini) as teammates. Percentages are relative to the first-listed W-Engine at the refinement Prydwen marks as 100%."
+        }
+    ]
+}

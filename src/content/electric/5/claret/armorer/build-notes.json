@@ -1,0 +1,26 @@
+{
+    "name": {
+        "en": "Armorer DPS"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "[[character:claret]] converts CRIT DMG into CRIT Rate, so stack CRIT Rate and aim to get as close to 200% as possible after her Core Passive, W-Engine and team buffs. Laceration DMG is fixed."
+        },
+        {
+            "en": "Target stats at level 60: DEF 2,300 to 2,600+, HP 9,500+ and CRIT Rate 128.9% with her signature."
+        },
+        {
+            "en": "[[character:norma]] is among the best Stunners for her. Her buffs and signature fit Armorers, she provides Quick Assists on demand (so Astral Voice works), and her Chain Attack conversions help with resource management."
+        },
+        {
+            "en": "[[character:rina]] is the only Support that provides DEF buffs, and her PEN Ratio is very valuable because DMG% bonuses saturate on Armorer teams. [[character:koleda]] is the de facto standard Armorer Stunner and the only one at release that can increase Laceration DMG, one of the best multipliers for Armorers."
+        },
+        {
+            "en": "[[character:lycaon]] is a decent pick thanks to his Potential Unlock, and meets his Additional Ability criteria with Rina through the Victoria Housekeeping faction match. [[character:trigger]] and [[character:nicole]] work as a pair: Trigger's Daze is good and Nicole offers Armorer-compatible buffs."
+        },
+        {
+            "en": "The W-Engine calculation team was [[character:roxy]] (Crimson Moon Casket) and [[character:rina]] (Weeping Cradle). Percentages are relative to Crimson Thirst at S1."
+        }
+    ]
+}

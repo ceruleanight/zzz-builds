@@ -1,0 +1,27 @@
+{
+    "substats_priority": [
+        {
+            "name": "atk%",
+            "note": {
+                "en": "Top priorities until you reach the ATK cap."
+            }
+        },
+        {
+            "name": "atk",
+            "note": {
+                "en": "Top priorities until you reach the ATK cap."
+            }
+        },
+        {
+            "items": [
+                {
+                    "name": "cr"
+                },
+                {
+                    "name": "cd"
+                }
+            ]
+        },
+        "pen-flat"
+    ]
+}

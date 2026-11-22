@@ -1,0 +1,104 @@
+{
+    "disc_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "king-of-the-summit",
+                            "pieces": 4,
+                            "note": {
+                                "en": "The best Stun set, for almost any Stun agent in almost any team. The 2-piece gives 6% Daze, and the 4-piece gives up to 30% CRIT DMG to the whole squad for 15 seconds after EX Specials and Chain Attacks, if the equipper has 50% CRIT Rate or more, which is easy to meet."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "astral-voice",
+                            "pieces": 4,
+                            "note": {
+                                "en": "The best generalist Support set. The 2-piece gives 10% ATK, and the 4-piece buffs damage from agents entering via Quick Assist by up to 24%, the biggest Drive Disc buff in the game. Generally a must-have on any team, but make sure it stays up."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "proto-punk",
+                            "pieces": 4,
+                            "note": {
+                                "en": "A niche supportive set for teams that trigger Perfect Assists often. It gives the whole party 15% DMG for 10 seconds after a Perfect Assist. Usually used when an [[set:astral-voice]] wielder is already in the team."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "shockstar-disco",
+                            "pieces": 4,
+                            "note": {
+                                "en": "The highest Daze output of any set, but the 4-piece adds little over the 2-piece alone. A supportive set like [[set:king-of-the-summit]] or [[set:astral-voice]] almost always gives better results."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "two_piece_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "shockstar-disco",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended with [[set:king-of-the-summit]]."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "king-of-the-summit",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended with the other three 4-piece sets."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "swing-jazz",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

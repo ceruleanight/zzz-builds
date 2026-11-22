@@ -1,0 +1,23 @@
+{
+    "name": {
+        "en": "Rupture DPS"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "[[character:banyue]] needs a lot of Sheer Force and HP. Target stats at level 60: Sheer Force 2,200+, ATK 1,800 to 2,000+, HP 18,000+, DEF 600+, CRIT Rate 90 to 100% (in combat, including the disc bonus and signature W-Engine) and CRIT DMG 120 to 150%+."
+        },
+        {
+            "en": "[[character:dialyn]] is easily the best Stunner for him as of his release. He wants as much field time as possible, but she does not take away from his resource generation. Her Ultimate conversion and Stun extension allow double Chain Attack and double Ultimate combos."
+        },
+        {
+            "en": "[[character:ju-fufu]] and [[character:trigger]] work very well as Aftershock Stunners, which lets him take nearly all of the field time. Ju Fufu's buffs are decent and her Decibel refund helps his Decibel generation, allowing 4 Ultimates in every fight."
+        },
+        {
+            "en": "[[character:lucia]] and [[character:pan-yinhu]] are his best supports. As a Rupture agent he has few supportive options, because Attack does not convert to Sheer at a high enough rate for meta Attacker Supports like [[character:astra-yao]] to compete. Lucia is the standout."
+        },
+        {
+            "en": "The W-Engine ranking was calculated with [[character:dialyn]] (Yesterday Calls) and [[character:lucia]] (Dreamlit Hearth) as teammates. Percentages are relative to his signature."
+        }
+    ]
+}

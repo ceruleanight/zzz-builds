@@ -1,0 +1,56 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "weeping-cradle",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 102.38% at S5. At S1: about 93.51%."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "thoughtbop",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 102.07% at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "metanukimorphosis",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 100% at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "kaboom-the-cannon",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 93.28% at S5."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "unfettered-game-ball",
+                    "refinement": 5
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "serpentine-seeker",
+                    "refinement": 1,
+                    "note": {
+                        "en": "Her signature offers nearly everything she needs: an Energy Regen main stat for her Core Passive, some of the highest unconditional CRIT Rate bonuses and a good amount of personal DEF ignore. Its buff lasts only 3 seconds, but it ramps quickly with her frequent EX Specials."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "bellicose-blaze",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 93%. Orphie's signature is little more than a stat stick, but a competitive one. It has Energy Regen as its main stat and a decent amount of unconditional CRIT Rate, less than her own signature, which makes building her less demanding."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "drill-rig-red-axis",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 91%. Anton does not use his own signature, but she can. It has an Energy Regen main stat, and its effect is easy to keep up through her EX Specials and applies to most of her damage (Basic Attacks)."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "cordis-germina",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 91%. Seed's signature is among her best choices for personal damage, though it costs some DEF shred for the team. A decent pick for a main carry Cissia, but she is likely to be run with Seed instead."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "severed-innocence",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 88%. A stat stick with plenty of CRIT DMG. Behind the other options, but it can be strong in fights where CRIT Rate is given freely, such as with a P5 Gameball buff or teammate CRIT Rate bonuses."
+                    }
+                }
+            ]
+        }
+    ]
+}

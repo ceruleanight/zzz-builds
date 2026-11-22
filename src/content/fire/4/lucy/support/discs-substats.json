@@ -1,0 +1,30 @@
+{
+    "substats_priority": [
+        {
+            "items": [
+                {
+                    "name": "atk%",
+                    "note": {
+                        "en": "Top priority until ability cap."
+                    }
+                },
+                {
+                    "name": "cr"
+                },
+                {
+                    "name": "cd"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "pen-flat"
+                },
+                {
+                    "name": "atk"
+                }
+            ]
+        }
+    ]
+}

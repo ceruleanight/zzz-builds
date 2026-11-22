@@ -1,0 +1,405 @@
+{
+    "dreamlit-hearth": {
+        "rarity": 5,
+        "passive": {
+            "en": "Moontide Epic: The equipper's Energy Regen increases by {{value}}/s. When the equipper activates Ether Veil or extends its duration, all squad members gain {{value}}% increased DMG and {{value}}% increased Max HP for 45s. Repeated triggers reset the duration. Only one instance of this effect can exist in the same squad."
+        },
+        "r1": [
+            0.4,
+            25,
+            15
+        ],
+        "r2": [
+            0.46,
+            28.8,
+            17.3
+        ],
+        "r3": [
+            0.52,
+            32.5,
+            19.5
+        ],
+        "r4": [
+            0.58,
+            36.3,
+            21.8
+        ],
+        "r5": [
+            0.64,
+            40,
+            24
+        ],
+        "substat": "hp%",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "30%"
+        }
+    },
+    "elegant-vanity": {
+        "rarity": 5,
+        "passive": {
+            "en": "Untold Beauty: When any squad member enters the field through a Quick Assist, Chain Attack, Defensive Assist, or Evasive Assist, the equipper gains {{value}} Energy. This effect can trigger once every 5s."
+        },
+        "r1": [
+            5
+        ],
+        "r2": [
+            5.5
+        ],
+        "r3": [
+            6
+        ],
+        "r4": [
+            6.5
+        ],
+        "r5": [
+            7
+        ],
+        "substat": "atk%",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "30%"
+        }
+    },
+    "metanukimorphosis": {
+        "rarity": 5,
+        "passive": {
+            "en": "Exquisitely Ingenious: When the equipper's EX Special Attack or Ultimate deals Physical DMG, their Anomaly Mastery increases by {{value}} for 40s."
+        },
+        "r1": [
+            30
+        ],
+        "r2": [
+            34
+        ],
+        "r3": [
+            39
+        ],
+        "r4": [
+            43
+        ],
+        "r5": [
+            48
+        ],
+        "substat": "er",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "60%"
+        }
+    },
+    "thoughtbop": {
+        "rarity": 5,
+        "passive": {
+            "en": "Decibel Monologue: While not the active character, the equipper's Energy Regen increases by {{value}} per second. When the equipper uses an EX Special Attack and deals Physical DMG, all squad members gain a buff: DMG dealt increases by {{value}}% for 40s, stacking up to 2 times. Repeated triggers reset the duration. At 2 stacks, characters gain an additional {{value}}% ATK. Only one instance of this effect can exist in the same squad."
+        },
+        "r1": [
+            0.6,
+            12.5,
+            10
+        ],
+        "r2": [
+            0.69,
+            14.3,
+            11.5
+        ],
+        "r3": [
+            0.78,
+            16.1,
+            13
+        ],
+        "r4": [
+            0.87,
+            17.9,
+            14.5
+        ],
+        "r5": [
+            0.96,
+            20,
+            16
+        ],
+        "substat": "er",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "60%"
+        }
+    },
+    "weeping-cradle": {
+        "rarity": 5,
+        "passive": {
+            "en": "Punishment: While off-field, Energy Regen increases by {{value}} per second. Attacks from the equipper enhance the squad's DMG against a struck target by {{value}}% for 3 seconds. During this period, this effect is further increased by {{value}}% every 0.5s, up to a maximum additional increase of {{value}}%. Repeated triggers only refresh its duration without refreshing the DMG increase effect. Passive effects of the same name do not stack."
+        },
+        "r1": [
+            0.6,
+            10,
+            1.7,
+            10.2
+        ],
+        "r2": [
+            0.75,
+            12.5,
+            2,
+            12
+        ],
+        "r3": [
+            0.9,
+            15,
+            2.5,
+            15
+        ],
+        "r4": [
+            1.05,
+            17.5,
+            3,
+            18
+        ],
+        "r5": [
+            1.2,
+            20,
+            3.3,
+            19.8
+        ],
+        "substat": "pen",
+        "level_max": {
+            "base_attack": 684,
+            "substat_value": "24%"
+        }
+    },
+    "bashful-demon": {
+        "rarity": 4,
+        "passive": {
+            "en": "Visage of Greed: Increases Ice DMG by {{value}}%. When launching an EX Special Attack, all squad members' ATK increases by {{value}}% for 12s, stacking up to 4 times. Retriggering refreshes duration. Passive effects of the same name do not stack."
+        },
+        "r1": [
+            15,
+            2
+        ],
+        "r2": [
+            17.5,
+            2.3
+        ],
+        "r3": [
+            20,
+            2.6
+        ],
+        "r4": [
+            22,
+            2.9
+        ],
+        "r5": [
+            24,
+            3.2
+        ],
+        "substat": "atk%",
+        "level_max": {
+            "base_attack": 624,
+            "substat_value": "25%"
+        }
+    },
+    "kaboom-the-cannon": {
+        "rarity": 4,
+        "passive": {
+            "en": "Stampede Accident: When any friendly unit in the squad attacks and hits an enemy, all friendly units' ATK increases by {{value}}% for 8s, stacking up to 4 times. The duration of each stack is calculated separately, and each friendly unit can provide 1 stack of the buff. Passive effects of the same name do not stack."
+        },
+        "r1": [
+            2.5
+        ],
+        "r2": [
+            2.8
+        ],
+        "r3": [
+            3.2
+        ],
+        "r4": [
+            3.6
+        ],
+        "r5": [
+            4
+        ],
+        "substat": "er",
+        "level_max": {
+            "base_attack": 624,
+            "substat_value": "50%"
+        }
+    },
+    "slice-of-time": {
+        "rarity": 4,
+        "passive": {
+            "en": "Say Cheese: Any squad members' Dodge Counter, EX Special Attack, Assist Attack, or Chain Attack respectively generates {{value}} (Dodge) | {{value}} (Special) | {{value}} (Assist) | {{value}} (Chain) more Decibels and generates {{value}} Energy for the equipper. This effect can trigger once every 12s. The cooldown for each type of attack is independent of others. Passive effects of the same name do not stack."
+        },
+        "r1": [
+            20,
+            25,
+            30,
+            35,
+            0.7
+        ],
+        "r2": [
+            23,
+            28.5,
+            34.5,
+            40,
+            0.8
+        ],
+        "r3": [
+            26,
+            32,
+            39,
+            45,
+            0.9
+        ],
+        "r4": [
+            29,
+            35.5,
+            43.5,
+            50,
+            1
+        ],
+        "r5": [
+            32,
+            40,
+            48,
+            55,
+            1.1
+        ],
+        "substat": "pen",
+        "level_max": {
+            "base_attack": 594,
+            "substat_value": "20%"
+        }
+    },
+    "the-vault": {
+        "rarity": 4,
+        "passive": {
+            "en": "Money-Lover: Dealing Ether DMG using an EX Special Attack, Chain Attack, or Ultimate increases all squad members' DMG against the target by {{value}}% and increases the equipper's Energy Regen by {{value}} per second for 2s. Passive effects of the same name do not stack."
+        },
+        "r1": [
+            15,
+            0.5
+        ],
+        "r2": [
+            17.5,
+            0.58
+        ],
+        "r3": [
+            20,
+            0.65
+        ],
+        "r4": [
+            22,
+            0.72
+        ],
+        "r5": [
+            24,
+            0.8
+        ],
+        "substat": "er",
+        "level_max": {
+            "base_attack": 624,
+            "substat_value": "50%"
+        }
+    },
+    "unfettered-game-ball": {
+        "rarity": 4,
+        "passive": {
+            "en": "Game Start!: Whenever the equipper's attack triggers an Attribute Counter effect, all squad members' CRIT Rate against the struck enemy increases by {{value}}% for 12s. The bonuses triggered by the same type of passive effects do not stack."
+        },
+        "r1": [
+            12
+        ],
+        "r2": [
+            13.5
+        ],
+        "r3": [
+            15.5
+        ],
+        "r4": [
+            17.5
+        ],
+        "r5": [
+            20
+        ],
+        "substat": "er",
+        "level_max": {
+            "base_attack": 594,
+            "substat_value": "50%"
+        }
+    },
+    "reverb-mark-i": {
+        "rarity": 3,
+        "passive": {
+            "en": "Changing Tides: Launching an EX Special Attack increases all squad members' Impact by {{value}}% for 10s. This effect can trigger once every 20s. Passive effects of the same name do not stack."
+        },
+        "r1": [
+            8
+        ],
+        "r2": [
+            9
+        ],
+        "r3": [
+            10
+        ],
+        "r4": [
+            11
+        ],
+        "r5": [
+            12
+        ],
+        "substat": "atk%",
+        "level_max": {
+            "base_attack": 475,
+            "substat_value": "20%"
+        }
+    },
+    "reverb-mark-ii": {
+        "rarity": 3,
+        "passive": {
+            "en": "Roaring Waves: Launching an EX Special Attack or Chain Attack increases all squad members' Anomaly Mastery and Anomaly Proficiency by {{value}} for 10s. This effect can trigger once every 20s. Passive effects of the same name do not stack."
+        },
+        "r1": [
+            10
+        ],
+        "r2": [
+            12
+        ],
+        "r3": [
+            13
+        ],
+        "r4": [
+            15
+        ],
+        "r5": [
+            16
+        ],
+        "substat": "er",
+        "level_max": {
+            "base_attack": 475,
+            "substat_value": "40%"
+        }
+    },
+    "reverb-mark-iii": {
+        "rarity": 3,
+        "passive": {
+            "en": "Booming Sound: Launching a Chain Attack or Ultimate increases all squad members' ATK by {{value}}% for 10s. This effect can trigger once every 20s. Passive effects of the same name do not stack."
+        },
+        "r1": [
+            8
+        ],
+        "r2": [
+            9
+        ],
+        "r3": [
+            10
+        ],
+        "r4": [
+            11
+        ],
+        "r5": [
+            12
+        ],
+        "substat": "hp%",
+        "level_max": {
+            "base_attack": 475,
+            "substat_value": "20%"
+        }
+    }
+}

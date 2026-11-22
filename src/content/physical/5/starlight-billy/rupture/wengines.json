@@ -1,0 +1,81 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "starlight-rider-faceplate",
+                    "refinement": 1,
+                    "note": {
+                        "en": "His signature is unsurprisingly his best pick, with a lack of good alternatives for Rupture agents making it even more valuable. It has an HP% main stat, unconditional CRIT Rate and a stacking Sheer DMG buff, which is all he needs."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "qingming-birdcage",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 87%. An effective stat stick. Its high Base ATK matters little for Rupture scaling, but 20% unconditional CRIT Rate goes a long way, given how much CRIT DMG he already has."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "cauldron-of-clarity",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 84%. By far the best A-rank option for him, with an HP% main stat and a valuable spread of buffs, and it is easy to keep at full uptime."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "steel-cushion",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 84%. An Attack W-Engine, but also a standard S-rank with CRIT Rate as its main stat, which makes it a solid stat stick for him."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "grill-owisp",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 80%. He can drain his own HP with Drive Suppression, but in practice that rarely happens in his combos. Doing it before every Adrenaline EX would cost time with his long animations, and it effectively trades CRIT Rate for Stun DMG multiplier."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "puzzle-sphere",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 77%. Its ATK% main stat and CRIT DMG boost, a stat he is already saturated in, make it a generally bad option. As the craftable Rupture W-Engine it works as a holdover until you get better ones."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "radiowave-journey",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 75%. Despite its HP% main stat, its buff value is severely lacking. It builds on Chain Attacks and Ultimates, so the first ones used have few Sheer Force stacks, and the 12-second duration is shorter than most Stuns."
+                    }
+                }
+            ]
+        }
+    ]
+}

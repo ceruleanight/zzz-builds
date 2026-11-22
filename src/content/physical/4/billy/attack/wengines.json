@@ -1,0 +1,103 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "the-brimstone",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 116% at S5 (about 102% at S1). Maxed out in Phases, it is his best option. Its stacks count separately, and his gameplan of constant Basic Attacks, Dash Attacks and Dodge Counters keeps building them. The lack of CRIT Rate can make building around it difficult."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "cloudcleave-radiance",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 108%. An ideal stat stick. He cannot activate Ether Veil, so its DMG and CRIT DMG bonuses are never up, but the Physical RES ignore is universal, and the high Base ATK and CRIT DMG main stat make it a strong pick."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "heartstring-nocturne",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 103%. A great stat stick for most agents, giving a tremendous amount of unconditional CRIT Rate and CRIT DMG."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "steel-cushion",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 100%. Nekomata's signature can be very strong for him. It has a CRIT Rate main stat and he can use both its Physical DMG bonus and the conditional back-attack effect. He is mobile enough to sustain the back-attack bonus more easily than most."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "starlight-engine-replica",
+                    "refinement": 5,
+                    "note": {
+                        "en": "The reference option (100%). As his signature it is a decent pick, with a Physical DMG bonus far beyond most competing picks. It may need some management, such as after moving close for an EX."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "starlight-engine",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 91%. The best craftable W-Engine and a solid free-to-play option. Combat ATK is valuable and, with frequent Dodge Counters, it has near-permanent uptime out of Stun, though it needs Quick Assists to last through a Stun."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "street-superstar",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 85%. A decent but niche free-to-play option for all Attack agents. Against bosses you can guarantee 3 Chain Attacks every Stun, which effectively gives 72% Ultimate damage."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "cannon-rotor",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 85%. The Battle Pass W-Engine is very consistent but often weaker than the alternatives. Its on-CRIT damage is Physical and cannot CRIT."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "gilded-blossom",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 83%. A weaker alternative to [[wengine:starlight-engine]] that gives ATK% and boosts EX Special damage. Only use it if you lack better W-Engines."
+                    }
+                }
+            ]
+        }
+    ]
+}

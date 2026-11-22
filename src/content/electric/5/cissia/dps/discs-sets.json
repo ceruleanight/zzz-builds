@@ -1,0 +1,131 @@
+{
+    "disc_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "astral-voice",
+                            "pieces": 4,
+                            "note": {
+                                "en": "Highest potential in a Seed team with [[character:sunna]] or [[character:astra-yao]]. It does not matter who holds the set as long as Quick Assists pass the buff along. It is on par with [[set:dawns-bloom]] even with poor buff juggling, and much better when well managed."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "dawns-bloom",
+                            "pieces": 4,
+                            "note": {
+                                "en": "The best generalist set, since most of her damage is Basic Attacks and she lacks personal DMG bonuses. It needs little management because she uses EX Specials often, and works across many teams."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "thunder-metal",
+                            "pieces": 4,
+                            "note": {
+                                "en": "The Combat ATK is excellent, but it is only really usable in full Electric teams (such as Seed, Trigger and Cissia) or with specific routes and Bangboo Anomaly management, because it needs to be up during Stun bursts."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "two_piece_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "swing-jazz",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Prydwen's recommended 2-piece pair."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "moonlight-lullaby",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Prydwen's recommended 2-piece pair."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "branch-and-blade-song",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "woodpecker-electro",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "thunder-metal",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "astral-voice",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Only listed with [[set:dawns-bloom]]."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "hormone-punk",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Only listed with [[set:dawns-bloom]]."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

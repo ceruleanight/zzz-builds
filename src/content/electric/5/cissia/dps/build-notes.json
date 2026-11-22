@@ -1,0 +1,26 @@
+{
+    "name": {
+        "en": "DPS"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "[[character:cissia]] deals most of her damage with Basic Attacks and has few personal DMG bonuses, so generalist DMG sets and Energy Regen for her Core Passive matter most."
+        },
+        {
+            "en": "Target stats at level 60: ATK 2,500 to 2,700+, HP 9,000+, DEF 800+, CRIT Rate 50 to 57% (with her signature, before combat) and CRIT DMG 110%+."
+        },
+        {
+            "en": "[[character:seed]] is the unquestionable best partner. Both are Electric, so there is no attribute mismatch, and both bring DEF shred (Cordis Germina and Cissia's Core Passive). She can be run with other Electric Attackers such as [[character:soldier-0-anby]] and [[character:harumasa]], but they fall behind."
+        },
+        {
+            "en": "[[character:sunna]] and [[character:astra-yao]] are the two premium Attacker Supports. Sunna gives more general damage and Daze, while Astra's Quick Assists enable Astral Voice. A double Attacker team with a Support in the third slot is very accessible for her."
+        },
+        {
+            "en": "Her Daze build-up is high, so Stunners matter less. [[character:dialyn]] is always a good pick and [[character:trigger]]'s DEF shred is useful. [[character:nicole]] is a great free support whose DEF shred and M6 CRIT Rate bonus help a lot."
+        },
+        {
+            "en": "The W-Engine ranking was calculated with [[character:seed]] (Cordis Germina) and [[character:astra-yao]] (Kaboom the Cannon) as teammates. Percentages are relative to her signature."
+        }
+    ]
+}

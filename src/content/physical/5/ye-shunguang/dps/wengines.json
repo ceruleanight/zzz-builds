@@ -1,0 +1,48 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "cloudcleave-radiance",
+                    "refinement": 1,
+                    "note": {
+                        "en": "Incredibly powerful, and needs no special accommodation. Every Enlightened Mind State counts as an Ether Veil activation, so its conditional DMG and CRIT DMG bonuses stay up, and the 20% Physical RES shred is great against Physical-neutral enemies."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "the-brimstone",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 91% at S5 (about 80% at S1). Surprisingly good, because nearly all of her damage in Enlightened Mind State is Basic Attacks, which build its stacks. Use airborne Basics to ramp faster and mind the stacks before Ultimates. Its lack of CRIT Rate helps her substats."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "severed-innocence",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 81%. Soldier 0 - Anby's signature is the best non-S5 option besides her own. Its lack of CRIT Rate makes substats easier to build, and keeping 2 stacks would improve it slightly."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "starlight-engine",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 72%. About as good as an A-rank option gets. Her Entry Skill counts as a Quick Assist hit, so she can activate its bonuses without being Quick Assisted to, but do it before Ultimates because those do not count."
+                    }
+                }
+            ]
+        }
+    ]
+}

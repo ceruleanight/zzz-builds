@@ -1,0 +1,320 @@
+---
+import { rankLabel } from '../utils/rank';
+import { t } from '../utils/i18n';
+
+type WEngineBrowserData = {
+  rarities: number[];
+  substats: {
+    id: string;
+    label: string;
+  }[];
+  sources: {
+    id: string;
+    label: string;
+  }[];
+  specialties: {
+    id: string;
+    label: string;
+  }[];
+  wengines: {
+    id: string;
+    image: string;
+    name: string;
+    rarity: number;
+    source: string;
+    type: string;
+    typeLabel: string;
+    versionReleased: string;
+    sourceName: string;
+    substat: string;
+    substatName: string;
+    baseStat: string;
+    level1BaseAttack: string;
+    levelMaxBaseAttack: string;
+    level1Substat: string;
+    levelMaxSubstat: string;
+    rankingUsage: {
+      characterName: string;
+      characterRarity: string;
+      href: string;
+      isWip?: boolean;
+      rank?: number;
+    }[];
+    passivePanels: {
+      refinement: number;
+      html: string;
+    }[];
+  }[];
+};
+
+const { data, locale } = Astro.props as {
+  data: WEngineBrowserData;
+  locale: any;
+};
+
+const allLabel = t(locale, 'ui', 'All');
+const resultsLabel = t(locale, 'ui', 'Results');
+const noResultsLabel = t(locale, 'ui', 'No wengines found', undefined, false);
+const sourceLabel = t(locale, 'ui', 'Source', undefined, false);
+const substatsLabel = t(locale, 'ui', 'Substats', undefined, false);
+const searchByNameLabel = t(locale, 'ui', 'Search by name');
+const wengineLabel = t(locale, 'ui', 'WEngine');
+const rarityLabel = t(locale, 'ui', 'Rarity');
+const searchLabel = t(locale, 'ui', 'Search');
+const descriptionLabel = t(locale, 'ui', 'Description', undefined, false);
+const rankedOnLabel = t(locale, 'ui', 'WEngine ranked on', undefined, false);
+const noRankingMentionsLabel = t(
+  locale,
+  'ui',
+  'No wengine ranking mentions',
+  undefined,
+  false,
+);
+const maxLevelLabel = t(locale, 'ui', 'Max Level', undefined, false);
+const statLabel = t(locale, 'ui', 'Stat', undefined, false);
+const baseAttackLabel = t(locale, 'ui', 'Base ATK', undefined, false);
+const baseDefLabel = t(locale, 'ui', 'Base DEF', undefined, false);
+const sortByLabel = t(locale, 'ui', 'Sort by', undefined, false);
+const releaseDateLabel = t(locale, 'ui', 'Release date', undefined, false);
+const newestLabel = t(locale, 'ui', 'Newest', undefined, false);
+const sortOptions = [
+  { value: 'name', label: `${wengineLabel} - A-Z` },
+  { value: 'release', label: `${releaseDateLabel} - ${newestLabel}` },
+];
+---
+
+<section class="wengine-browser" data-wengine-browser>
+  <form
+    class="home-filters wengine-filters"
+    id="wengine-filters"
+    data-wengine-filters
+  >
+    <label class="home-search">
+      {searchLabel}
+      <input
+        type="search"
+        name="search"
+        placeholder={searchByNameLabel}
+        autocomplete="off"
+      />
+    </label>
+
+    <div class="home-select-filter">
+      {wengineLabel}
+      <select class="home-native-select" name="type" aria-label={wengineLabel}>
+        <option value="">{allLabel}</option>
+        {
+          data.specialties.map((type) => (
+            <option value={type.id}>{type.label}</option>
+          ))
+        }
+      </select>
+    </div>
+
+    <div class="home-select-filter">
+      {rarityLabel}
+      <select class="home-native-select" name="rarity" aria-label={rarityLabel}>
+        <option value="">{allLabel}</option>
+        {
+          data.rarities.map((rarity) => (
+            <option value={String(rarity)}>
+              {rankLabel(rarity)}
+            </option>
+          ))
+        }
+      </select>
+    </div>
+
+    <div class="home-select-filter">
+      {sourceLabel}
+      <select class="home-native-select" name="source" aria-label={sourceLabel}>
+        <option value="">{allLabel}</option>
+        {
+          data.sources.map((source) => (
+            <option value={source.id}>{source.label}</option>
+          ))
+        }
+      </select>
+    </div>
+
+    <div class="home-select-filter">
+      {substatsLabel}
+      <select
+        class="home-native-select"
+        name="substat"
+        aria-label={substatsLabel}
+      >
+        <option value="">{allLabel}</option>
+        {
+          data.substats.map((substat) => (
+            <option value={substat.id}>{substat.label}</option>
+          ))
+        }
+      </select>
+    </div>
+  </form>
+
+  <div class="wengine-browser-header">
+    <p data-wengine-count data-results-label={resultsLabel} aria-live="polite">
+      {data.wengines.length}
+      {resultsLabel}
+    </p>
+    <label class="roster-sort">
+      {sortByLabel}
+      <select
+        class="home-native-select"
+        name="sort"
+        form="wengine-filters"
+        aria-label={sortByLabel}
+      >
+        {
+          sortOptions.map((option) => (
+            <option value={option.value} selected={option.value === 'name'}>
+              {option.label}
+            </option>
+          ))
+        }
+      </select>
+    </label>
+  </div>
+
+  <div class="wengine-grid">
+    {
+      data.wengines.map((wengine) => (
+        <article
+          class={`wengine-entry rarity-${wengine.rarity}`}
+          data-wengine-card
+          data-id={wengine.id}
+          data-name={wengine.name}
+          data-rarity={wengine.rarity}
+          data-source={wengine.source}
+          data-substat={wengine.substat}
+          data-type={wengine.type}
+          data-version-released={wengine.versionReleased}
+        >
+          <header class="wengine-entry-header">
+            <div class="wengine-entry-title">
+              <div
+                class={`wengine-entry-image${wengine.image ? '' : ' is-empty'}`}
+              >
+                {wengine.image ? (
+                  <img
+                    src={wengine.image}
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    width={72}
+                    height={72}
+                    referrerpolicy="no-referrer"
+                  />
+                ) : (
+                  <span class="image-placeholder" aria-hidden="true">
+                    {wengine.name.charAt(0)}
+                  </span>
+                )}
+              </div>
+              <div>
+                <h2>{wengine.name}</h2>
+                <p>{wengine.typeLabel}</p>
+              </div>
+            </div>
+            <span class="wengine-entry-rarity">
+              {rankLabel(wengine.rarity)}
+            </span>
+          </header>
+
+          <table class="wengine-stat-table">
+            <thead>
+              <tr>
+                <th>{statLabel}</th>
+                <th>{maxLevelLabel}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">{wengine.baseStat === 'def' ? baseDefLabel : baseAttackLabel}</th>
+                <td>{wengine.levelMaxBaseAttack || '-'}</td>
+              </tr>
+              {wengine.substatName && (
+                <tr>
+                  <th scope="row">{wengine.substatName}</th>
+                  <td>{wengine.levelMaxSubstat || '-'}</td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+
+          {wengine.passivePanels.length > 0 && (
+            <section
+              class="wengine-entry-passive"
+              aria-label={`${wengine.name} ${descriptionLabel}`}
+            >
+              <div class="wengine-entry-section-header">
+                <h3>{descriptionLabel}</h3>
+                <div class="wengine-refinement-buttons">
+                  {wengine.passivePanels.map((panel) => (
+                    <button
+                      class="wengine-refinement-button"
+                      type="button"
+                      data-wengine-refinement={`r${panel.refinement}`}
+                      aria-pressed={panel.refinement === 1 ? 'true' : 'false'}
+                    >
+                      S{panel.refinement}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <div class="wengine-passive-copy">
+                {wengine.passivePanels.map((panel) => (
+                  <div
+                    data-wengine-refinement-panel={`r${panel.refinement}`}
+                    hidden={panel.refinement !== 1}
+                    set:html={panel.html}
+                  />
+                ))}
+              </div>
+            </section>
+          )}
+
+          <section
+            class="wengine-ranking-usage"
+            aria-label={`${wengine.name} ${rankedOnLabel}`}
+          >
+            <h3>{rankedOnLabel}</h3>
+            {wengine.rankingUsage.length > 0 ? (
+              <div class="wengine-ranking-list">
+                {wengine.rankingUsage.map((usage) => (
+                  <a
+                    class={`wengine-ranking-chip character-rarity-${usage.characterRarity}${usage.isWip ? ' is-wip' : ''}`}
+                    href={usage.href}
+                  >
+                    <strong class="usage-rank-number">
+                      {usage.isWip ? 'WIP' : usage.rank}
+                    </strong>
+                    <span class="wengine-ranking-character">
+                      {usage.characterName}
+                    </span>
+                  </a>
+                ))}
+              </div>
+            ) : (
+              <p class="wengine-ranking-empty">{noRankingMentionsLabel}</p>
+            )}
+          </section>
+
+          <footer class="wengine-entry-footer">
+            <span>{sourceLabel}</span>
+            <strong>{wengine.sourceName}</strong>
+          </footer>
+        </article>
+      ))
+    }
+  </div>
+
+  <p class="wengine-empty" data-wengine-empty hidden>{noResultsLabel}</p>
+</section>
+
+<script>
+  import '../scripts/card-filters';
+</script>

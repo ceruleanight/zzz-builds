@@ -1,0 +1,37 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "timeweaver",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 118.41% at S5. At S1: about 100%."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "weeping-gemini",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 99.22% at S5."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "electro-lip-gloss",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 96.19% at S5."
+                    }
+                }
+            ]
+        }
+    ]
+}

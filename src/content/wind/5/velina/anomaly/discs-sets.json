@@ -1,0 +1,47 @@
+{
+    "disc_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "wuthering-salon",
+                            "pieces": 4,
+                            "note": {
+                                "en": "Made specifically for her, and far ahead of any alternative."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "two_piece_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "swing-jazz",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Prydwen's recommended 2-piece pair."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "moonlight-lullaby",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Prydwen's recommended 2-piece pair."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

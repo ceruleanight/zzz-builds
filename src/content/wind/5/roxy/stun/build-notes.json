@@ -1,0 +1,17 @@
+{
+    "name": {
+        "en": "Stun"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "Target stats at level 60: ATK 2,200 to 2,500+, HP 9,500+, DEF 750+, CRIT Rate 74.6% to 100% (76% is needed to max her CRIT RATE with Signature W-Engine), CRIT DMG 70% to 100%+, Energy Regen 2.88+ (3.12 needed to max her Impact, but this needs 2x 2-piece ER set effects)."
+        },
+        {
+            "en": "Partners Prydwen lists for this agent (each group is one entry in its synergy list): [[character:sigrid]]; [[character:pyrois]]; [[character:claret]]; [[character:sunna]], [[character:rina]], [[character:lucia]]."
+        },
+        {
+            "en": "The W-Engine ranking was calculated with [[character:claret]] (Crimson Thirst) and [[character:rina]] (Weeping Cradle) as teammates. Percentages are relative to the first-listed W-Engine at the refinement Prydwen marks as 100%."
+        }
+    ]
+}

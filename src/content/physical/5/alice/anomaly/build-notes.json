@@ -1,0 +1,26 @@
+{
+    "name": {
+        "en": "Anomaly"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "[[character:alice]] gets more Blade Etiquette and much bigger Assault damage from Disorders, so she wants Anomaly partners that apply Anomalies in quick bursts for her to Disorder."
+        },
+        {
+            "en": "Target stats at level 60: ATK 2,600 to 2,900+, HP 9,500+, DEF 750+, Anomaly Proficiency 330 to 420+ and Anomaly Mastery 184+. Her signature adds another 60 Anomaly Mastery in combat."
+        },
+        {
+            "en": "Secondary Anomaly DPS partners: [[character:vivian]], [[character:yanagi]], [[character:burnice]] and [[character:grace]]. [[character:vivian]] is the strongest because she deals great damage while applying a lot of Anomaly."
+        },
+        {
+            "en": "[[character:yuzuha]] is the ultimate Anomaly buffer and the best partner. She buffs damage, speeds up Anomaly Buildup and adds Physical Anomaly Application."
+        },
+        {
+            "en": "Generalist supports that fit any team: [[character:astra-yao]] (Quick Assists, Chain Attacks, healing and buffs), [[character:nicole]] (DEF shred) and [[character:lucy]] (long-lasting ATK buffs)."
+        },
+        {
+            "en": "The W-Engine ranking was calculated with [[character:vivian]] (Weeping Cradle) and [[character:yuzuha]] (Kaboom the Cannon) as teammates. Percentages are damage output relative to her signature."
+        }
+    ]
+}

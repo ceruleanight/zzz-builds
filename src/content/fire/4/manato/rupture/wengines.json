@@ -1,0 +1,59 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "grill-owisp",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 100% at S5. At S1: about 89.77%."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "wrathful-vajra",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 96.15% at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "qingming-birdcage",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 91.02% at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "radiowave-journey",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 85.27% at S5."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "puzzle-sphere",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 81.77% at S5."
+                    }
+                }
+            ]
+        }
+    ]
+}

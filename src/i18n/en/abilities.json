@@ -1,0 +1,8 @@
+{
+    "core": "Core Skill",
+    "basic": "Basic Attack",
+    "special": "EX Special Attack",
+    "chain": "Chain Attack / Ultimate",
+    "dodge": "Dodge",
+    "assist": "Assist"
+}

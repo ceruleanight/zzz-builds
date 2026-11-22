@@ -1,0 +1,16 @@
+{
+    "substats_priority": [
+        "ap",
+        "atk%",
+        {
+            "items": [
+                {
+                    "name": "pen-flat"
+                },
+                {
+                    "name": "atk"
+                }
+            ]
+        }
+    ]
+}

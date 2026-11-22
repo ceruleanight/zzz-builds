@@ -1,0 +1,98 @@
+{
+    "disc_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "fanged-metal",
+                            "pieces": 4,
+                            "note": {
+                                "en": "Best for direct Physical Anomaly damage. The 2-piece gives 10% Physical DMG, and the 4-piece adds 35% damage against enemies hit by any squad member's Assault for 12 seconds, which a Physical teammate or Bangboo can help keep up."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "hormone-punk",
+                            "pieces": 4,
+                            "note": {
+                                "en": "About 89%. Big highs and lows depending on the encounter and team. She is on-field a lot of the time, which does not suit its high damage and low uptime, so [[set:fanged-metal]] is the better choice, but it works if you lack that set."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "two_piece_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "phaethons-melody",
+                            "pieces": 2,
+                            "note": {
+                                "en": "The recommended 2-piece with both 4-piece sets."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "puffer-electro",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "freedom-blues",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "chaos-jazz",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "astral-voice",
+                            "pieces": 2
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "fanged-metal",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Only listed as a 2-piece with [[set:hormone-punk]]."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

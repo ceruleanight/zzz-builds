@@ -1,0 +1,29 @@
+{
+    "name": {
+        "en": "Rupture DPS"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "[[character:yixuan]] deals Sheer DMG, which ignores enemy DEF, so PEN and PEN Ratio do nothing for her. She scales from HP, CRIT Rate and CRIT DMG, and deals most of her damage during Stun."
+        },
+        {
+            "en": "Target stats at level 60: Sheer Force 2,100 to 2,400, ATK 1,800 to 2,000+, HP 16,000 to 18,000+, DEF 600+, CRIT Rate 80 to 90% (including the disc bonus) and CRIT DMG 140 to 160%."
+        },
+        {
+            "en": "[[character:lucia]] is by far the best partner. She is the dedicated Rupture support with a huge amount of Sheer Force, extra max HP, CRIT DMG and DMG%, and better Decibel generation and Daze than [[character:astra-yao]] or [[character:pan-yinhu]]."
+        },
+        {
+            "en": "[[character:pan-yinhu]] is the natural partner, and with Yixuan he is the best way to buff her damage besides [[character:ju-fufu]]. [[character:dialyn]] is her ideal partner, because three Ultimates in one Stun (two from Decibels, one from a Technique Point) is very valuable."
+        },
+        {
+            "en": "[[character:ju-fufu]] is the runner-up. Her Decibel refund guarantees Ultimates every Stun, and she adds Ultimate, Chain Attack and CRIT DMG buffs and off-field Daze. [[character:trigger]], [[character:qingyi]] and [[character:pulchra]] (a decent A-rank option, better at M6) also work."
+        },
+        {
+            "en": "[[character:astra-yao]] and [[character:yuzuha]] are the best generalist supports. Together with Pan Yinhu they make some of her best teams."
+        },
+        {
+            "en": "The W-Engine ranking was calculated with [[character:ju-fufu]] (Roaring Fur-nace) and [[character:lucia]] (Dreamlit Hearth) as teammates. Percentages are relative to her signature."
+        }
+    ]
+}

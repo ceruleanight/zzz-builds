@@ -1,0 +1,14 @@
+{
+    "name": {
+        "en": "Support"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "Target stats at level 60: ATK 2,000 to 2,600+ (Optional), HP 10,500+, DEF 800+, Anomaly Proficiency 200 to 300 (Optional), PEN Ratio 38% to 72% (72% Grants full 30% team buff at Core Passive 6)."
+        },
+        {
+            "en": "Partners Prydwen lists for this agent (each group is one entry in its synergy list): [[character:yanagi]], [[character:jane-doe]]; [[character:harumasa]]."
+        }
+    ]
+}

@@ -1,0 +1,103 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "heartstring-nocturne",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 106% of The Brimstone. A great stat stick for most agents, with a tremendous amount of unconditional CRIT Rate and CRIT DMG."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "zanshin-herb-case",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 103%. A solid generic option with close to permanent 20% CRIT Rate, always-active 45% CRIT DMG and high Base ATK."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "the-brimstone",
+                    "refinement": 1,
+                    "note": {
+                        "en": "The reference option. Soldier 11's signature suits agents that use many Basic Attacks. Each stack has its own duration and only one can be gained every 0.5 seconds, so it needs constant Basic Attacks to stay at max stacks."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "street-superstar",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 93%. A decent but niche free-to-play option. Against bosses you can guarantee 3 Chain Attacks every Stun, which effectively gives 72% Ultimate damage."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "starlight-engine",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 93%. A solid all-round free-to-play option for Attack agents. It gives 25% unconditional Basic ATK and a further 19.2% Combat ATK at S5 for 12 seconds after a Dodge Counter or Quick Assist."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "marcato-desire",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 91%. A reasonable option for CRIT agents in teams that apply Anomalies semi-consistently."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "cannon-rotor",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 90%. The Battle Pass W-Engine is very consistent but often weaker than the alternatives. Its on-CRIT damage is Physical and cannot CRIT, so non-Physical agents lose their elemental DMG% boosts on it."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "gilded-blossom",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 87%. A weaker alternative to [[wengine:starlight-engine]] that gives ATK% and boosts EX Special damage. Only use it if you lack better W-Engines."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "drill-rig-red-axis",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 87%. His signature is built around his kit and also works on other Electric agents focused on Electric Basic burst damage. If you do not need its Energy Regen on him, its value drops sharply."
+                    }
+                }
+            ]
+        }
+    ]
+}

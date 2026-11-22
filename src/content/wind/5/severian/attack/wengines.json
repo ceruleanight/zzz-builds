@@ -1,0 +1,70 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "incarcerating-grip",
+                    "refinement": 1,
+                    "note": {
+                        "en": "His signature has 44% CRIT Rate in total, which is quite important. Even with it he can struggle to max out his Additional Ability's ATK bonus without plenty of substats or a 2-piece CRIT Rate set. It also gives a decent amount of ATK and Wind RES ignore. S5 is about 114% of S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "cordis-germina",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 89%. Seed's signature is the runner-up. It has plenty of CRIT Rate and DEF ignore on Basic Attacks and Ultimates, the two most damaging skill types in his kit. It makes PEN Ratio worth less, but can still be worth running."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "heartstring-nocturne",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 85%. Evelyn's signature is a decent stat stick with a CRIT Rate main stat and some CRIT DMG. It demands a lot of CRIT Rate substats, but it is workable."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "sol-exuvia",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 83%. The free-to-play pick, with unconditional CRIT Rate and some ATK on an S-rank Base ATK. It has less CRIT than other limited S-ranks, but it is accessible."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "the-brimstone",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 77% at S5 (about 73% at S1). His Basic Attacks have long multi-hits, so uptime out of Stun is great, but his long Ultimate animation and back-to-back Chain Attacks in Stun let stacks drop when it matters most. The lack of CRIT Rate also lowers its value a lot."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "starlight-engine",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 72%. The craftable free-to-play option, but it performs very poorly because it has no CRIT Rate and low Base ATK. Use it only until [[wengine:sol-exuvia]] can be acquired."
+                    }
+                }
+            ]
+        }
+    ]
+}

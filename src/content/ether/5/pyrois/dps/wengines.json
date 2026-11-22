@@ -1,0 +1,26 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "sol-exuvia",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 104.44% damage and 103.77% Daze at S5. At S1: about 100% damage and 100% Daze."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "cordis-germina",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 91.63% damage and 100.3% Daze at S1."
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": {
+        "en": "DPS"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "Target stats at level 60: ATK 3,000 to 3,400+, HP 9,500+, DEF 750+, CRIT Rate 33.8% (any more and she’ll overcap due to the 66% from her Core Passive!), CRIT DMG 150% to 210%+ (W-Engine mainstat and D4 picks can give it a large range)."
+        },
+        {
+            "en": "Partners Prydwen lists for this agent (each group is one entry in its synergy list): [[character:norma]], [[character:dialyn]], [[character:lycaon]]; [[character:sunna]], [[character:rina]], [[character:astra-yao]]; [[character:lighter]], [[character:ju-fufu]]."
+        },
+        {
+            "en": "The W-Engine ranking was calculated with [[character:norma]] (Chief Sidekick) and [[character:sunna]] (Thoughtbop) as teammates. Percentages are relative to the first-listed W-Engine at the refinement Prydwen marks as 100%."
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "disc_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "thunder-metal",
+                            "pieces": 4,
+                            "note": {
+                                "en": "A competitive option for direct and Anomaly-based Electric damage dealers. The 2-piece gives 10% Electric DMG, and the 4-piece gives 28% Combat ATK as long as any enemy is Shocked. Shock lasts 10 seconds, so the bonus has a long duration."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "puffer-electro",
+                            "pieces": 4,
+                            "note": {
+                                "en": "About 89%. A top option for burst agents who deal most of their damage in a short window after their Ultimate. It gives 8% PEN Ratio, then 15% Combat ATK for 12 seconds and 20% Ultimate DMG after an Ultimate."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "woodpecker-electro",
+                            "pieces": 4,
+                            "note": {
+                                "en": "About 86%. A great option for direct damage dealers that use Basic Attacks and EX Specials often. It has ramp-up time and falls off without Energy for EX Specials, so it suits cheap EX Specials, frequent Dodge Counters or concentrated burst windows."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "two_piece_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "woodpecker-electro",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended with [[set:thunder-metal]] and [[set:puffer-electro]]."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "puffer-electro",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended with [[set:woodpecker-electro]]."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "hormone-punk",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "thunder-metal",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

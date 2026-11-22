@@ -1,0 +1,26 @@
+{
+    "name": {
+        "en": "Anomaly Build"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "[[character:astra-yao]] needs about 3,430 ATK to get the full team-wide buff from her Core Skill. Reaching that ATK breakpoint with your set bonus, main stats, substats and W-Engine is the most important thing to do with her."
+        },
+        {
+            "en": "Target stats at level 60: ATK 3,430+, HP 10,500+, DEF 800+ and Energy Regen 0 to 130% (depends on your 2-piece set, Disc 6 and W-Engine). More Energy Regen is the same as more free Quick Assists, so pick it up whenever it does not stop you reaching the ATK goal."
+        },
+        {
+            "en": "After those goals, stack either CRIT or Anomaly Proficiency, but not both. Any amount of either helps."
+        },
+        {
+            "en": "She takes almost no field time: swap her in at the start to use her Special, use her for Quick Assists and spend her Ultimate in Stun windows. DPS agents that need a lot of field time benefit most, such as [[character:miyabi]], [[character:yanagi]], [[character:jane-doe]] and [[character:burnice]]."
+        },
+        {
+            "en": "[[character:evelyn]] is a particularly good partner, because her Ultimate turns the next 2 Quick Assists into Chain Attacks. Other strong attacker partners include [[character:ye-shunguang]], [[character:soldier-0-anby]], [[character:seed]], [[character:soldier-11]], [[character:zhu-yuan]] and [[character:nekomata]]."
+        },
+        {
+            "en": "Double Support teams with [[character:nicole]] or [[character:trigger]] work especially well, since both take very little field time. On some DPS agents it is their best team by far."
+        }
+    ]
+}

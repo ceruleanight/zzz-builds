@@ -1,0 +1,67 @@
+{
+    "disc_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "bunny-in-wonderland",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "astral-voice",
+                            "pieces": 4
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "two_piece_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "yunkui-tales",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended with [[set:bunny-in-wonderland]]."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "moonlight-lullaby",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended with [[set:astral-voice]]."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "swing-jazz",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended with [[set:astral-voice]]."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

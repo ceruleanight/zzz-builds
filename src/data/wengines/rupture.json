@@ -1,0 +1,261 @@
+{
+    "krakens-cradle": {
+        "rarity": 5,
+        "passive": {
+            "en": "Heartfelt Caress: When the equipper's HP decreases, their Ice Sheer DMG increases by {{value}}%, stacking up to 3 times and lasting 25s. The duration of each stack is calculated separately. This effect can trigger once every 0.5s. When the equipper's HP falls to 50% of Max HP or below, CRIT Rate increases by {{value}}%."
+        },
+        "r1": [
+            6,
+            20
+        ],
+        "r2": [
+            7,
+            23
+        ],
+        "r3": [
+            8,
+            26
+        ],
+        "r4": [
+            9,
+            29
+        ],
+        "r5": [
+            10,
+            32
+        ],
+        "substat": "hp%",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "30%"
+        }
+    },
+    "qingming-birdcage": {
+        "rarity": 5,
+        "passive": {
+            "en": "Cloud Flow: CRIT Rate increases by {{value}}%. When the equipper launches an EX Special Attack, the character gains the Qingming Companion effect, stacking up to 2 times and lasting 15s. On entering combat, immediately gain 2 stacks. Repeated triggers reset the duration. Each stack of the Qingming Companion effect increases the equipper's Ether DMG by {{value}}%, and increases Ultimate and EX Special Attack Ether Sheer DMG by {{value}}%."
+        },
+        "r1": [
+            20,
+            8,
+            10
+        ],
+        "r2": [
+            23,
+            9.2,
+            11.5
+        ],
+        "r3": [
+            26,
+            10.4,
+            13
+        ],
+        "r4": [
+            29,
+            11.6,
+            14.5
+        ],
+        "r5": [
+            32,
+            12.8,
+            16
+        ],
+        "substat": "hp%",
+        "level_max": {
+            "base_attack": 743,
+            "substat_value": "30%"
+        }
+    },
+    "starlight-rider-faceplate": {
+        "rarity": 5,
+        "passive": {
+            "en": "Knight's Morale: Increases CRIT Rate by 20%. When the equipper launches a Special Attack, their Physical Sheer DMG increases by 10%, stacking up to 2 times and lasting 30s. Repeated triggers reset the duration."
+        },
+        "r1": [],
+        "r2": [],
+        "r3": [],
+        "r4": [],
+        "r5": [],
+        "substat": "hp%",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "30%"
+        }
+    },
+    "wrathful-vajra": {
+        "rarity": 5,
+        "passive": {
+            "en": "Purging Karmic Fire: CRIT Rate increases by {{value}}%. When the equipper launches an EX Special Attack, their Fire Sheer DMG increases by {{value}}%, stacking up to 2 times and lasting 20s. The duration of each stack is calculated separately."
+        },
+        "r1": [
+            20,
+            9
+        ],
+        "r2": [
+            23,
+            10.35
+        ],
+        "r3": [
+            26,
+            11.7
+        ],
+        "r4": [
+            29,
+            13.05
+        ],
+        "r5": [
+            32,
+            14.4
+        ],
+        "substat": "hp%",
+        "level_max": {
+            "base_attack": 713,
+            "substat_value": "30%"
+        }
+    },
+    "cauldron-of-clarity": {
+        "rarity": 4,
+        "passive": {
+            "en": "Summoning Arcanum: When the equipper activates an EX Special Attack, they gain 1 stack of a buff. Each stack increases the equipper's DMG by {{value}}%, up to 3 stacks, and lasting 20s. This effect can trigger once every 0.5s, and repeated triggers reset the duration. At 3 stacks, the equipper's CRIT Rate increases by {{value}}%."
+        },
+        "r1": [
+            4,
+            6.5
+        ],
+        "r2": [
+            4.6,
+            7.5
+        ],
+        "r3": [
+            5.2,
+            8.5
+        ],
+        "r4": [
+            5.8,
+            9.4
+        ],
+        "r5": [
+            6.4,
+            10.4
+        ],
+        "substat": "hp%",
+        "level_max": {
+            "base_attack": 594,
+            "substat_value": "25%"
+        }
+    },
+    "grill-owisp": {
+        "rarity": 4,
+        "passive": {
+            "en": "Caged Fire: The equipper's Fire DMG increases by {{value}}%. When the equipper's HP decreases, their CRIT Rate increases by {{value}}% for 5s."
+        },
+        "r1": [
+            15,
+            15
+        ],
+        "r2": [
+            17.25,
+            17.25
+        ],
+        "r3": [
+            19.5,
+            19.5
+        ],
+        "r4": [
+            21.75,
+            21.75
+        ],
+        "r5": [
+            24,
+            24
+        ],
+        "substat": "hp%",
+        "level_max": {
+            "base_attack": 624,
+            "substat_value": "25%"
+        }
+    },
+    "puzzle-sphere": {
+        "rarity": 4,
+        "passive": {
+            "en": "Ingenious Craft: Upon launching an EX Special Attack, the equipper's CRIT DMG increases by {{value}}% for 12s. Additionally, if the target's current HP is below 50% of their Max HP, EX Special Attack DMG increases by {{value}}%."
+        },
+        "r1": [
+            16,
+            20
+        ],
+        "r2": [
+            18.4,
+            23
+        ],
+        "r3": [
+            20.8,
+            26
+        ],
+        "r4": [
+            23.2,
+            29
+        ],
+        "r5": [
+            25.6,
+            32
+        ],
+        "substat": "atk%",
+        "level_max": {
+            "base_attack": 594,
+            "substat_value": "25%"
+        }
+    },
+    "radiowave-journey": {
+        "rarity": 4,
+        "passive": {
+            "en": "Easy Strides: When launching a Chain Attack or Ultimate, the equipper gains 1 stack of a buff effect. Each stack increases the equipper's Sheer Force by {{value}}, stacking up to 3 times, and lasting 12s. The duration of each stack is calculated separately."
+        },
+        "r1": [
+            80
+        ],
+        "r2": [
+            92
+        ],
+        "r3": [
+            104
+        ],
+        "r4": [
+            116
+        ],
+        "r5": [
+            128
+        ],
+        "substat": "hp%",
+        "level_max": {
+            "base_attack": 594,
+            "substat_value": "25%"
+        }
+    },
+    "cinder-cobalt": {
+        "rarity": 3,
+        "passive": {
+            "en": "Dim Flame: Upon entering combat or switching in, the equipper's ATK increases by {{value}}% for 10s. This effect can trigger once every 20s."
+        },
+        "r1": [
+            7.2
+        ],
+        "r2": [
+            8.2
+        ],
+        "r3": [
+            9.3
+        ],
+        "r4": [
+            10.4
+        ],
+        "r5": [
+            11.5
+        ],
+        "substat": "hp%",
+        "level_max": {
+            "base_attack": 475,
+            "substat_value": "20%"
+        }
+    }
+}

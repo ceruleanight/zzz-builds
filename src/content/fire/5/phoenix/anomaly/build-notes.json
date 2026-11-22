@@ -1,0 +1,29 @@
+{
+    "name": {
+        "en": "Anomaly"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "[[character:phoenix]] is an Anomaly driver for Vortex teams. Her Core Passive gives every squad member's Anomaly hits a chance to critically hit against Sear enemies. This applies to Vortex but not to Disorder, so a Wind Anomaly agent is close to mandatory."
+        },
+        {
+            "en": "Her own CRIT DMG does not apply to Disorders, so build around the number of Vortexes. Avoid over-capping Anomaly buildup, since the excess is wasted triggers. Reaching 255 [[stat:am]] caps the extra CRIT Rate from her Sear effect."
+        },
+        {
+            "en": "Target stats at level 60: ATK 2,400 to 2,600+, HP 9,500+, DEF 750+, Anomaly Proficiency 330 to 420+ and Anomaly Mastery 255."
+        },
+        {
+            "en": "[[character:velina]] is the top partner, because Wind Vortexes are what her CRIT passive boosts most. Without Velina, Phoenix's damage drops sharply."
+        },
+        {
+            "en": "[[character:remielle]] pairs well because Luminize counts as Anomaly DMG, so Phoenix's CRIT passive applies in full. Phoenix also generates the Voidflares that keep Remielle's burst going. Phoenix is at her best with Velina and Remielle together."
+        },
+        {
+            "en": "[[character:yuzuha]] is a competitive partner as long as Velina is in the team. Her buffs and Aftershocks give a lot of Anomaly buildup, which loops more Vortexes."
+        },
+        {
+            "en": "The W-Engine ranking was calculated with [[character:velina]] (Joyau Dore) and [[character:remielle]] (Ode of Resurrected Wings) as teammates. Percentages are relative to Plume of Rebirth at S1, and utility can matter more than the number."
+        }
+    ]
+}

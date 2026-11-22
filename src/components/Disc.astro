@@ -1,0 +1,164 @@
+---
+import DiscSetGroup from './DiscSetGroup.astro';
+import RowNoteAction from './RowNoteAction.astro';
+import { t } from '../utils/i18n';
+
+type DiscSetItem = {
+  name: string;
+  pieces: number;
+  note?: string;
+  noteId?: string;
+};
+
+type DiscSetGroupData = {
+  items?: DiscSetItem[];
+  choose?: boolean;
+  choices?: { items: DiscSetItem[] }[];
+};
+
+type DiscSetRank = {
+  groups: DiscSetGroupData[];
+};
+
+type DiscRecommendations = {
+  sets: {
+    disc_sets?: DiscSetRank[];
+    conditional?: DiscSetGroupData[];
+    two_piece_sets?: DiscSetRank[];
+    two_piece_conditional?: DiscSetGroupData[];
+  };
+};
+
+const {
+  discs,
+  locale,
+  lang = 'en',
+} = Astro.props as {
+  discs: DiscRecommendations;
+  locale: any;
+  lang?: string;
+};
+
+// Drive Disc recommendations are two independent rankings: the 4-piece set
+// and the 2-piece set that fills the other two slots.
+const sections = [
+  {
+    key: 'four',
+    title: t(locale, 'ui', '4-Piece Sets'),
+    ranks: discs.sets.disc_sets ?? [],
+    conditional: discs.sets.conditional ?? [],
+  },
+  {
+    key: 'two',
+    title: t(locale, 'ui', '2-Piece Sets'),
+    ranks: discs.sets.two_piece_sets ?? [],
+    conditional: discs.sets.two_piece_conditional ?? [],
+  },
+].filter((section) => section.ranks.length > 0 || section.conditional.length > 0);
+
+const hasNoteMarker = (item: DiscSetItem) => Boolean(item.noteId || item.note);
+const getGroupNoteItems = (group: DiscSetGroupData) =>
+  [
+    ...(group.items ?? []),
+    ...(group.choices ?? []).flatMap((choice) => choice.items),
+  ].filter(hasNoteMarker);
+---
+
+<div class="card recommendation-card disc-card disc-sets-card">
+  <h2>{t(locale, 'ui', 'Discs Sets', undefined, false)}</h2>
+
+  <div class="recommendation-card-body">
+    {
+      sections.map((section) => (
+        <div class="section recommendation-section">
+          <h3>{section.title}</h3>
+
+          <div class="rank-list">
+            {section.ranks.map((rank: DiscSetRank, i: number) => {
+              const [mainGroup, ...alternativeGroups] = rank.groups;
+              const mainGroupNoteItems = mainGroup
+                ? getGroupNoteItems(mainGroup)
+                : [];
+
+              return (
+                <div class="rank-group">
+                  {mainGroup && (
+                    <div
+                      class={`rank-row${mainGroupNoteItems.length > 0 ? ' has-row-note' : ''}`}
+                    >
+                      <strong class="rank-number">{i + 1}</strong>
+                      <div class="rank-content disc-set-content">
+                        <DiscSetGroup
+                          group={mainGroup}
+                          locale={locale}
+                          lang={lang}
+                        />
+                      </div>
+                      {mainGroupNoteItems.length > 0 && (
+                        <RowNoteAction items={mainGroupNoteItems} />
+                      )}
+                    </div>
+                  )}
+
+                  {alternativeGroups.map((group) => {
+                    const noteItems = getGroupNoteItems(group);
+
+                    return (
+                      <div
+                        class={`rank-row alt${noteItems.length > 0 ? ' has-row-note' : ''}`}
+                      >
+                        <span class="rank-approx">&asymp;</span>
+                        <div class="rank-content disc-set-content">
+                          <DiscSetGroup
+                            group={group}
+                            locale={locale}
+                            lang={lang}
+                          />
+                        </div>
+                        {noteItems.length > 0 && (
+                          <RowNoteAction items={noteItems} />
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              );
+            })}
+          </div>
+
+          {section.conditional.length > 0 && (
+            <div class="conditional-list">
+              <div class="conditional-heading">
+                {t(locale, 'ui', 'Conditional (See Notes):')}
+              </div>
+
+              <div class="rank-list">
+                {section.conditional.map((group: DiscSetGroupData) => {
+                  const noteItems = getGroupNoteItems(group);
+
+                  return (
+                    <div
+                      class={`rank-row conditional-row${noteItems.length > 0 ? ' has-row-note' : ''}`}
+                    >
+                      <span class="rank-marker" aria-hidden="true" />
+                      <div class="rank-content disc-set-content">
+                        <DiscSetGroup
+                          group={group}
+                          locale={locale}
+                          lang={lang}
+                        />
+                      </div>
+                      {noteItems.length > 0 && (
+                        <RowNoteAction items={noteItems} />
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+        </div>
+      ))
+    }
+  </div>
+</div>

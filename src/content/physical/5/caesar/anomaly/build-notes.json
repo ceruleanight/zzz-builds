@@ -1,0 +1,23 @@
+{
+    "name": {
+        "en": "Anomaly Build"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "[[character:caesar]] needs Impact most of all (145 to 170+). The rest of her stats are optional, and she picks either an Anomaly Proficiency or a CRIT profile based on the team she supports."
+        },
+        {
+            "en": "Target stats at level 60: ATK 1,400 to 2,000+ (optional), HP 12,000+, DEF 1,000+ and Impact 145 to 170+. Then choose one: Anomaly Proficiency 250 to 330+ with Anomaly Mastery 87+, or CRIT Rate 50 to 60%+ with CRIT DMG 100 to 120%+."
+        },
+        {
+            "en": "She has a special synergy with [[character:soldier-0-anby]], because she takes little field time and provides extra Daze, buffs and a DMG% mark in a short time. [[character:soldier-0-anby]] wants to spend a lot of time on the field."
+        },
+        {
+            "en": "[[character:corin]] and [[character:billy]] both benefit from the Daze she applies on top of her buffs and debuffs, and she lets them activate their Additional Abilities, which is sometimes complicated otherwise. Her extra survivability also helps them."
+        },
+        {
+            "en": "[[character:astra-yao]], [[character:trigger]], [[character:nicole]] and [[character:lucy]] are generalist units that can serve as Support or Stun in almost any team. Astra Yao is usually the overall best Support."
+        }
+    ]
+}

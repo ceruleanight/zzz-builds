@@ -1,0 +1,70 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "cordis-germina",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 103% damage and 101% Daze. Seed's signature is one of the better choices thanks to its high CRIT Rate and 20% DEF ignore on Basic Attacks and Ultimates at max stacks. This is especially true with other DEF shred sources such as [[character:trigger]]."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "heartstring-nocturne",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 100% damage and 102% Daze. Evelyn's signature is the best CRIT stat stick for all Attack agents, with a massive amount of CRIT Rate and CRIT DMG."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "steel-cushion",
+                    "refinement": 1,
+                    "note": {
+                        "en": "The reference option (100%). A strong permanent option, particularly for Corin, who takes good advantage of its CRIT Rate and Physical DMG stats. With its back-attack DMG bonus it can even outperform Heartstring Nocturne."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "myriad-eclipse",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 99% damage and 100% Daze. Hugo's signature is a fairly good stat stick. Much like Heartstring Nocturne it has a hefty amount of CRIT Rate and CRIT DMG, just 5% CRIT DMG behind."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "housekeeper",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 87% damage and 82% Daze. Her own signature is fine to use. The Physical DMG it gives from EX Specials does not last long enough to apply to anything else, but a fair amount of her burst comes from it. The Energy Regen bonus does little outside of that."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "starlight-engine",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 85% damage and 91% Daze. A solid all-round free-to-play option for Attack agents that gives 25% unconditional Basic ATK and a further 19.2% Combat ATK at S5 for 12 seconds after a Dodge Counter or Quick Assist."
+                    }
+                }
+            ]
+        }
+    ]
+}

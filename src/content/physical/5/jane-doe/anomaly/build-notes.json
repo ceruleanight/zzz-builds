@@ -1,0 +1,26 @@
+{
+    "name": {
+        "en": "Anomaly"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "[[character:jane-doe]] is the greedy on-field Anomaly DPS who relies on Perfect Dodges to sustain Passion State and her signature's stacks. Her Core Passive allows all Assaults to CRIT, so her CRIT stats do not matter."
+        },
+        {
+            "en": "Target stats at level 60: ATK 2,300 to 2,800+, HP 9,000 to 10,000+, DEF 800+, Anomaly Proficiency 375 to 420+ (in combat; 420 is required to cap the 600 flat Combat ATK in Passion State) and Anomaly Mastery 192+."
+        },
+        {
+            "en": "[[character:velina]] is an ideal match: Jane's Core Passive lets Assault DMG crit, and Vortex counts as Assault DMG, so it can crit too. That makes Velina a far better partner than previous agents such as [[character:alice]] or [[character:nangong-yu]]. [[character:remielle]] also works."
+        },
+        {
+            "en": "With [[character:alice]], Jane takes a step back and functions as a support instead, which makes a surprisingly strong team. [[character:burnice]] and [[character:vivian]] are very good Anomaly sub-DPS pairings."
+        },
+        {
+            "en": "[[character:yuzuha]] makes up for Jane's Anomaly build-up struggles when she lacks Energy for EX Specials or on non-aggressive enemies. Generalist supports such as [[character:astra-yao]], [[character:trigger]], [[character:lucy]] and [[character:nicole]] are all fine; Astra's CRIT DMG buffs do little for Jane."
+        },
+        {
+            "en": "The W-Engine ranking was calculated with [[character:velina]] (Joyau Dore) and [[character:yuzuha]] (Metanukimorphosis). Percentages are relative to her signature at S1."
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "disc_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "freedom-blues",
+                            "pieces": 4,
+                            "note": {
+                                "en": "The go-to pick for Wind Anomaly teams such as with [[character:velina]]. Vortexes are strong enough that pushing for more of them beats slight damage increases, and her high Energy Regen keeps the 4-piece effect up easily."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "chaos-jazz",
+                            "pieces": 4,
+                            "note": {
+                                "en": "The best general set for Disorder teams. She usually plays off-field, so it is almost always up, and its lingering effect covers most of her Anomaly application even when she is on-field, such as for Chain Attacks in Stun."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "two_piece_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "swing-jazz",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Prydwen's recommended 2-piece pair."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "moonlight-lullaby",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Prydwen's recommended 2-piece pair."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

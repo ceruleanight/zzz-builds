@@ -1,0 +1,48 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "yesterday-calls",
+                    "refinement": 1,
+                    "note": {
+                        "en": "Her signature is the best option by a long shot. It gives up to 27% Daze instead of Impact, so it scales well with her, and 30% CRIT DMG, the equivalent of Lighter's signature but for all damage types. It gives the most value in the 1.5 times Stun window."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "hellfire-gears",
+                    "refinement": 1,
+                    "note": {
+                        "en": "Arguably the second best option. Its off-field Energy Regen is similar to her signature's, if lower, and is enough for the Positive Reviews she needs to convert her Ultimate in every Stun for most teams."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "steam-oven",
+                    "refinement": 5,
+                    "note": {
+                        "en": "She is very Energy hungry, so its Energy Regen goes a long way. It is not ideal, because she wants to use EX Specials often for Daze, so staying at the high Energy levels needed for its Impact bonuses is hard."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "precious-fossilized-core",
+                    "refinement": 5,
+                    "note": {
+                        "en": "It gives Daze instead of Impact, so it is viable if quick Stuns are needed and scales well with her Core Passive's flat Impact bonuses. The complete lack of Energy Regen hurts its value."
+                    }
+                }
+            ]
+        }
+    ]
+}

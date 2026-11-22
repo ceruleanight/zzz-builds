@@ -1,0 +1,48 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "knights-extolment",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 116.85% at S5. At S1: about 100%."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "the-brimstone",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 89.96% at S5. At S1: about 80.03%."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "severed-innocence",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 82.87% at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "starlight-engine",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 73.69% at S5."
+                    }
+                }
+            ]
+        }
+    ]
+}

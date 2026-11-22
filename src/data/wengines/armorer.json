@@ -1,0 +1,163 @@
+{
+    "crimson-thirst": {
+        "rarity": 5,
+        "passive": {
+            "en": "Bloodthirst: The equipper's CRIT Rate increases by {{value}}%, and Electric DMG increases by {{value}}%. When the equipper uses an EX Special Attack or triggers Maim, Electric Sharp DMG dealt increases by {{value}}% for 40s. Repeated triggers reset the duration."
+        },
+        "r1": [
+            25,
+            15,
+            10
+        ],
+        "r2": [
+            27.5,
+            17.5,
+            11.5
+        ],
+        "r3": [
+            30,
+            20,
+            13
+        ],
+        "r4": [
+            32.5,
+            22.5,
+            14.5
+        ],
+        "r5": [
+            35,
+            25,
+            16
+        ],
+        "substat": "def%",
+        "base_stat": "def",
+        "level_max": {
+            "base_attack": 431,
+            "substat_value": "48%"
+        }
+    },
+    "bloodmarrow-coffer": {
+        "rarity": 4,
+        "passive": {
+            "en": "Moment of Unsealing: When the equipper's CRIT Rate exceeds 100%, each 1% of CRIT Rate above 100% increases DMG dealt by {{value}}%, up to a maximum increase of {{value}}%."
+        },
+        "r1": [
+            0.48,
+            24
+        ],
+        "r2": [
+            0.56,
+            28
+        ],
+        "r3": [
+            0.64,
+            32
+        ],
+        "r4": [
+            0.72,
+            36
+        ],
+        "r5": [
+            0.8,
+            40
+        ],
+        "substat": "cr",
+        "base_stat": "def",
+        "level_max": {
+            "base_attack": 356,
+            "substat_value": "20%"
+        }
+    },
+    "catty-luck": {
+        "rarity": 4,
+        "passive": {
+            "en": "Lucky Pawpad: DEF increases by {{value}}%. When using EX Special Attack, DEF increases by an additional {{value}}% for 40s. Repeated triggers reset the duration."
+        },
+        "r1": [
+            8,
+            8
+        ],
+        "r2": [
+            9,
+            9
+        ],
+        "r3": [
+            10,
+            10
+        ],
+        "r4": [
+            11,
+            11
+        ],
+        "r5": [
+            12,
+            12
+        ],
+        "substat": "def%",
+        "base_stat": "def",
+        "level_max": {
+            "base_attack": 356,
+            "substat_value": "40%"
+        }
+    },
+    "lunar-semiluna": {
+        "rarity": 3,
+        "passive": {
+            "en": "Crescent Moon: When using an EX Special Attack, Basic Attack DMG increases by {{value}}% for 10s. Repeated triggers reset the duration."
+        },
+        "r1": [
+            18
+        ],
+        "r2": [
+            21
+        ],
+        "r3": [
+            24
+        ],
+        "r4": [
+            27
+        ],
+        "r5": [
+            30
+        ],
+        "substat": "def%",
+        "base_stat": "def",
+        "level_max": {
+            "base_attack": 282,
+            "substat_value": "32%"
+        }
+    },
+    "candlelit-scheme": {
+        "rarity": 4,
+        "passive": {
+            "en": "Moment of Fright: When using an EX Special Attack, the equipper's CRIT Rate is increased by {{value}}% for 40s. The equipper deals {{value}}% more DMG to enemies whose current HP is below 50% of their Max HP."
+        },
+        "r1": [
+            8,
+            15
+        ],
+        "r2": [
+            9.2,
+            17.3
+        ],
+        "r3": [
+            10.4,
+            19.5
+        ],
+        "r4": [
+            11.6,
+            21.8
+        ],
+        "r5": [
+            12.8,
+            24
+        ],
+        "substat": "def%",
+        "base_stat": "def",
+        "level_max": {
+            "base_attack": 356,
+            "substat_value": "40%"
+        },
+        "source": "Event"
+    }
+}

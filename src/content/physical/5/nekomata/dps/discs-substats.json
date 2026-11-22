@@ -1,0 +1,30 @@
+{
+    "substats_priority": [
+        {
+            "items": [
+                {
+                    "name": "cr",
+                    "note": {
+                        "en": "Until 100%."
+                    }
+                },
+                {
+                    "name": "cd"
+                },
+                {
+                    "name": "atk%"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "pen-flat"
+                },
+                {
+                    "name": "atk"
+                }
+            ]
+        }
+    ]
+}

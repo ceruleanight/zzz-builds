@@ -1,0 +1,14 @@
+{
+    "name": {
+        "en": "Stun"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "Target stats at level 60: ATK 1,800 to 2,200+ (Optional), HP 10,000+, DEF 850+, Impact 169 to 189+ (Most Important Stat), Anomaly Proficiency 250 to 300+ (Optional), Anomaly Mastery 92+ (Optional), CRIT Rate 50 to 60%+ (for King of the Summit), CRIT DMG 100 to 120%+ (Optional)."
+        },
+        {
+            "en": "Partners Prydwen lists for this agent (each group is one entry in its synergy list): [[character:manato]]; [[character:anby]], [[character:soldier-0-anby]]; [[character:yixuan]], [[character:manato]]; [[character:nekomata]], [[character:soldier-11]], [[character:corin]]; [[character:astra-yao]], [[character:nicole]], [[character:lucy]]."
+        }
+    ]
+}

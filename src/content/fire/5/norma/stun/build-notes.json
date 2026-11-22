@@ -1,0 +1,26 @@
+{
+    "name": {
+        "en": "Stun"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "[[character:norma]] relies on her Core Passive for both Daze and damage, so CRIT Rate matters. She has two W-Engine percentages: damage first, Daze second, relative to her signature at S1."
+        },
+        {
+            "en": "Target stats at level 60: ATK 2,400+, HP 9,500+, DEF 800+, CRIT Rate 80 to 100% and CRIT DMG 100%+."
+        },
+        {
+            "en": "[[character:sunna]] and Norma together make a very strong generic pair that any Attacker can slot in as a final pick. Between them they have enough buffs, Daze and personal damage to clear most endgame content."
+        },
+        {
+            "en": "[[character:pyrois]] and [[character:soldier-11]] both benefit significantly: Pyrois has one of the hardest-hitting Chain Attacks, and Norma meets Soldier 11's Additional Ability criteria and gives plenty of empowered Basics. [[character:cissia]] and [[character:orphie-magus]] can use her as a secondary DPS partner."
+        },
+        {
+            "en": "[[character:hugo]] gets a very good match from her Stun DMG Multiplier and duration extension, and her forced Chain Attack can give 3 Chains and a Totalize in the Hormone Punk window. For [[character:manato]] and [[character:starlight-billy]], her extra Chain Attack can be better than [[character:dialyn]] given their very long Ultimate animations."
+        },
+        {
+            "en": "The W-Engine ranking was calculated with [[character:pyrois]] (Sol Exuvia) and [[character:sunna]] (Thoughtbop) as teammates."
+        }
+    ]
+}

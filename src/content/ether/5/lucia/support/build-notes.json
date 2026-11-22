@@ -1,0 +1,14 @@
+{
+    "name": {
+        "en": "Support"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "Target stats at level 60: ATK 1,800+, HP 22,000 to 24,000+ (Focus on hitting 24,000!), DEF 800+."
+        },
+        {
+            "en": "Partners Prydwen lists for this agent (each group is one entry in its synergy list): [[character:yixuan]], [[character:manato]], [[character:banyue]]; [[character:yidhari]]."
+        }
+    ]
+}

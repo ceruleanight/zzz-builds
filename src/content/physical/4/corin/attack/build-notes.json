@@ -1,0 +1,26 @@
+{
+    "name": {
+        "en": "DPS"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "[[character:corin]] has big damage windows concentrated in a few key abilities. Two values show on the W-Engines: damage first, Daze second, relative to Steel Cushion at S1."
+        },
+        {
+            "en": "Target stats at level 60: ATK 2,400 to 3,000+, HP 9,000+, DEF 800+, CRIT Rate 70 to 80%+ and CRIT DMG 140 to 160%+."
+        },
+        {
+            "en": "[[character:dialyn]] is easily the best Stunner and far surpasses any double support comp at Corin's release. As a Physical agent she enables Corin's Additional Ability, which was rarely met in her earlier best teams, and she helps with Decibel generation."
+        },
+        {
+            "en": "[[character:trigger]] and [[character:ju-fufu]] are alternative Stunners without Dialyn. Trigger gives much more significant buffs, especially with her signature W-Engine, and more off-field Daze. [[character:seed]] buffs Attackers with Energy, ATK, DMG dealt and CRIT DMG, and many Physical-weak bosses are also Electric-weak."
+        },
+        {
+            "en": "[[character:astra-yao]], [[character:nicole]] and [[character:yuzuha]] are generalist supports for any team. Astra Yao is the best by far for Corin, with Quick Assists, extra Chain Attacks, healing, very low field time and ATK, DMG and CRIT DMG buffs."
+        },
+        {
+            "en": "The W-Engine calculation team was [[character:dialyn]] (Yesterday Calls) and [[character:astra-yao]] (Kaboom the Cannon)."
+        }
+    ]
+}

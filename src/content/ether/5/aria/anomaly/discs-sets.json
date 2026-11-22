@@ -1,0 +1,104 @@
+{
+    "disc_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "phaethons-melody",
+                            "pieces": 4,
+                            "note": {
+                                "en": "Her best 4-piece, at about 102% of Shining Aria. It gives more Anomaly Proficiency and its DMG bonuses apply regardless of Stun status, but it has strict player demands, including EX Special uses from other agents."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "shining-aria",
+                            "pieces": 4,
+                            "note": {
+                                "en": "A hassle-free second place. It is far easier to use than [[set:phaethons-melody]], and its strength depends on the number of Stuns in a fight. Much of her burst happens in Stun anyway."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "two_piece_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "chaos-jazz",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended with [[set:phaethons-melody]]."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "phaethons-melody",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended with [[set:shining-aria]]."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "freedom-blues",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "shining-aria",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Only listed with [[set:phaethons-melody]]."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "chaotic-metal",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Only listed with [[set:phaethons-melody]]."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

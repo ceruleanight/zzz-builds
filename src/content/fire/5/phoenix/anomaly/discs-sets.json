@@ -1,0 +1,66 @@
+{
+    "disc_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "freedom-blues",
+                            "pieces": 4,
+                            "note": {
+                                "en": "Recommended. Her passive deals EX damage every 8 seconds, so its effect is always active. More Anomaly buildup means more Vortexes, which means more damage."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "chaos-jazz",
+                            "pieces": 4,
+                            "note": {
+                                "en": "About 99.9% of [[set:freedom-blues]]. She swaps often in her teams, so it is easy to trigger, but it can give fewer Vortexes, which may need routing changes."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "feathered-fate",
+                            "pieces": 4,
+                            "note": {
+                                "en": "About 98.8%. Only the flat 50 Anomaly Proficiency helps her, since the Anomaly DMG bonus does not apply. A fallback if you lack good substats on the other sets."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "two_piece_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "phaethons-melody",
+                            "pieces": 2,
+                            "note": {
+                                "en": "The recommended 2-piece with all three 4-piece sets."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

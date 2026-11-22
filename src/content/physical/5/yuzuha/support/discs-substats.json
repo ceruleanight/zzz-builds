@@ -1,0 +1,13 @@
+{
+    "substats_priority": [
+        "atk%",
+        {
+            "name": "atk",
+            "note": {
+                "en": "Until 3000."
+            }
+        },
+        "ap",
+        "pen-flat"
+    ]
+}

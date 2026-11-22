@@ -1,0 +1,235 @@
+---
+import { rankLabel } from '../utils/rank';
+import { t } from '../utils/i18n';
+
+type DiscSetBrowserData = {
+  discSets: {
+    id: string;
+    image: string;
+    name: string;
+    rarity: number;
+    versionReleased: string;
+    bonuses: {
+      id: string;
+      label: string;
+      html: string;
+    }[];
+    tags: string[];
+    tagGroups: string[];
+    fourPieceUsage: {
+      characterName: string;
+      characterRarity: string;
+      href: string;
+      isWip?: boolean;
+      rank?: number;
+      popoverHtml?: string;
+    }[];
+    twoPieceUsage: {
+      characterName: string;
+      characterRarity: string;
+      href: string;
+      isWip?: boolean;
+      rank?: number;
+      popoverHtml?: string;
+    }[];
+  }[];
+  rarities: number[];
+  tagOptionGroups: {
+    label: string;
+    options: {
+      id: string;
+      label: string;
+    }[];
+  }[];
+};
+
+const { data, locale } = Astro.props as {
+  data: DiscSetBrowserData;
+  locale: any;
+};
+
+const allLabel = t(locale, 'ui', 'All');
+const resultsLabel = t(locale, 'ui', 'Results');
+const noResultsLabel = t(locale, 'ui', 'No disc sets found', undefined, false);
+const searchByNameLabel = t(locale, 'ui', 'Search by name');
+const rarityLabel = t(locale, 'ui', 'Rarity');
+const searchLabel = t(locale, 'ui', 'Search');
+const tagLabel = t(locale, 'ui', 'Set Effect', undefined, false);
+const discSetsLabel = t(locale, 'ui', 'Discs Sets', undefined, false);
+const sortByLabel = t(locale, 'ui', 'Sort by', undefined, false);
+const releaseDateLabel = t(locale, 'ui', 'Release date', undefined, false);
+const newestLabel = t(locale, 'ui', 'Newest', undefined, false);
+const sortOptions = [
+  { value: 'name', label: `${discSetsLabel} - A-Z` },
+  { value: 'release', label: `${releaseDateLabel} - ${newestLabel}` },
+];
+const mentionedOnLabel = t(locale, 'ui', 'Disc set mentioned on', undefined, false);
+const mentionedOnTwoLabel = t(locale, 'ui', 'Disc set mentioned on 2', undefined, false);
+const noMentionsLabel = t(locale, 'ui', 'No disc set mentions', undefined, false);
+---
+
+<section class="disc-set-browser" data-disc-browser>
+  <form class="home-filters disc-set-filters" id="disc-set-filters" data-disc-filters>
+    <label class="home-search">
+      {searchLabel}
+      <input type="search" name="search" placeholder={searchByNameLabel} autocomplete="off" />
+    </label>
+
+    <div class="home-select-filter">
+      {rarityLabel}
+      <select class="home-native-select" name="rarity" aria-label={rarityLabel}>
+        <option value="">{allLabel}</option>
+        {
+          data.rarities.map((rarity) => (
+            <option value={String(rarity)}>
+              {rankLabel(rarity)}
+            </option>
+          ))
+        }
+      </select>
+    </div>
+
+    <div class="home-select-filter">
+      {tagLabel}
+      <select class="home-native-select" name="tagGroups" aria-label={tagLabel}>
+        <option value="">{allLabel}</option>
+        {
+          data.tagOptionGroups.map((group) => (
+            <optgroup label={group.label}>
+              {group.options.map((tag) => (
+                <option value={tag.id}>{tag.label}</option>
+              ))}
+            </optgroup>
+          ))
+        }
+      </select>
+    </div>
+  </form>
+
+  <div class="disc-set-browser-header">
+    <p data-disc-count data-results-label={resultsLabel} aria-live="polite">
+      {data.discSets.length}
+      {resultsLabel}
+    </p>
+    <label class="roster-sort">
+      {sortByLabel}
+      <select class="home-native-select" name="sort" form="disc-set-filters" aria-label={sortByLabel}>
+        {
+          sortOptions.map((option) => (
+            <option value={option.value} selected={option.value === 'name'}>
+              {option.label}
+            </option>
+          ))
+        }
+      </select>
+    </label>
+  </div>
+
+  <div class="disc-set-grid">
+    {
+      data.discSets.map((discSet) => (
+        <article
+          class={`disc-set-entry rarity-${discSet.rarity}`}
+          data-disc-card
+          data-id={discSet.id}
+          data-name={discSet.name}
+          data-rarity={discSet.rarity}
+          data-tags={discSet.tags.join(' ')}
+          data-tag-groups={discSet.tagGroups.join(' ')}
+          data-version-released={discSet.versionReleased}
+        >
+          <header class="disc-set-entry-header">
+            <div class="disc-set-entry-title">
+              <div class={`disc-set-entry-image${discSet.image ? '' : ' is-empty'}`}>
+                {discSet.image ? (
+                  <img
+                    src={discSet.image}
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    width={72}
+                    height={72}
+                    referrerpolicy="no-referrer"
+                  />
+                ) : (
+                  <span class="image-placeholder" aria-hidden="true">
+                    {discSet.name.charAt(0)}
+                  </span>
+                )}
+              </div>
+              <div>
+                <h2>{discSet.name}</h2>
+              </div>
+            </div>
+            <span class="disc-set-entry-rarity">
+              {rankLabel(discSet.rarity)}
+            </span>
+          </header>
+
+          <div class="disc-set-bonus-list">
+            {discSet.bonuses.map((bonus) => (
+              <section class="disc-set-bonus" aria-label={`${discSet.name} ${bonus.label}`}>
+                <h3>{bonus.label}</h3>
+                <div set:html={bonus.html} />
+              </section>
+            ))}
+          </div>
+
+          {(discSet.fourPieceUsage.length > 0 || discSet.twoPieceUsage.length === 0) && (
+          <section class="disc-set-usage" aria-label={`${discSet.name} ${mentionedOnLabel}`}>
+            <h3>{mentionedOnLabel}</h3>
+            {discSet.fourPieceUsage.length > 0 ? (
+              <div class="disc-set-usage-list">
+                {discSet.fourPieceUsage.map((usage) => (
+                  <a
+                    class={`disc-set-usage-chip character-rarity-${usage.characterRarity}${usage.isWip ? ' is-wip' : ''}`}
+                    href={usage.href}
+                    data-usage-popover-html={usage.popoverHtml || undefined}
+                  >
+                    {(usage.rank || usage.isWip) && (
+                      <strong class="usage-rank-number">{usage.isWip ? 'WIP' : usage.rank}</strong>
+                    )}
+                    <span class="disc-set-usage-character">{usage.characterName}</span>
+                  </a>
+                ))}
+              </div>
+            ) : (
+              <p class="disc-set-usage-empty">{noMentionsLabel}</p>
+            )}
+          </section>
+          )}
+          {discSet.twoPieceUsage.length > 0 && (
+          <section class="disc-set-usage" aria-label={`${discSet.name} ${mentionedOnTwoLabel}`}>
+            <h3>{mentionedOnTwoLabel}</h3>
+            {discSet.twoPieceUsage.length > 0 ? (
+              <div class="disc-set-usage-list">
+                {discSet.twoPieceUsage.map((usage) => (
+                  <a
+                    class={`disc-set-usage-chip character-rarity-${usage.characterRarity}${usage.isWip ? ' is-wip' : ''}`}
+                    href={usage.href}
+                    data-usage-popover-html={usage.popoverHtml || undefined}
+                  >
+                    {(usage.rank || usage.isWip) && (
+                      <strong class="usage-rank-number">{usage.isWip ? 'WIP' : usage.rank}</strong>
+                    )}
+                    <span class="disc-set-usage-character">{usage.characterName}</span>
+                  </a>
+                ))}
+              </div>
+            ) : (
+              <p class="disc-set-usage-empty">{noMentionsLabel}</p>
+            )}
+          </section>
+          )}
+        </article>
+      ))
+    }
+  </div>
+
+  <p class="disc-set-empty" data-disc-empty hidden>{noResultsLabel}</p>
+</section>
+
+<script>
+  import '../scripts/card-filters';
+  import '../scripts/disc-usage-popover';
+</script>

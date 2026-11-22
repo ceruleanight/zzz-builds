@@ -1,0 +1,81 @@
+{
+    "wengines": [
+        {
+            "items": [
+                {
+                    "name": "spectral-gaze",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 100% damage and 100% Daze at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "blazing-laurel",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 99.31% damage and 75.2% Daze at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "ice-jade-teapot",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 97.75% damage and 86.82% Daze at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "the-restrained",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 94.21% damage and 73.96% Daze at S1."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "precious-fossilized-core",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 93.71% damage and 70.12% Daze at S5."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "steam-oven",
+                    "refinement": 5,
+                    "note": {
+                        "en": "About 93.32% damage and 70.12% Daze at S5."
+                    }
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "hellfire-gears",
+                    "refinement": 1,
+                    "note": {
+                        "en": "About 92.66% damage and 73.96% Daze at S1."
+                    }
+                }
+            ]
+        }
+    ]
+}

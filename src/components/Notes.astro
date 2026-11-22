@@ -1,0 +1,92 @@
+---
+import { t } from '../utils/i18n';
+const { notes, buildNote, locale } = Astro.props;
+
+type RenderedNote = {
+  id: string;
+  name: string;
+  note: string;
+};
+
+type NoteGroup = {
+  headingId: string;
+  items: RenderedNote[];
+};
+
+type NoteSection = {
+  headingId: string;
+  global: string[];
+  groups: NoteGroup[];
+};
+
+/**
+ * Checks whether a note section has any global notes or item notes.
+ */
+const hasNoteContent = (section: NoteSection) =>
+  section.global.length +
+    section.groups.reduce((total, group) => total + group.items.length, 0) >
+  0;
+
+const noteSections: NoteSection[] = [
+  {
+    headingId: 'Regarding WEngines Choices:',
+    global: notes.wengines.global,
+    groups: [{ headingId: 'WEngines notes', items: notes.wengines.items }],
+  },
+  {
+    headingId: 'Regarding Discs Choices:',
+    global: notes.discs.global,
+    groups: [
+      { headingId: 'Disc sets notes', items: notes.discs.sets },
+      { headingId: 'Main stats notes', items: notes.discs.mainstats },
+      { headingId: 'Substats notes', items: notes.discs.substats },
+    ],
+  },
+  {
+    headingId: 'Regarding Talents Choices:',
+    global: notes.talents.global,
+    groups: [{ headingId: 'Talents notes', items: notes.talents.items }],
+  },
+].filter(hasNoteContent);
+
+const hasNotes = noteSections.length > 0;
+---
+
+{
+  (hasNotes || buildNote?.notes?.length > 0) && (
+    <div class="card notes-card">
+      <h2>{t(locale, 'ui', 'Notes')}</h2>
+
+      <div class="notes-content">
+        {(buildNote?.notes?.length > 0 || noteSections.some((section) => section.global.length > 0)) && (
+          <div class="build-note-list">
+            {buildNote?.notes?.map((note: string) => <div set:html={note} />)}
+            {noteSections.filter((section) => section.global.length > 0).map((section) => (
+              <section class="notes-section">
+                <h3>{t(locale, 'ui', section.headingId)}</h3>
+                {section.global.map((note) => <p set:html={note} />)}
+              </section>
+            ))}
+          </div>
+        )}
+
+        {noteSections.flatMap((section) => section.groups)
+          .filter((group) => group.items.length > 0)
+          .map((group) => (
+            <details class="note-accordion" name="note-groups">
+              <summary>{t(locale, 'ui', group.headingId)}</summary>
+              <div class="note-group">
+                {group.items.map((note) => (
+                  <div
+                    data-note-id={note.id}
+                    class="note-target"
+                    set:html={`<span class="element-bold">${note.name}:</span> ${note.note}`}
+                  />
+                ))}
+              </div>
+            </details>
+          ))}
+      </div>
+    </div>
+  )
+}

@@ -1,0 +1,101 @@
+{
+    "disc_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "thunder-metal",
+                            "pieces": 4,
+                            "note": {
+                                "en": "By far his best option: the single highest source of ATK% of all Drive Discs. It needs Shock to be active, which limits it to teams with another Electric agent."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "shadow-harmony",
+                            "pieces": 4,
+                            "note": {
+                                "en": "About 94%. It supplies less raw Combat ATK than Thunder Metal or Hormone Punk, and its CRIT Rate bonuses can be hard to build around, but it is the choice for teams without Shock."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "two_piece_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "hormone-punk",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Prydwen's recommended pair with [[set:thunder-metal]]."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "name": "astral-voice",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Prydwen's recommended pair with [[set:thunder-metal]]."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "branch-and-blade-song",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended with [[set:shadow-harmony]]."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "woodpecker-electro",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "shadow-harmony",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

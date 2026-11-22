@@ -1,0 +1,48 @@
+{
+    "disc_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "yunkui-tales",
+                            "pieces": 4,
+                            "note": {
+                                "en": "The best and only option to consider. The 2-piece gives HP%, and the 4-piece gives a stackable CRIT Rate buff (4% three times, up to 12%) for 15 seconds, plus 10% Sheer DMG at max stacks."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "two_piece_sets": [
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "woodpecker-electro",
+                            "pieces": 2,
+                            "note": {
+                                "en": "Recommended."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "groups": [
+                {
+                    "items": [
+                        {
+                            "name": "branch-and-blade-song",
+                            "pieces": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

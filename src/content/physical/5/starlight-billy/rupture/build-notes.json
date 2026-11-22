@@ -1,0 +1,26 @@
+{
+    "name": {
+        "en": "Rupture DPS"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "[[character:starlight-billy]] needs a lot of Sheer Force and HP. Target stats at level 60: Sheer Force 2,200+, ATK 1,800 to 2,000+, HP 18,000+, DEF 600+, CRIT Rate 90 to 100% (in combat, including the disc bonus and signature W-Engine) and CRIT DMG 120 to 150%+."
+        },
+        {
+            "en": "[[character:dialyn]] has nearly everything he wants. Both are Physical, so her Daze is always effective, her Ultimate conversion suits his strongest skill, and her Stun extension helps with his long attack animations."
+        },
+        {
+            "en": "[[character:lucia]] is the premium Rupture Support and the best partner, mainly for her high buff value. Her Ultimate healing can also keep him from running low on HP for Drive Suppression."
+        },
+        {
+            "en": "[[character:ju-fufu]], [[character:trigger]] and [[character:qingyi]] are serviceable Stunners, far behind Dialyn. Ju Fufu buffs Chain Attacks and Ultimates, Trigger has low commitment needs, and Qingyi's buff is higher but harder to keep up."
+        },
+        {
+            "en": "[[character:pan-yinhu]] is the best A-rank supportive pick, even ahead of S-rank limiteds such as [[character:astra-yao]] or [[character:caesar]] at baseline. Billy fights many parries, so Bunny in Wonderland is easy to keep up."
+        },
+        {
+            "en": "The W-Engine ranking was calculated with [[character:dialyn]] (Yesterday Calls) and [[character:lucia]] (Dreamlit Hearth) as teammates. Percentages are relative to his signature."
+        }
+    ]
+}

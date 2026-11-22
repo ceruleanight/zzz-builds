@@ -1,0 +1,14 @@
+{
+    "name": {
+        "en": "Stun"
+    },
+    "best": true,
+    "notes": [
+        {
+            "en": "Target stats at level 60: Impact 139 to 160+, ATK 3,100-3,400, HP 11,000+, DEF 850+, CRIT Rate 50%+ (If using 4P King of the Summit)."
+        },
+        {
+            "en": "Partners Prydwen lists for this agent (each group is one entry in its synergy list): [[character:yixuan]]; [[character:evelyn]], [[character:hugo]], [[character:soldier-11]], [[character:anby]], [[character:soldier-0-anby]]; [[character:trigger]], [[character:lighter]]; [[character:banyue]]; [[character:orphie-magus]]; [[character:lucia]]; [[character:manato]]; [[character:yidhari]]."
+        }
+    ]
+}

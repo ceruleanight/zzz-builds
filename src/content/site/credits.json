@@ -1,0 +1,37 @@
+{
+    "translators": {},
+    "sections": [
+        {
+            "title": {
+                "en": "Data sources"
+            },
+            "names": [
+                "Prydwen (Drive Disks, W-Engines and every agent build)",
+                "Icy Veins (W-Engine passive names carried over from earlier data)",
+                "Game8 (release dates, Candlelit Scheme)",
+                "METAMMO (agent roster)",
+                "Gaiiiaaa-GH/ZZZdle-Assets (agent portraits, attribute icons)"
+            ]
+        }
+    ],
+    "text": {
+        "legalTitle": {
+            "en": "Legal"
+        },
+        "unofficial": {
+            "en": "This is an unofficial fan project. It is not affiliated with, endorsed by, or sponsored by HoYoverse or COGNOSPHERE."
+        },
+        "ownership": {
+            "en": "Zenless Zone Zero, its characters, W-Engines, Drive Discs, names, and artwork are the property of COGNOSPHERE PTE. LTD. and HoYoverse."
+        },
+        "unpublished": {
+            "en": ""
+        },
+        "legalFaq": {
+            "en": ""
+        },
+        "feedback": {
+            "en": ""
+        }
+    }
+}

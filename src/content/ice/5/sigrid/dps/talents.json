@@ -1,0 +1,39 @@
+{
+    "talents": [
+        {
+            "items": [
+                {
+                    "name": "basic"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "chain"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "special"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "assist"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "dodge"
+                }
+            ]
+        }
+    ]
+}

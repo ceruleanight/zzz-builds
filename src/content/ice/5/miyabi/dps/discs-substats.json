@@ -1,0 +1,33 @@
+{
+    "substats_priority": [
+        {
+            "name": "cr",
+            "note": {
+                "en": "Counts up to 80% CRIT Rate."
+            }
+        },
+        {
+            "items": [
+                {
+                    "name": "cd"
+                },
+                {
+                    "name": "atk%"
+                }
+            ]
+        },
+        {
+            "items": [
+                {
+                    "name": "ap"
+                },
+                {
+                    "name": "atk"
+                },
+                {
+                    "name": "pen-flat"
+                }
+            ]
+        }
+    ]
+}

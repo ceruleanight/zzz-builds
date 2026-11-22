@@ -1,0 +1,177 @@
+:root {
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Inter,
+    Arial,
+    'Noto Sans',
+    'Helvetica Neue',
+    sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main,
+.page {
+  flex: 1 0 auto;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+
+a:hover {
+  opacity: 0.85;
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.card {
+  position: relative;
+  margin-bottom: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 14px;
+  background: rgba(0, 0, 0, 0.096);
+  backdrop-filter: blur(8px);
+}
+
+.card h2 {
+  margin: 0 0 30px;
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+
+.card h3 {
+  margin: 30px 0 15px;
+  color: var(--accent);
+  font-weight: 500;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.site-footer {
+  width: 100%;
+  max-width: 1100px;
+  flex-shrink: 0;
+  margin: 40px auto 0;
+  padding: 24px 16px 32px;
+  color: color-mix(in srgb, var(--text) 72%, transparent);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.site-footer p {
+  margin: 4px 0;
+}
+
+.footer-version {
+  font-size: 0.72rem;
+  opacity: 0.8;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (max-width: 760px), (prefers-reduced-motion: reduce) {
+  .site-stars {
+    display: none;
+  }
+}
+
+.usage-rank-number {
+  display: grid;
+  width: 22px;
+  min-height: 22px;
+  flex: 0 0 22px;
+  place-items: center;
+  margin-right: 6px;
+  border: 1px solid color-mix(in srgb, var(--character-rarity) 30%, transparent);
+  border-radius: 7px;
+  background: color-mix(
+    in srgb,
+    var(--character-rarity) 14%,
+    rgba(0, 0, 0, 0.22)
+  );
+  color: color-mix(in srgb, #fff 88%, var(--character-rarity) 12%);
+  font-size: 0.68rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.wengine-ranking-chip.is-wip,
+.disc-set-usage-chip.is-wip {
+  --character-rarity: #9ca3af;
+  filter: grayscale(0.65);
+  opacity: 0.72;
+}
+
+.wengine-ranking-chip.is-wip .usage-rank-number,
+.disc-set-usage-chip.is-wip .usage-rank-number {
+  width: auto;
+  min-width: 32px;
+  padding: 0 4px;
+}
+
+/* Placeholder shown when no image URL is available for an agent, W-Engine or Drive Disc. */
+.image-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 48px;
+  font-weight: 700;
+  font-size: 1.6em;
+  color: var(--roster-element, var(--element, #fff));
+  background: color-mix(in srgb, var(--roster-element, var(--element, #888)) 18%, transparent);
+  border-radius: inherit;
+}
+
+.image-placeholder.character-image {
+  width: 132px;
+  height: 132px;
+}

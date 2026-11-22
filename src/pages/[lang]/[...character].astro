@@ -1,0 +1,128 @@
+---
+import WEngine from '../../components/WEngine.astro';
+import Disc from '../../components/Disc.astro';
+import DiscStats from '../../components/DiscStats.astro';
+import Talent from '../../components/Talent.astro';
+import Notes from '../../components/Notes.astro';
+import BuildTips from '../../components/BuildTips.astro';
+import CharacterPageLayout from '../../layouts/CharacterLayout.astro';
+import { getCharacterPageData } from '../../utils/character-page';
+import { t } from '../../utils/i18n';
+import { getCharacterStaticPaths } from '../../utils/routes';
+
+export const getStaticPaths = getCharacterStaticPaths;
+
+const { lang, character: characterPath } = Astro.params;
+
+let pageData;
+try {
+  pageData = getCharacterPageData({ lang, characterPath });
+} catch (error) {
+  if (error instanceof Error && error.message === 'Character not found') {
+    return new Response(null, { status: 404 });
+  }
+
+  throw error;
+}
+
+const { characterSlug, characterName, metadata, element, baseElement, rarity, lang: currentLang, locale, builds, warnings } = pageData;
+
+const defaultBuildSlug =
+  builds.find((build) => build.isBest && !build.isWip)?.slug ?? builds.find((build) => !build.isWip)?.slug;
+
+const calculationKeys = ['disc', 'discs', 'wengines', 'talent', 'talents', 'global'];
+
+const hasBuildCalculations = (buildNote: any) =>
+  calculationKeys.some((key) => {
+    const credits = Array.isArray(buildNote?.[key]) ? buildNote[key] : [buildNote?.[key]];
+
+    return credits.some((credit) => credit?.author && credit?.link);
+  });
+
+const buildHasItemNotes = (notes: any) =>
+  [
+    notes?.wengines?.items,
+    notes?.discs?.sets,
+    notes?.discs?.mainstats,
+    notes?.discs?.substats,
+    notes?.talents?.items,
+  ].some((items) => Array.isArray(items) && items.length > 0);
+
+const noteMarkerExplanation = t(locale, 'ui', 'Note marker explanation', undefined, false);
+---
+
+<CharacterPageLayout
+  characterSlug={characterSlug}
+  character={characterName}
+  metadata={metadata}
+  element={element}
+  baseElement={baseElement}
+  rarity={rarity}
+  lang={currentLang}
+  locale={locale}
+  defaultBuildSlug={defaultBuildSlug}
+  builds={builds.map((build) => ({
+    slug: build.slug,
+    name: build.name,
+    isBest: build.isBest,
+    isWip: build.isWip,
+    lastUpdated: build.lastUpdated,
+    buildNote: build.buildNote,
+    hasCalculations: hasBuildCalculations(build.buildNote),
+  }))}
+>
+  <div class="character-builds-layout" data-default-build={defaultBuildSlug}>
+    <div class="build-list">
+      {
+        builds.map((build) => {
+          const buildContentId = `build-content-${build.slug}`;
+          const hasNoteMarkerHint = buildHasItemNotes(build.notes);
+          const isDefaultBuild = build.slug === defaultBuildSlug && !build.isWip;
+
+          return (
+            <section
+              class={`build-card${isDefaultBuild ? ' open' : ''}`}
+              data-build-panel
+              data-id={build.slug}
+              id={buildContentId}
+              aria-hidden={isDefaultBuild ? 'false' : 'true'}
+              hidden={!isDefaultBuild}
+            >
+              <div class="build-content">
+                {hasNoteMarkerHint && (
+                  <div class="build-note-hint">
+                    <span class="note-marker-text" aria-hidden="true">
+                      ⓘ
+                    </span>
+                    <span>{noteMarkerExplanation}</span>
+                  </div>
+                )}
+
+                <div class="grid">
+                  {build.wengines && <WEngine wengines={build.wengines} locale={locale} lang={currentLang} />}
+                  {build.discs.sets && <Disc discs={build.discs} locale={locale} lang={currentLang} />}
+                  {build.discs.mainstats && build.discs.substats && (
+                    <DiscStats discs={build.discs} locale={locale} />
+                  )}
+                  {build.talents && <Talent talents={build.talents} locale={locale} />}
+                </div>
+                <Notes notes={build.notes} buildNote={build.buildNote} locale={locale} />
+                {build.buildNote?.tips?.length > 0 && (
+                  <section class="build-tips-section build-tips-mobile">
+                    <h2>{t(locale, 'ui', 'Gameplay Tips')}</h2>
+                    <BuildTips tips={build.buildNote.tips} />
+                  </section>
+                )}
+              </div>
+            </section>
+          );
+        })
+      }
+    </div>
+  </div>
+</CharacterPageLayout>
+
+<script>
+  import '../../scripts/build-selector';
+  import '../../scripts/info-popover';
+</script>
