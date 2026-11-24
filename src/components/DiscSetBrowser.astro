@@ -56,6 +56,7 @@ const rarityLabel = t(locale, 'ui', 'Rarity');
 const searchLabel = t(locale, 'ui', 'Search');
 const tagLabel = t(locale, 'ui', 'Set Effect', undefined, false);
 const discSetsLabel = t(locale, 'ui', 'Discs Sets', undefined, false);
+const previewLabel = t(locale, 'ui', 'Preview', undefined, false);
 const sortByLabel = t(locale, 'ui', 'Sort by', undefined, false);
 const releaseDateLabel = t(locale, 'ui', 'Release date', undefined, false);
 const newestLabel = t(locale, 'ui', 'Newest', undefined, false);
@@ -181,16 +182,33 @@ const noMentionsLabel = t(locale, 'ui', 'No disc set mentions', undefined, false
             {discSet.fourPieceUsage.length > 0 ? (
               <div class="disc-set-usage-list">
                 {discSet.fourPieceUsage.map((usage) => (
-                  <a
-                    class={`disc-set-usage-chip character-rarity-${usage.characterRarity}${usage.isWip ? ' is-wip' : ''}`}
-                    href={usage.href}
-                    data-usage-popover-html={usage.popoverHtml || undefined}
-                  >
-                    {(usage.rank || usage.isWip) && (
-                      <strong class="usage-rank-number">{usage.isWip ? 'WIP' : usage.rank}</strong>
+                  <span class="disc-set-usage-item">
+                    <a
+                      class={`disc-set-usage-chip character-rarity-${usage.characterRarity}${usage.isWip ? ' is-wip' : ''}${usage.popoverHtml ? ' has-preview' : ''}`}
+                      href={usage.href}
+                      data-usage-popover-html={usage.popoverHtml || undefined}
+                    >
+                      {(usage.rank || usage.isWip) && (
+                        <strong class="usage-rank-number">{usage.isWip ? 'WIP' : usage.rank}</strong>
+                      )}
+                      <span class="disc-set-usage-character">{usage.characterName}</span>
+                    </a>
+                    {usage.popoverHtml && (
+                      <button
+                        type="button"
+                        class={`disc-set-usage-preview character-rarity-${usage.characterRarity}`}
+                        data-usage-preview
+                        aria-expanded="false"
+                        aria-label={`${previewLabel}: ${usage.characterName}`}
+                      >
+                        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+                          <circle cx="8" cy="8" r="6.2" />
+                          <path d="M8 7.2v4" />
+                          <path d="M8 4.7v.1" />
+                        </svg>
+                      </button>
                     )}
-                    <span class="disc-set-usage-character">{usage.characterName}</span>
-                  </a>
+                  </span>
                 ))}
               </div>
             ) : (
@@ -204,16 +222,33 @@ const noMentionsLabel = t(locale, 'ui', 'No disc set mentions', undefined, false
             {discSet.twoPieceUsage.length > 0 ? (
               <div class="disc-set-usage-list">
                 {discSet.twoPieceUsage.map((usage) => (
-                  <a
-                    class={`disc-set-usage-chip character-rarity-${usage.characterRarity}${usage.isWip ? ' is-wip' : ''}`}
-                    href={usage.href}
-                    data-usage-popover-html={usage.popoverHtml || undefined}
-                  >
-                    {(usage.rank || usage.isWip) && (
-                      <strong class="usage-rank-number">{usage.isWip ? 'WIP' : usage.rank}</strong>
+                  <span class="disc-set-usage-item">
+                    <a
+                      class={`disc-set-usage-chip character-rarity-${usage.characterRarity}${usage.isWip ? ' is-wip' : ''}${usage.popoverHtml ? ' has-preview' : ''}`}
+                      href={usage.href}
+                      data-usage-popover-html={usage.popoverHtml || undefined}
+                    >
+                      {(usage.rank || usage.isWip) && (
+                        <strong class="usage-rank-number">{usage.isWip ? 'WIP' : usage.rank}</strong>
+                      )}
+                      <span class="disc-set-usage-character">{usage.characterName}</span>
+                    </a>
+                    {usage.popoverHtml && (
+                      <button
+                        type="button"
+                        class={`disc-set-usage-preview character-rarity-${usage.characterRarity}`}
+                        data-usage-preview
+                        aria-expanded="false"
+                        aria-label={`${previewLabel}: ${usage.characterName}`}
+                      >
+                        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+                          <circle cx="8" cy="8" r="6.2" />
+                          <path d="M8 7.2v4" />
+                          <path d="M8 4.7v.1" />
+                        </svg>
+                      </button>
                     )}
-                    <span class="disc-set-usage-character">{usage.characterName}</span>
-                  </a>
+                  </span>
                 ))}
               </div>
             ) : (
