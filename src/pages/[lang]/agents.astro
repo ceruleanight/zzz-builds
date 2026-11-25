@@ -1,0 +1,46 @@
+---
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import AgentPlanner from '../../components/AgentPlanner.astro';
+import '../../styles/base.css';
+import '../../styles/home.css';
+import '../../styles/theme.css';
+import '../../styles/roster.css';
+import '../../styles/agents.css';
+import { getLocale, t } from '../../utils/i18n';
+import { localizedPath, sitePath } from '../../utils/paths';
+import { getLanguageStaticPaths } from '../../utils/routes';
+import { getAgentPlanData } from '../../utils/agent-plans';
+
+export const getStaticPaths = getLanguageStaticPaths;
+
+const lang =
+  (Array.isArray(Astro.params.lang)
+    ? Astro.params.lang[0]
+    : Astro.params.lang) ?? 'en';
+const locale = getLocale(lang);
+const agents = getAgentPlanData(lang);
+const title = t(locale, 'ui', 'My Agents');
+---
+
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href={sitePath('favicon.ico')} />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title} - ZZZ Builds</title>
+  </head>
+  <body data-element="base">
+    <Header locale={locale} lang={lang} page="agents" />
+    <main class="agents-page">
+      <h1>{title}</h1>
+      <AgentPlanner
+        agents={agents}
+        locale={locale}
+        discsHref={localizedPath(lang, 'discs')}
+      />
+    </main>
+    <Footer lang={lang} />
+  </body>
+</html>

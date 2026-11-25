@@ -2,8 +2,32 @@
 import { rankLabel } from '../utils/rank';
 import { t } from '../utils/i18n';
 
+type OwnedUsage = {
+  characterId: string;
+  characterName: string;
+  characterRarity: string;
+  href: string;
+  isWip: boolean;
+  pieces: 2 | 4;
+  slots: {
+    key: string;
+    label: string;
+    stats: { id: string; label: string; rank: number }[];
+  }[];
+};
+
 type DiscSetBrowserData = {
+  agentDefaults: Record<string, { sets: string[]; stats: Record<string, string[]> }>;
+  characters: {
+    id: string;
+    name: string;
+    rarity: string;
+    element: string;
+    elementLabel: string;
+  }[];
   discSets: {
+    usageIds: string[];
+    ownedUsage: OwnedUsage[];
     id: string;
     image: string;
     name: string;
@@ -43,9 +67,10 @@ type DiscSetBrowserData = {
   }[];
 };
 
-const { data, locale } = Astro.props as {
+const { data, locale, agentsHref } = Astro.props as {
   data: DiscSetBrowserData;
   locale: any;
+  agentsHref: string;
 };
 
 const allLabel = t(locale, 'ui', 'All');
@@ -66,10 +91,60 @@ const sortOptions = [
 ];
 const mentionedOnLabel = t(locale, 'ui', 'Disc set mentioned on', undefined, false);
 const mentionedOnTwoLabel = t(locale, 'ui', 'Disc set mentioned on 2', undefined, false);
+const ui = (id: string) => t(locale, 'ui', id, undefined, false);
+const rosterOptions = [
+  { value: '', label: ui('Roster all') },
+  { value: 'needed', label: ui('Roster needed') },
+  { value: 'unneeded', label: ui('Roster unneeded') },
+];
 const noMentionsLabel = t(locale, 'ui', 'No disc set mentions', undefined, false);
 ---
 
 <section class="disc-set-browser" data-disc-browser>
+  <div
+    class="disc-roster-bar"
+    data-roster-panel
+    data-known-ids={data.characters.map((character) => character.id).join(' ')}
+    data-defaults={JSON.stringify(data.agentDefaults)}
+    data-msg-no-agents={ui('Roster no agents')}
+    data-label-two={ui('2-piece')}
+    data-label-four={ui('4-piece')}
+    data-msg-not-needed={ui('Roster not needed')}
+  >
+    <p class="disc-roster-bar-count">
+      <strong>{ui('My Agents')}:</strong>
+      <span><strong data-roster-count>0</strong> / {data.characters.length} {ui('My agents selected')}</span>
+      <a class="disc-roster-button" href={agentsHref}>{ui('Plan edit')}</a>
+    </p>
+    <label class="disc-roster-mode">
+      <span>{ui('Roster stats shown')}</span>
+      <select data-roster-mode aria-label={ui('Roster stats shown')}>
+        <option value="all">{ui('Roster stats all')}</option>
+        <option value="top">{ui('Roster stats top')}</option>
+      </select>
+    </label>
+    <label class="disc-roster-mode disc-roster-check">
+      <input type="checkbox" data-roster-hide-names />
+      <span>{ui('Roster hide names')}</span>
+    </label>
+    <label class="disc-roster-mode disc-roster-check">
+      <input type="checkbox" data-roster-hide-ranked />
+      <span>{ui('Roster hide ranked')}</span>
+    </label>
+  </div>
+
+  <div class="disc-roster-views" role="group" aria-label={ui('Roster view label')}>
+    <button type="button" class="disc-roster-view" data-roster-view="" aria-pressed="true">
+      {ui('Roster all')} <span data-roster-view-count></span>
+    </button>
+    <button type="button" class="disc-roster-view is-keep" data-roster-view="needed" aria-pressed="false">
+      {ui('Roster view keep')} <span data-roster-view-count></span>
+    </button>
+    <button type="button" class="disc-roster-view is-remove" data-roster-view="unneeded" aria-pressed="false">
+      {ui('Roster view remove')} <span data-roster-view-count></span>
+    </button>
+  </div>
+
   <form class="home-filters disc-set-filters" id="disc-set-filters" data-disc-filters>
     <label class="home-search">
       {searchLabel}
@@ -89,6 +164,12 @@ const noMentionsLabel = t(locale, 'ui', 'No disc set mentions', undefined, false
         }
       </select>
     </div>
+
+    <select name="roster" hidden aria-hidden="true" tabindex="-1">
+      {rosterOptions.map((option) => (
+        <option value={option.value}>{option.label}</option>
+      ))}
+    </select>
 
     <div class="home-select-filter">
       {tagLabel}
@@ -138,6 +219,8 @@ const noMentionsLabel = t(locale, 'ui', 'No disc set mentions', undefined, false
           data-tags={discSet.tags.join(' ')}
           data-tag-groups={discSet.tagGroups.join(' ')}
           data-version-released={discSet.versionReleased}
+          data-usage-ids={discSet.usageIds.join(' ')}
+          data-roster="unneeded"
         >
           <header class="disc-set-entry-header">
             <div class="disc-set-entry-title">
@@ -256,6 +339,19 @@ const noMentionsLabel = t(locale, 'ui', 'No disc set mentions', undefined, false
             )}
           </section>
           )}
+
+          <section
+            class="disc-set-owned"
+            data-owned-panel
+            data-usage-json={JSON.stringify(discSet.ownedUsage)}
+            hidden
+            aria-label={`${discSet.name} ${ui('My Agents')}`}
+          >
+            <h3>{ui('My Agents')}</h3>
+            <p class="disc-set-owned-empty" data-owned-empty hidden></p>
+            <p class="disc-set-owned-agents" data-owned-agents hidden></p>
+            <div class="disc-set-owned-slots" data-owned-slots></div>
+          </section>
         </article>
       ))
     }
@@ -267,4 +363,5 @@ const noMentionsLabel = t(locale, 'ui', 'No disc set mentions', undefined, false
 <script>
   import '../scripts/card-filters';
   import '../scripts/disc-usage-popover';
+  import '../scripts/disc-roster';
 </script>

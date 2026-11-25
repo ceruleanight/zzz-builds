@@ -560,3 +560,267 @@
     color: var(--usage-popover-accent);
     font-weight: 900;
 }
+
+/* Cards: the owned panel is an extra row, so size rows by content. */
+.disc-set-entry {
+  grid-template-rows: auto auto auto;
+  align-content: start;
+}
+
+.disc-set-owned {
+  display: grid;
+  min-width: 0;
+  gap: 8px;
+  border: 1px solid color-mix(in srgb, var(--disc-rarity) 40%, transparent);
+  border-radius: 8px;
+  padding: 9px;
+  background: color-mix(in srgb, var(--disc-rarity) 7%, rgba(0, 0, 0, 0.14));
+}
+
+.disc-set-owned[hidden],
+.disc-set-owned-item[hidden],
+.disc-set-owned-empty[hidden] {
+  display: none;
+}
+
+.disc-set-owned.is-unneeded {
+  border-style: dashed;
+  border-color: rgba(255, 255, 255, 0.16);
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.disc-set-owned h3 {
+  margin: 0;
+  color: color-mix(in srgb, var(--text) 66%, transparent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.disc-set-owned-empty {
+  margin: 0;
+  color: color-mix(in srgb, var(--text) 66%, transparent);
+  font-size: 0.8rem;
+  font-weight: 650;
+}
+
+.disc-set-owned.is-unneeded .disc-set-owned-empty {
+  color: #ff9a8a;
+}
+
+.disc-set-owned-agents {
+  margin: 0;
+  color: color-mix(in srgb, var(--text) 74%, transparent);
+  font-size: 0.8rem;
+  font-weight: 650;
+  line-height: 1.6;
+}
+
+.disc-set-owned-agents[hidden],
+.disc-set-owned-slots:empty {
+  display: none;
+}
+
+.disc-set-owned-agent {
+  color: color-mix(in srgb, #fff 84%, var(--disc-rarity) 16%);
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.disc-set-owned-agent:hover,
+.disc-set-owned-agent:focus-visible {
+  text-decoration: underline;
+}
+
+.disc-set-owned-piece {
+  margin-left: 4px;
+  border: 1px solid color-mix(in srgb, var(--disc-rarity) 50%, transparent);
+  border-radius: 5px;
+  padding: 1px 5px;
+  font-size: 0.66rem;
+  font-weight: 800;
+}
+
+.disc-set-owned-slots {
+  display: grid;
+  gap: 8px;
+}
+
+.disc-set-owned-slot {
+  display: grid;
+  gap: 3px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 6px;
+}
+
+.disc-set-owned-slot-title {
+  margin: 0;
+  color: color-mix(in srgb, var(--text) 62%, transparent);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.disc-set-owned-row {
+  display: grid;
+  grid-template-columns: 22px minmax(0, auto) minmax(0, 1fr);
+  align-items: baseline;
+  gap: 8px;
+  font-size: 0.84rem;
+}
+
+.disc-set-owned-rank {
+  display: inline-grid;
+  width: 20px;
+  height: 20px;
+  place-items: center;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--disc-rarity) 26%, transparent);
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+
+.disc-set-owned-stat {
+  font-weight: 850;
+}
+
+.disc-set-owned-who {
+  color: color-mix(in srgb, var(--text) 66%, transparent);
+  font-size: 0.78rem;
+  font-weight: 650;
+  overflow-wrap: anywhere;
+}
+
+.disc-roster-mode {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 0 10px;
+  background: rgba(8, 11, 16, 0.52);
+  font-size: 0.74rem;
+  font-weight: 750;
+  text-transform: uppercase;
+}
+
+.disc-roster-mode select {
+  min-height: 32px;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: 0.86rem;
+  text-transform: none;
+  cursor: pointer;
+}
+
+.disc-roster-mode select option {
+  background: white;
+  color: #111;
+}
+
+@media (max-width: 760px) {
+  .disc-set-filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .disc-set-filters {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Keep / Remove view switch */
+.disc-roster-views {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+  margin: 0 0 10px;
+}
+
+.disc-roster-view {
+  min-height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  padding: 0 10px;
+  background: rgba(8, 11, 16, 0.52);
+  color: color-mix(in srgb, var(--text) 74%, transparent);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.disc-roster-view span {
+  opacity: 0.7;
+  font-weight: 700;
+}
+
+.disc-roster-view[aria-pressed='true'] {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 20%, transparent);
+  color: #fff;
+}
+
+.disc-roster-view.is-keep[aria-pressed='true'] {
+  border-color: #5fd38d;
+  background: rgba(95, 211, 141, 0.18);
+}
+
+.disc-roster-view.is-remove[aria-pressed='true'] {
+  border-color: #ff8a7a;
+  background: rgba(255, 138, 122, 0.18);
+}
+
+.disc-roster-view:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.disc-roster-check {
+  cursor: pointer;
+}
+
+.disc-roster-check input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+
+.disc-roster-check span {
+  padding: 6px 0;
+  text-transform: none;
+  font-size: 0.84rem;
+}
+
+/* Summary bar linking to the My agents page */
+.disc-roster-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 10px;
+}
+
+.disc-roster-bar-count {
+  display: flex;
+  flex: 1 1 260px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-size: 0.86rem;
+}
+
+.disc-roster-bar-count .disc-roster-button {
+  text-decoration: none;
+}
+
+/* "Hide ranked on" option: drops the 4-piece / 2-piece usage lists */
+body[data-hide-ranked] .disc-set-usage {
+  display: none;
+}

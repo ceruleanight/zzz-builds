@@ -1,0 +1,219 @@
+/* ---- Owned-agent roster ------------------------------------------------ */
+
+.disc-roster {
+  --roster-accent: var(--accent);
+  margin: 0 0 14px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 8px;
+  padding: 10px 12px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.012)),
+    rgba(5, 8, 12, 0.28);
+}
+
+.disc-roster-summary {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.disc-roster-title {
+  color: var(--accent);
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.disc-roster-count {
+  color: color-mix(in srgb, var(--text) 68%, transparent);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.disc-roster-hint {
+  margin: 8px 0 10px;
+  color: color-mix(in srgb, var(--text) 64%, transparent);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.disc-roster-tools,
+.disc-roster-transfer-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.disc-roster-search {
+  display: flex;
+  flex: 1 1 200px;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 0 10px;
+  background: rgba(8, 11, 16, 0.52);
+  font-size: 0.74rem;
+  font-weight: 750;
+  text-transform: uppercase;
+}
+
+.disc-roster-search input {
+  min-width: 0;
+  flex: 1;
+  min-height: 32px;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: 0.9rem;
+  text-transform: none;
+  outline: none;
+}
+
+.disc-roster-button {
+  display: inline-flex;
+  min-height: 32px;
+  align-items: center;
+  border: 1px solid color-mix(in srgb, var(--roster-accent) 42%, transparent);
+  border-radius: 8px;
+  padding: 0 12px;
+  background: color-mix(in srgb, var(--roster-accent) 10%, transparent);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.disc-roster-button:hover,
+.disc-roster-button:focus-visible {
+  border-color: var(--roster-accent);
+  background: color-mix(in srgb, var(--roster-accent) 22%, transparent);
+  outline: none;
+}
+
+.disc-roster-file input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.disc-roster-file {
+  position: relative;
+}
+
+.disc-roster-groups {
+  display: grid;
+  gap: 8px;
+  margin: 10px 0 12px;
+}
+
+.disc-roster-group {
+  display: grid;
+  grid-template-columns: 86px minmax(0, 1fr);
+  align-items: start;
+  gap: 8px;
+  min-width: 0;
+}
+
+.disc-roster-group[hidden],
+.disc-roster-chip[hidden] {
+  display: none;
+}
+
+.disc-roster-group-label {
+  padding-top: 5px;
+  color: color-mix(in srgb, var(--text) 62%, transparent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.disc-roster-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-width: 0;
+}
+
+.disc-roster-chip {
+  --chip: #f1b44a;
+  border: 1px solid color-mix(in srgb, var(--chip) 36%, transparent);
+  border-radius: 7px;
+  padding: 4px 9px;
+  background: transparent;
+  color: color-mix(in srgb, var(--text) 62%, transparent);
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.disc-roster-chip.character-rarity-4 {
+  --chip: #b980ff;
+}
+
+.disc-roster-chip[aria-pressed='true'] {
+  border-color: var(--chip);
+  background: color-mix(in srgb, var(--chip) 24%, transparent);
+  color: #fff;
+}
+
+.disc-roster-chip:focus-visible {
+  outline: 2px solid var(--chip);
+  outline-offset: 1px;
+}
+
+.disc-roster-transfer {
+  display: grid;
+  gap: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 10px;
+}
+
+.disc-roster-transfer h2 {
+  margin: 0;
+  color: color-mix(in srgb, var(--text) 66%, transparent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.disc-roster-text {
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: rgba(8, 11, 16, 0.52);
+  color: var(--text);
+  font: inherit;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.78rem;
+}
+
+.disc-roster-status {
+  margin: 0;
+  color: color-mix(in srgb, var(--text) 74%, transparent);
+  font-size: 0.8rem;
+  font-weight: 650;
+}
+
+@media (max-width: 760px) {
+  .disc-roster-group {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .disc-roster-group-label {
+    padding-top: 0;
+  }
+}

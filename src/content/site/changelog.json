@@ -4,6 +4,14 @@
             "version": "3.3",
             "entries": [
                 {
+                    "date": "November 25, 2026",
+                    "changes": "The My agents page can now sort agent cards by release date (default, newest first), alphabetically, or by type. All agent cards are now the same size."
+                },
+                {
+                    "date": "November 25, 2026",
+                    "changes": "Added a My agents page. Select your agents, then choose the Drive Disc sets and Disc 4, 5 and 6 main stats you plan to use for each. The Drive Disc Sets page now uses those choices for its Keep / Remove view and stat lists."
+                },
+                {
                     "date": "November 22, 2026",
                     "changes": "Builds are now available for all 62 agents. Agent lists and \"ranked on\" chips use in-game names (for example Anby, Miyabi and Lucy); full names remain on each agent page, and search matches both."
                 },

@@ -7,6 +7,8 @@ import { getCharacterBuilds, getContentCharacters } from './content-tree';
 import { localizedPath } from './paths';
 
 export type BuildUsage = {
+  /** Public character slug; stable key used for the owned-agent roster. */
+  characterId: string;
   characterName: string;
   characterRarity: string;
   href: string;
@@ -84,6 +86,7 @@ export function getBestBuildUsage(
 
         if (!existing) {
           usage.push({
+            characterId: getPublicCharacterSlug(character),
             characterName,
             characterRarity: character.rarity,
             href,

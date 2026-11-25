@@ -1,0 +1,263 @@
+---
+import { t } from '../utils/i18n';
+import { compareCharacterCards } from '../scripts/character-sort.mjs';
+import type { AgentPlanEntry, PlanSetOption } from '../utils/agent-plans';
+
+type Props = {
+  agents: AgentPlanEntry[];
+  locale: any;
+  discsHref: string;
+};
+
+const { agents, locale, discsHref } = Astro.props as Props;
+
+const ui = (id: string) => t(locale, 'ui', id, undefined, false);
+
+const agentGroups = agents.reduce(
+  (groups, agent) => {
+    const group = groups.find((item) => item.element === agent.element);
+    if (group) group.agents.push(agent);
+    else
+      groups.push({
+        element: agent.element,
+        label: agent.elementLabel,
+        agents: [agent],
+      });
+    return groups;
+  },
+  [] as { element: string; label: string; agents: AgentPlanEntry[] }[],
+);
+
+// Cards start in the default order (newest release first), using the same
+// comparison as the sort control so the page doesn't reshuffle on load.
+const asCard = (agent: AgentPlanEntry) => ({
+  agent,
+  dataset: {
+    name: agent.name,
+    releaseDate: agent.releaseDate,
+    versionReleased: agent.versionReleased,
+  },
+});
+const cardAgents = agents
+  .map(asCard)
+  .sort((left, right) => compareCharacterCards(left, right, 'release'))
+  .map(({ agent }) => agent);
+
+const setRows = (agent: AgentPlanEntry) =>
+  ([4, 2] as const)
+    .map((pieces) => ({
+      pieces,
+      label: ui(pieces === 4 ? '4-piece' : '2-piece'),
+      options: agent.sets.filter((set) => set.pieces === pieces),
+    }))
+    .filter((row) => row.options.length > 0);
+
+const rankText = (set: PlanSetOption) =>
+  set.isWip ? 'WIP' : set.rank !== undefined ? String(set.rank) : '';
+---
+
+<section class="agent-planner" data-agent-planner>
+  <details
+    class="disc-roster"
+    data-roster-panel
+    data-msg-copied={ui('Roster copied')}
+    data-msg-copy-failed={ui('Roster copy failed')}
+    data-msg-imported={ui('Roster imported')}
+    data-msg-ignored={ui('Roster import ignored')}
+    data-msg-invalid={ui('Roster import invalid')}
+    open
+  >
+    <summary class="disc-roster-summary">
+      <span class="disc-roster-title">{ui('My Agents')}</span>
+      <span class="disc-roster-count">
+        <strong data-roster-count>0</strong> / {agents.length}{' '}
+        {ui('My agents selected')}
+      </span>
+    </summary>
+
+    <p class="disc-roster-hint">{ui('Agents hint')}</p>
+
+    <div class="disc-roster-tools">
+      <label class="disc-roster-search">
+        <span>{ui('Roster search')}</span>
+        <input type="search" data-roster-search autocomplete="off" />
+      </label>
+      <button type="button" class="disc-roster-button" data-roster-all>
+        {ui('Roster select all')}
+      </button>
+      <button type="button" class="disc-roster-button" data-roster-clear>
+        {ui('Roster clear')}
+      </button>
+    </div>
+
+    <div class="disc-roster-groups">
+      {
+        agentGroups.map((group) => (
+          <div class="disc-roster-group" data-roster-group>
+            <span class="disc-roster-group-label">{group.label}</span>
+            <div class="disc-roster-chips">
+              {group.agents.map((agent) => (
+                <button
+                  type="button"
+                  class={`disc-roster-chip character-rarity-${agent.rarity}`}
+                  data-roster-toggle
+                  data-id={agent.id}
+                  data-name={agent.name.toLowerCase()}
+                  aria-pressed="false"
+                >
+                  {agent.name}
+                </button>
+              ))}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="disc-roster-transfer">
+      <h2>{ui('Roster export')} / {ui('Roster import')}</h2>
+      <div class="disc-roster-transfer-row">
+        <button type="button" class="disc-roster-button" data-roster-copy>
+          {ui('Roster copy')}
+        </button>
+        <button type="button" class="disc-roster-button" data-roster-download>
+          {ui('Roster download')}
+        </button>
+        <label class="disc-roster-button disc-roster-file">
+          {ui('Roster import file')}
+          <input type="file" accept=".json,application/json,text/plain" data-roster-file />
+        </label>
+      </div>
+      <textarea
+        class="disc-roster-text"
+        data-roster-text
+        rows="3"
+        spellcheck="false"
+        placeholder={ui('Roster import placeholder')}
+      ></textarea>
+      <div class="disc-roster-transfer-row">
+        <button type="button" class="disc-roster-button" data-roster-import>
+          {ui('Roster import')}
+        </button>
+        <p class="disc-roster-status" data-roster-status aria-live="polite"></p>
+      </div>
+    </div>
+  </details>
+
+  <div class="agent-planner-bar">
+    <h2>{ui('Plan heading')}</h2>
+    <div class="agent-planner-controls">
+      <label class="agent-sort">
+        <span>{ui('Sort by')}</span>
+        <select data-agent-sort>
+          <option value="release" selected>{ui('Release date')}</option>
+          <option value="name">{ui('Alphabetical')}</option>
+          <option value="specialty">{ui('Agent type')}</option>
+        </select>
+      </label>
+      <a class="disc-roster-button" href={discsHref}>{ui('Plan open discs')}</a>
+    </div>
+  </div>
+
+  <p class="agent-empty" data-agent-empty>{ui('Plan no agents')}</p>
+
+  <div class="agent-grid" data-agent-grid>
+    {
+      cardAgents.map((agent) => (
+        <article
+          class={`agent-card character-rarity-${agent.rarity}`}
+          data-agent-card
+          data-id={agent.id}
+          data-name={agent.name}
+          data-specialty={agent.specialty}
+          data-release-date={agent.releaseDate}
+          data-version-released={agent.versionReleased}
+          data-defaults={JSON.stringify(agent.defaults)}
+          hidden
+        >
+          <header class="agent-card-header">
+            <div class="agent-card-title">
+              <a href={agent.href}>{agent.name}</a>
+              <span>
+                {agent.elementLabel} · {agent.buildLabel}
+              </span>
+            </div>
+            <button type="button" class="disc-roster-button" data-plan-reset>
+              {ui('Plan reset')}
+            </button>
+          </header>
+
+          <section class="agent-card-section" aria-label={ui('Plan sets')}>
+            <h3>{ui('Plan sets')}</h3>
+            {setRows(agent).length === 0 && (
+              <p class="agent-card-empty">{ui('Plan no sets')}</p>
+            )}
+            {setRows(agent).map((row) => (
+              <div class="agent-card-row">
+                <span class="agent-card-row-label">{row.label}</span>
+                <div class="agent-card-chips">
+                  {row.options.map((set) => (
+                    <button
+                      type="button"
+                      class="plan-chip plan-set-chip"
+                      data-plan-set
+                      data-key={set.key}
+                      aria-pressed="false"
+                    >
+                      {set.image && (
+                        <img
+                          src={set.image}
+                          alt=""
+                          width="22"
+                          height="22"
+                          loading="lazy"
+                          decoding="async"
+                          referrerpolicy="no-referrer"
+                        />
+                      )}
+                      {rankText(set) && (
+                        <strong class="plan-chip-rank">{rankText(set)}</strong>
+                      )}
+                      <span>{set.name}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </section>
+
+          <section class="agent-card-section" aria-label={ui('Plan stats')}>
+            <h3>{ui('Plan stats')}</h3>
+            {agent.slots.length === 0 && (
+              <p class="agent-card-empty">{ui('Plan no stats')}</p>
+            )}
+            {agent.slots.map((slot) => (
+              <div class="agent-card-row">
+                <span class="agent-card-row-label">{slot.label}</span>
+                <div class="agent-card-chips">
+                  {slot.stats.map((stat) => (
+                    <button
+                      type="button"
+                      class="plan-chip"
+                      data-plan-stat
+                      data-slot={slot.key}
+                      data-stat={stat.id}
+                      aria-pressed="false"
+                    >
+                      <strong class="plan-chip-rank">{stat.rank}</strong>
+                      <span>{stat.label}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </section>
+        </article>
+      ))
+    }
+  </div>
+</section>
+
+<script>
+  import '../scripts/agent-planner';
+</script>

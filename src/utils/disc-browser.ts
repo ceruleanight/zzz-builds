@@ -1,14 +1,26 @@
 import path from 'path';
-import translationAliases from '../data/translation-aliases.json';
 import {
   getBestBuildUsage,
   getWipNoteItems,
   type BuildUsage,
 } from './build-usage';
 import { loadJSON, readJSONFile, toTitleCase } from './content';
+import { getContentCharacters } from './content-tree';
+import {
+  getPublicCharacterSlug,
+  getShortCharacterName,
+} from './character-slugs';
 import { getLocale, t } from './i18n';
 import { TranslationHelper } from './translator';
 import { resolveDiscAssetImage } from './item-assets';
+import {
+  canonicalDiscSetId,
+  getDiscSetGroups,
+  getDiscSetItems,
+  normalizeDiscSetItemId,
+} from './disc-set-items';
+import { getAgentPlanData } from './agent-plans';
+import { getBuildMainStatSlots, statName } from './build-stats';
 
 const bonusKeys = ['1p', '2p', '4p'] as const;
 
@@ -65,13 +77,6 @@ const tagGroups: TagOption[] = tagOptionGroups.flatMap(
 );
 
 /**
- * Translation aliases relevant to canonicalizing disc set recommendation IDs.
- */
-type TranslationAliasCategory = Partial<Record<'set', Record<string, string>>>;
-
-const aliases = translationAliases as TranslationAliasCategory;
-
-/**
  * Localized bonus text as stored in `disc_sets.json`.
  *
  * English is treated as the fallback language when a requested locale is
@@ -94,41 +99,6 @@ type DiscSetData = {
   '2p'?: LocalizedDiscEffect;
   '4p'?: LocalizedDiscEffect;
 };
-
-/**
- * Extracts a canonical set ID from one disc recommendation item.
- *
- * @param item Raw disc set item from `discs-sets.json`.
- * @returns Canonical disc set ID, or null when the item is unusable.
- */
-function normalizeDiscSetItemId(item: any) {
-  const setId = item?.name;
-
-  if (typeof setId !== 'string' || !setId.trim()) {
-    return null;
-  }
-
-  return aliases.set?.[setId] ?? setId;
-}
-
-/**
- * Returns every direct item list attached to one disc recommendation group.
- *
- * Groups can hold a plain `items` list, nested `choices`, or both.
- *
- * @param group Raw disc recommendation group.
- * @returns Flat list of raw disc set items.
- */
-function getDiscSetItems(group: any) {
-  const items = Array.isArray(group?.items) ? group.items : [];
-  const choiceItems = Array.isArray(group?.choices)
-    ? group.choices.flatMap((choice: any) =>
-        Array.isArray(choice?.items) ? choice.items : [],
-      )
-    : [];
-
-  return [...items, ...choiceItems];
-}
 
 function getDiscSetTagGroups(tags: string[]) {
   const tagSet = new Set(tags);
@@ -158,17 +128,7 @@ function getDiscSetUsage(
 ) {
   return getBestBuildUsage(locale, lang, (buildPath, buildNotes) => {
     const data = loadJSON(buildPath, 'discs-sets.json');
-    const groups = [
-      ...(data?.[rankedKey]?.flatMap((entry: any, index: number) =>
-        (entry.groups ?? []).map((group: any) => ({
-          group,
-          rank: index + 1,
-        })),
-      ) ?? []),
-      ...(data?.[conditionalKey]?.flatMap((entry: any) =>
-        (entry.groups ?? [entry]).map((group: any) => ({ group })),
-      ) ?? []),
-    ];
+    const groups = getDiscSetGroups(data, rankedKey, conditionalKey);
 
     return [
       ...groups.flatMap(({ group, rank }) =>
@@ -181,7 +141,7 @@ function getDiscSetUsage(
             buildNotes,
             'disc',
             'set',
-            (id) => aliases.set?.[id] ?? id,
+            canonicalDiscSetId,
           )
         : []),
     ];
@@ -197,24 +157,27 @@ function escapeHtml(value: unknown) {
     .replace(/'/g, '&#39;');
 }
 
-const mainStatSlots = [
-  { key: 'disc4', label: 'Disc 4' },
-  { key: 'disc5', label: 'Disc 5' },
-  { key: 'disc6', label: 'Disc 6' },
-] as const;
-
 /**
- * Reads a stat entry (a plain ID, `{ name }`, or a name containing inline
- * `[[stat:id]]` tokens) and returns its plain display text.
+ * Returns the display name of the build a usage chip links to.
  */
-function statName(locale: any, translator: TranslationHelper, item: any) {
-  const name = typeof item === 'string' ? item : item?.name;
+function getUsageBuildName(
+  lang: string,
+  translator: TranslationHelper,
+  usage: BuildUsage,
+) {
+  const buildNotes = loadJSON(usage.buildPath, 'build-notes.json');
 
-  if (typeof name !== 'string') return '';
+  return translator.translateNoteText(
+    buildNotes?.name?.[lang] ?? buildNotes?.name?.en ?? toTitleCase(usage.buildName),
+  );
+}
 
-  return name.includes('[[')
-    ? translator.translateNoteText(name)
-    : t(locale, 'stat', name, undefined, false);
+function getUsageSlots(
+  locale: any,
+  translator: TranslationHelper,
+  usage: BuildUsage,
+) {
+  return getBuildMainStatSlots(locale, translator, usage.buildPath);
 }
 
 /**
@@ -229,25 +192,15 @@ function renderUsagePopoverHtml(locale: any, lang: string, usage: BuildUsage) {
 
   if (!mainStats && !substats) return '';
 
-  const buildNotes = loadJSON(usage.buildPath, 'build-notes.json');
-  const buildName = translator.translateNoteText(
-    buildNotes?.name?.[lang] ?? buildNotes?.name?.en ?? toTitleCase(usage.buildName),
-  );
+  const buildName = getUsageBuildName(lang, translator, usage);
 
-  const slotRows = mainStatSlots
-    .map(({ key, label }) => {
-      const names = (mainStats?.[key] ?? [])
-        .map((item: any) => statName(locale, translator, item))
-        .filter(Boolean);
-
-      return names.length
-        ? `<div class="usage-popover-row"><span class="usage-popover-slot">${escapeHtml(
-            t(locale, 'ui', label, undefined, false),
-          )}</span><span class="usage-popover-value">${escapeHtml(
-            names.join(' / '),
-          )}</span></div>`
-        : '';
-    })
+  const slotRows = getUsageSlots(locale, translator, usage)
+    .map(
+      ({ label, value }) =>
+        `<div class="usage-popover-row"><span class="usage-popover-slot">${escapeHtml(
+          label,
+        )}</span><span class="usage-popover-value">${escapeHtml(value)}</span></div>`,
+    )
     .join('');
 
   const substatChips = (substats ?? [])
@@ -304,7 +257,22 @@ function getDiscSetEntries(
     DiscSetData
   >;
 
+  const translator = new TranslationHelper(locale, {}, lang);
+  const toOwnedUsage = (usage: BuildUsage, pieces: 2 | 4) => ({
+    characterId: usage.characterId,
+    characterName: usage.characterName,
+    characterRarity: usage.characterRarity,
+    href: usage.href,
+    isWip: usage.isWip ?? false,
+    pieces,
+    slots: getUsageSlots(locale, translator, usage).map(
+      ({ key, label, stats }) => ({ key, label, stats }),
+    ),
+  });
+
   return Object.entries(discData).map(([id, info]) => {
+    const fourPiece = fourPieceUsageBySet.get(id) ?? [];
+    const twoPiece = twoPieceUsageBySet.get(id) ?? [];
     const bonuses = bonusKeys
       .map((key) => ({
         id: key,
@@ -322,14 +290,21 @@ function getDiscSetEntries(
       bonuses,
       tags: info.tags ?? [],
       tagGroups: getDiscSetTagGroups(info.tags ?? []),
-      fourPieceUsage: (fourPieceUsageBySet.get(id) ?? []).map((usage) => ({
+      fourPieceUsage: fourPiece.map((usage) => ({
         ...usage,
         popoverHtml: renderUsagePopoverHtml(locale, lang, usage),
       })),
-      twoPieceUsage: (twoPieceUsageBySet.get(id) ?? []).map((usage) => ({
+      twoPieceUsage: twoPiece.map((usage) => ({
         ...usage,
         popoverHtml: renderUsagePopoverHtml(locale, lang, usage),
       })),
+      usageIds: [
+        ...new Set([...fourPiece, ...twoPiece].map((usage) => usage.characterId)),
+      ],
+      ownedUsage: [
+        ...fourPiece.map((usage) => toOwnedUsage(usage, 4)),
+        ...twoPiece.map((usage) => toOwnedUsage(usage, 2)),
+      ],
     };
   });
 }
@@ -381,7 +356,28 @@ export function getDiscSetBrowserData(lang = 'en') {
     }))
     .filter((group) => group.options.length > 0);
 
+  const characters = getContentCharacters()
+    .map((character) => ({
+      id: getPublicCharacterSlug(character),
+      name: getShortCharacterName(locale, character),
+      rarity: character.rarity,
+      element: character.element,
+      elementLabel: t(locale, 'element', character.element, undefined, false),
+    }))
+    .sort(
+      (a, b) =>
+        a.elementLabel.localeCompare(b.elementLabel) ||
+        Number(b.rarity) - Number(a.rarity) ||
+        a.name.localeCompare(b.name),
+    );
+
+  const agentDefaults = Object.fromEntries(
+    getAgentPlanData(lang).map((agent) => [agent.id, agent.defaults]),
+  );
+
   return {
+    agentDefaults,
+    characters,
     discSets,
     lang,
     locale,

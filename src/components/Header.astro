@@ -46,6 +46,11 @@ const primaryLinks = [
       t(locale, 'ui', 'Discs Sets', undefined, false) || 'Disc Sets',
     isCurrent: page === 'discs',
   },
+  {
+    href: localizedPath(currentLang, 'agents'),
+    label: t(locale, 'ui', 'My Agents', undefined, false) || 'My agents',
+    isCurrent: page === 'agents',
+  },
 ];
 const infoLinks = [
   {
