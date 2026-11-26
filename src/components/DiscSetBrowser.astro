@@ -79,6 +79,17 @@ const allLabel = t(locale, 'ui', 'All');
 const resultsLabel = t(locale, 'ui', 'Results');
 const noResultsLabel = t(locale, 'ui', 'No disc sets found', undefined, false);
 const searchByNameLabel = t(locale, 'ui', 'Search by name');
+const searchByCharacterNameLabel = t(
+  locale,
+  'ui',
+  'Search by character name',
+  undefined,
+  false,
+);
+const filterByDiscSetsLabel = t(locale, 'ui', 'Filter by disc sets', undefined, false);
+const selectAllDiscSetsLabel = t(locale, 'ui', 'Select all disc sets', undefined, false);
+const clearAllDiscSetsLabel = t(locale, 'ui', 'Clear all disc sets', undefined, false);
+const discSetsSelectedLabel = t(locale, 'ui', 'Disc sets selected', undefined, false);
 const rarityLabel = t(locale, 'ui', 'Rarity');
 const searchLabel = t(locale, 'ui', 'Search');
 const tagLabel = t(locale, 'ui', 'Set Effect', undefined, false);
@@ -107,6 +118,9 @@ const noMentionsLabel = t(locale, 'ui', 'No disc set mentions', undefined, false
     class="disc-roster-bar"
     data-roster-panel
     data-known-ids={data.characters.map((character) => character.id).join(' ')}
+    data-character-index={JSON.stringify(
+      data.characters.map(({ id, name }) => ({ id, name })),
+    )}
     data-defaults={JSON.stringify(data.agentDefaults)}
     data-all-substats={JSON.stringify(data.allSubstats)}
     data-label-keep-substats={ui('Roster substats keep')}
@@ -157,6 +171,16 @@ const noMentionsLabel = t(locale, 'ui', 'No disc set mentions', undefined, false
       <input type="search" name="search" placeholder={searchByNameLabel} autocomplete="off" />
     </label>
 
+    <label class="home-search">
+      {searchLabel}
+      <input
+        type="search"
+        name="character"
+        placeholder={searchByCharacterNameLabel}
+        autocomplete="off"
+      />
+    </label>
+
     <div class="home-select-filter">
       {rarityLabel}
       <select class="home-native-select" name="rarity" aria-label={rarityLabel}>
@@ -192,6 +216,55 @@ const noMentionsLabel = t(locale, 'ui', 'No disc set mentions', undefined, false
         }
       </select>
     </div>
+
+    <details class="disc-set-selection">
+      <summary>
+        <span>{filterByDiscSetsLabel}</span>
+        <span
+          data-disc-set-selection-count
+          data-label-selected={discSetsSelectedLabel}
+          aria-live="polite"
+        ></span>
+      </summary>
+      <div class="disc-set-selection-tools">
+        <button type="button" class="disc-roster-button" data-disc-set-select-all>
+          {selectAllDiscSetsLabel}
+        </button>
+        <button type="button" class="disc-roster-button" data-disc-set-clear-all>
+          {clearAllDiscSetsLabel}
+        </button>
+      </div>
+      <div class="disc-set-selection-list">
+        {
+          data.discSets.map((discSet) => (
+            <label class="disc-set-selection-option is-selected">
+              <input
+                type="checkbox"
+                name="discSet"
+                value={discSet.id}
+                checked
+              />
+              {discSet.image ? (
+                <img
+                  class="disc-set-selection-icon"
+                  src={discSet.image}
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  width={36}
+                  height={36}
+                />
+              ) : (
+                <span class="disc-set-selection-icon is-placeholder" aria-hidden="true">
+                  {discSet.name.charAt(0)}
+                </span>
+              )}
+              <span>{discSet.name}</span>
+            </label>
+          ))
+        }
+      </div>
+    </details>
   </form>
 
   <div class="disc-set-browser-header">
@@ -226,6 +299,10 @@ const noMentionsLabel = t(locale, 'ui', 'No disc set mentions', undefined, false
           data-tag-groups={discSet.tagGroups.join(' ')}
           data-version-released={discSet.versionReleased}
           data-usage-ids={discSet.usageIds.join(' ')}
+          data-character-names={data.characters
+            .filter((character) => discSet.usageIds.includes(character.id))
+            .map((character) => character.name)
+            .join(' ')}
           data-roster="unneeded"
         >
           <header class="disc-set-entry-header">

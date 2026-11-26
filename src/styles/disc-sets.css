@@ -15,7 +15,121 @@
 }
 
 .disc-set-filters {
-  grid-template-columns: minmax(260px, 1fr) repeat(2, minmax(126px, 0.42fr));
+  grid-template-columns:
+    repeat(2, minmax(240px, 1fr)) repeat(2, minmax(126px, 0.42fr));
+}
+
+.disc-set-selection {
+  grid-column: 1 / -1;
+  min-width: 0;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: rgba(5, 8, 12, 0.24);
+}
+
+.disc-set-selection > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: color-mix(in srgb, var(--text) 82%, transparent);
+  cursor: pointer;
+  font-weight: 750;
+}
+
+.disc-set-selection > summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.disc-set-selection-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.disc-set-selection-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.home-filters .disc-set-selection-option {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 72px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.075);
+  border-radius: 6px;
+  padding: 6px 8px;
+  background: rgba(255, 255, 255, 0.025);
+  color: color-mix(in srgb, var(--text) 66%, transparent);
+  cursor: pointer;
+  font-size: 0.86rem;
+  line-height: 1.25;
+  text-align: center;
+  transition:
+    border-color 140ms ease,
+    background-color 140ms ease,
+    color 140ms ease,
+    opacity 140ms ease;
+}
+
+.home-filters .disc-set-selection-option:not(.is-selected):hover {
+  border-color: rgba(255, 255, 255, 0.26);
+  background: rgba(255, 255, 255, 0.075);
+  color: var(--text);
+}
+
+.disc-set-selection-option input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.disc-set-selection-option.is-selected {
+  border-color: color-mix(in srgb, var(--accent) 56%, transparent);
+  background: color-mix(in srgb, var(--accent) 13%, rgba(5, 8, 12, 0.5));
+  color: var(--text);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) 18%, transparent);
+}
+
+.home-filters .disc-set-selection-option.is-selected:hover {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 24%, rgba(5, 8, 12, 0.5));
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) 40%, transparent);
+}
+
+.disc-set-selection-icon {
+  display: block;
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
+  border-radius: 4px;
+  object-fit: contain;
+}
+
+.disc-set-selection-icon.is-placeholder {
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  color: color-mix(in srgb, var(--text) 70%, transparent);
+  font-weight: 800;
+}
+
+.disc-set-selection-option span {
+  overflow-wrap: anywhere;
 }
 
 .disc-set-browser-header {

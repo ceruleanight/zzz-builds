@@ -63,6 +63,53 @@ if (kind) {
     const searchInput = form?.elements.namedItem('search');
     const sortSelect = form?.elements.namedItem('sort');
     const sortStorageKey = sortStorageKeys[kind];
+    const rosterPanel = document.querySelector<HTMLElement>('[data-roster-panel]');
+    const discSetInputs = Array.from(
+        form?.querySelectorAll<HTMLInputElement>('input[name="discSet"]') ?? [],
+    );
+    const discSetCount = form?.querySelector<HTMLElement>(
+        '[data-disc-set-selection-count]',
+    );
+    const selectAllDiscSets = form?.querySelector<HTMLButtonElement>(
+        '[data-disc-set-select-all]',
+    );
+    const clearAllDiscSets = form?.querySelector<HTMLButtonElement>(
+        '[data-disc-set-clear-all]',
+    );
+    let characterIndex: { id: string; name: string }[] = [];
+
+    try {
+        const parsed = JSON.parse(rosterPanel?.dataset.characterIndex ?? '[]');
+        if (Array.isArray(parsed)) characterIndex = parsed;
+    } catch {
+        characterIndex = [];
+    }
+
+    const matchesCharacter = (card: HTMLElement, value: string) => {
+        const query = value.trim().toLowerCase();
+        if (!query) return true;
+
+        const matches = characterIndex.filter((character) =>
+            character.name.toLowerCase().includes(query),
+        );
+        if (matches.length === 0) {
+            return (card.dataset.characterNames ?? '').toLowerCase().includes(query);
+        }
+
+        const ownedIds = new Set(
+            (rosterPanel?.dataset.ownedIds ?? '').split(' ').filter(Boolean),
+        );
+        const selectedIds = new Set(
+            (card.dataset.selectedCharacterIds ?? '').split(' ').filter(Boolean),
+        );
+        const possibleIds = new Set(
+            (card.dataset.usageIds ?? '').split(' ').filter(Boolean),
+        );
+
+        return matches.some(({ id }) =>
+            ownedIds.has(id) ? selectedIds.has(id) : possibleIds.has(id),
+        );
+    };
 
     if (searchInput instanceof HTMLInputElement) {
         const searchParam = new URLSearchParams(window.location.search).get('search');
@@ -134,10 +181,33 @@ if (kind) {
     const applyFilters = () => {
         if (!form) return;
 
-        const values = Object.fromEntries(new FormData(form));
+        const formData = new FormData(form);
+        const selectedDiscSets = new Set(
+            formData.getAll('discSet').map(String),
+        );
+        const values = Object.fromEntries(
+            [...formData.entries()].filter(([name]) => name !== 'discSet'),
+        );
         const search = String(values.search ?? '')
             .trim()
             .toLowerCase();
+        const selectedDiscSetCount = selectedDiscSets.size;
+
+        discSetInputs.forEach((input) => {
+            input
+                .closest('.disc-set-selection-option')
+                ?.classList.toggle('is-selected', input.checked);
+        });
+        if (discSetCount) {
+            discSetCount.textContent = `${selectedDiscSetCount} / ${discSetInputs.length} ${discSetCount.dataset.labelSelected ?? ''}`;
+        }
+        if (selectAllDiscSets) {
+            selectAllDiscSets.disabled = selectedDiscSetCount === discSetInputs.length;
+        }
+        if (clearAllDiscSets) {
+            clearAllDiscSets.disabled = selectedDiscSetCount === 0;
+        }
+
         let visibleCount = 0;
 
         if (sortSelect instanceof HTMLSelectElement) {
@@ -157,6 +227,10 @@ if (kind) {
                 const selected = String(value);
                 if (!selected || name === 'search' || name === 'sort') return true;
 
+                if (name === 'character') {
+                    return matchesCharacter(card, selected);
+                }
+
                 const key = name === 'updated' ? 'recentUpdated' : name;
                 const cardValue = card.dataset[key] ?? '';
                 return name === 'tagGroups'
@@ -165,6 +239,7 @@ if (kind) {
             });
             const visible =
                 matches &&
+                (!discSetInputs.length || selectedDiscSets.has(card.dataset.id ?? '')) &&
                 (!search || (card.dataset.name?.toLowerCase().includes(search) ||
                     card.dataset.fullName?.toLowerCase().includes(search)));
 
@@ -182,6 +257,18 @@ if (kind) {
     form?.addEventListener('change', applyFilters);
     form?.addEventListener('input', applyFilters);
     form?.addEventListener('submit', (event) => event.preventDefault());
+    selectAllDiscSets?.addEventListener('click', () => {
+        discSetInputs.forEach((input) => {
+            input.checked = true;
+        });
+        form?.dispatchEvent(new Event('input', { bubbles: true }));
+    });
+    clearAllDiscSets?.addEventListener('click', () => {
+        discSetInputs.forEach((input) => {
+            input.checked = false;
+        });
+        form?.dispatchEvent(new Event('input', { bubbles: true }));
+    });
     if (sortSelect instanceof HTMLSelectElement) {
         sortSelect.addEventListener('change', applyFilters);
     }

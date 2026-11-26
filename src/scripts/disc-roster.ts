@@ -355,6 +355,7 @@ if (panel && form) {
     const load = () => {
         owned = new Set(readOwned().filter((id) => knownIds.has(id)));
         plans = readPlans();
+        panel.dataset.ownedIds = [...owned].join(' ');
     };
 
     const render = () => {
@@ -366,6 +367,9 @@ if (panel && form) {
 
             const usage = getPlanned(card, section);
             card.dataset.roster = usage.length > 0 ? 'needed' : 'unneeded';
+            card.dataset.selectedCharacterIds = [
+                ...new Set(usage.map((item) => item.characterId)),
+            ].join(' ');
             renderPanel(card, section, usage);
         });
 
