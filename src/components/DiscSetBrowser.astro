@@ -14,10 +14,12 @@ type OwnedUsage = {
     label: string;
     stats: { id: string; label: string; rank: number }[];
   }[];
+  substats: { id: string; label: string; rank: number }[];
 };
 
 type DiscSetBrowserData = {
   agentDefaults: Record<string, { sets: string[]; stats: Record<string, string[]> }>;
+  allSubstats: { id: string; label: string }[];
   characters: {
     id: string;
     name: string;
@@ -106,6 +108,10 @@ const noMentionsLabel = t(locale, 'ui', 'No disc set mentions', undefined, false
     data-roster-panel
     data-known-ids={data.characters.map((character) => character.id).join(' ')}
     data-defaults={JSON.stringify(data.agentDefaults)}
+    data-all-substats={JSON.stringify(data.allSubstats)}
+    data-label-keep-substats={ui('Roster substats keep')}
+    data-label-unneeded-substats={ui('Roster substats unneeded')}
+    data-msg-no-unneeded-substats={ui('Roster substats none unneeded')}
     data-msg-no-agents={ui('Roster no agents')}
     data-label-two={ui('2-piece')}
     data-label-four={ui('4-piece')}
@@ -351,6 +357,7 @@ const noMentionsLabel = t(locale, 'ui', 'No disc set mentions', undefined, false
             <p class="disc-set-owned-empty" data-owned-empty hidden></p>
             <p class="disc-set-owned-agents" data-owned-agents hidden></p>
             <div class="disc-set-owned-slots" data-owned-slots></div>
+            <div class="disc-set-owned-substats" data-owned-substats></div>
           </section>
         </article>
       ))

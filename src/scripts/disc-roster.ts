@@ -34,6 +34,7 @@ type OwnedUsage = {
         label: string;
         stats: { id: string; label: string; rank: number }[];
     }[];
+    substats: { id: string; label: string; rank: number }[];
 };
 
 type StatRow = {
@@ -68,6 +69,13 @@ if (panel && form) {
     const viewButtons = Array.from(
         document.querySelectorAll<HTMLButtonElement>('[data-roster-view]'),
     );
+    let allSubstats: { id: string; label: string }[] = [];
+    try {
+        const parsed = JSON.parse(panel.dataset.allSubstats ?? '[]');
+        if (Array.isArray(parsed)) allSubstats = parsed;
+    } catch {
+        allSubstats = [];
+    }
     const usageCache = new Map<HTMLElement, OwnedUsage[]>();
 
     let defaults: Record<string, Plan> = {};
@@ -167,7 +175,9 @@ if (panel && form) {
         const emptyEl = section.querySelector<HTMLElement>('[data-owned-empty]');
         const agentsEl = section.querySelector<HTMLElement>('[data-owned-agents]');
         const slotsEl = section.querySelector<HTMLElement>('[data-owned-slots]');
+        const substatsEl = section.querySelector<HTMLElement>('[data-owned-substats]');
 
+        substatsEl?.replaceChildren();
         section.hidden = false;
         section.classList.toggle('is-unneeded', usage.length === 0);
         if (!emptyEl || !agentsEl || !slotsEl) return;
@@ -270,6 +280,76 @@ if (panel && form) {
 
                 slotsEl.append(slotEl);
             });
+
+        if (substatsEl) renderSubstats(substatsEl, usage, hideNames);
+    };
+
+    /**
+     * Substats under the main stats: one row per substat any owning agent
+     * wants (best priority first), then the substats nobody wants.
+     */
+    const renderSubstats = (
+        container: HTMLElement,
+        usage: OwnedUsage[],
+        hideNames: boolean,
+    ) => {
+        const rows = new Map<string, StatRow>();
+
+        usage.forEach((item) => {
+            (item.substats ?? []).forEach(({ id, label, rank }) => {
+                const row = rows.get(id) ?? {
+                    stat: label,
+                    bestRank: rank,
+                    agents: new Map(),
+                };
+                const known = row.agents.get(item.characterId);
+                if (!known || rank < known.rank) {
+                    row.agents.set(item.characterId, { name: item.characterName, rank });
+                }
+                row.bestRank = Math.min(row.bestRank, rank);
+                rows.set(id, row);
+            });
+        });
+
+        const keepEl = el('div', 'disc-set-owned-slot');
+        keepEl.append(el('h4', 'disc-set-owned-slot-title', msg('labelKeepSubstats')));
+
+        [...rows.values()]
+            .sort(
+                (a, b) =>
+                    a.bestRank - b.bestRank ||
+                    b.agents.size - a.agents.size ||
+                    a.stat.localeCompare(b.stat),
+            )
+            .forEach((row) => {
+                const rowEl = el('div', 'disc-set-owned-row');
+                const who = [...row.agents.values()]
+                    .sort((a, b) => a.rank - b.rank || a.name.localeCompare(b.name))
+                    .map((agent) => (agent.rank > 1 ? `${agent.name} #${agent.rank}` : agent.name))
+                    .join(', ');
+
+                rowEl.append(
+                    el('span', 'disc-set-owned-rank', String(row.bestRank)),
+                    el('span', 'disc-set-owned-stat', row.stat),
+                );
+                if (!hideNames) rowEl.append(el('span', 'disc-set-owned-who', who));
+                keepEl.append(rowEl);
+            });
+
+        const unneededEl = el('div', 'disc-set-owned-slot is-unneeded-substats');
+        unneededEl.append(el('h4', 'disc-set-owned-slot-title', msg('labelUnneededSubstats')));
+
+        const unneeded = allSubstats.filter((stat) => !rows.has(stat.id));
+        if (unneeded.length === 0) {
+            unneededEl.append(el('p', 'disc-set-owned-substat-none', msg('msgNoUnneededSubstats')));
+        } else {
+            const chips = el('div', 'disc-set-owned-chips');
+            unneeded.forEach((stat) => chips.append(el('span', 'disc-set-owned-chip', stat.label)));
+            unneededEl.append(chips);
+        }
+
+        if (rows.size > 0) container.append(keepEl);
+        container.append(unneededEl);
     };
 
     const load = () => {

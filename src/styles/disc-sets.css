@@ -561,14 +561,16 @@
     font-weight: 900;
 }
 
-/* Cards: the owned panel is an extra row, so size rows by content. */
+/* Cards: stack sections; the owned panel grows to fill the leftover height. */
 .disc-set-entry {
-  grid-template-rows: auto auto auto;
-  align-content: start;
+  display: flex;
+  flex-direction: column;
 }
 
 .disc-set-owned {
   display: grid;
+  flex: 1 1 auto;
+  align-content: start;
   min-width: 0;
   gap: 8px;
   border: 1px solid color-mix(in srgb, var(--disc-rarity) 40%, transparent);
@@ -645,6 +647,37 @@
 .disc-set-owned-slots {
   display: grid;
   gap: 8px;
+}
+
+.disc-set-owned-substats {
+  display: grid;
+  gap: 8px;
+}
+
+.disc-set-owned-substats:empty {
+  display: none;
+}
+
+.disc-set-owned-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.disc-set-owned-chip {
+  border: 1px solid rgba(255, 154, 138, 0.4);
+  border-radius: 5px;
+  padding: 1px 7px;
+  color: #ff9a8a;
+  font-size: 0.78rem;
+  font-weight: 750;
+}
+
+.disc-set-owned-substat-none {
+  margin: 0;
+  color: color-mix(in srgb, var(--text) 66%, transparent);
+  font-size: 0.78rem;
+  font-weight: 650;
 }
 
 .disc-set-owned-slot {

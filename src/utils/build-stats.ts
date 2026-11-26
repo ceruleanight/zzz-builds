@@ -33,6 +33,28 @@ const selectableMainStats: Record<'disc4' | 'disc5' | 'disc6', string[]> = {
   disc6: ['atk%', 'hp%', 'def%', 'impact', 'am', 'er'],
 };
 
+/** Every substat the game allows on a Drive Disc. */
+const selectableSubstats = [
+  'hp',
+  'atk',
+  'def',
+  'hp%',
+  'atk%',
+  'def%',
+  'cr',
+  'cd',
+  'ap',
+  'pen-flat',
+];
+
+export type SubstatOption = {
+  /** Raw stat key from the build file. Language independent. */
+  id: string;
+  label: string;
+  /** 1 = highest priority. Stats sharing a priority group share a rank. */
+  rank: number;
+};
+
 export type MainStatSlot = {
   key: 'disc4' | 'disc5' | 'disc6';
   label: string;
@@ -65,6 +87,47 @@ export function statName(
   return name.includes('[[')
     ? translator.translateNoteText(name)
     : t(locale, 'stat', name, undefined, false);
+}
+
+/**
+ * Returns every substat the game allows (id + label), in a fixed order.
+ */
+export function getAllSubstats(locale: any) {
+  return selectableSubstats
+    .map((id) => ({ id, label: t(locale, 'stat', id, undefined, false) }))
+    .filter((stat) => stat.label);
+}
+
+/**
+ * Returns the substats a build wants, ranked by priority. Entries that hold
+ * several `items` are one priority group and share the same rank.
+ */
+export function getBuildSubstats(
+  locale: any,
+  translator: TranslationHelper,
+  buildPath: string,
+): SubstatOption[] {
+  const priority = loadJSON(buildPath, 'discs-substats.json')?.substats_priority;
+  const seen = new Set<string>();
+  const result: SubstatOption[] = [];
+
+  (Array.isArray(priority) ? priority : []).forEach(
+    (entry: any, index: number) => {
+      const items = Array.isArray(entry?.items) ? entry.items : [entry];
+
+      items.forEach((item: any) => {
+        const id = statId(item);
+        const label = statName(locale, translator, item);
+
+        if (!id || !label || seen.has(id)) return;
+
+        seen.add(id);
+        result.push({ id, label, rank: index + 1 });
+      });
+    },
+  );
+
+  return result;
 }
 
 /**

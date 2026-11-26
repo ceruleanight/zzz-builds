@@ -22,7 +22,9 @@ import {
 import { getAgentPlanData } from './agent-plans';
 import {
   getAllBuildMainStatSlots,
+  getAllSubstats,
   getBuildMainStatSlots,
+  getBuildSubstats,
   statName,
 } from './build-stats';
 
@@ -274,6 +276,7 @@ function getDiscSetEntries(
     slots: getAllBuildMainStatSlots(locale, translator, usage.buildPath).map(
       ({ key, label, stats }) => ({ key, label, stats }),
     ),
+    substats: getBuildSubstats(locale, translator, usage.buildPath),
   });
 
   return Object.entries(discData).map(([id, info]) => {
@@ -383,6 +386,7 @@ export function getDiscSetBrowserData(lang = 'en') {
 
   return {
     agentDefaults,
+    allSubstats: getAllSubstats(locale),
     characters,
     discSets,
     lang,
