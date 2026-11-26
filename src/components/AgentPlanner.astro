@@ -114,8 +114,8 @@ const rankText = (set: PlanSetOption) =>
       }
     </div>
 
-    <div class="disc-roster-transfer">
-      <h2>{ui('Roster export')} / {ui('Roster import')}</h2>
+    <details class="disc-roster-transfer">
+      <summary>{ui('Roster export')} / {ui('Roster import')}</summary>
       <div class="disc-roster-transfer-row">
         <button type="button" class="disc-roster-button" data-roster-copy>
           {ui('Roster copy')}
@@ -141,7 +141,7 @@ const rankText = (set: PlanSetOption) =>
         </button>
         <p class="disc-roster-status" data-roster-status aria-live="polite"></p>
       </div>
-    </div>
+    </details>
   </details>
 
   <div class="agent-planner-bar">
