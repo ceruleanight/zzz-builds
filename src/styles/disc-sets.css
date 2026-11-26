@@ -43,9 +43,19 @@
 .disc-set-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-auto-rows: 1fr;
   gap: 12px;
-  align-items: stretch;
+  align-items: start;
+}
+
+/*
+ * Masonry: scripts/disc-masonry.ts sets the attribute and gives every card a
+ * row span from its own height, so cards keep their natural height and the
+ * next card slides up under them (no blank space, order stays left to right).
+ * Without the script the plain grid above is used.
+ */
+.disc-set-grid[data-masonry] {
+  grid-auto-rows: 4px;
+  row-gap: 0;
 }
 
 .disc-set-entry {
@@ -53,9 +63,7 @@
   position: relative;
   display: grid;
   min-width: 0;
-  height: 100%;
   gap: 12px;
-  grid-template-rows: auto minmax(0, 1fr) auto;
   border-radius: 8px;
   padding: 14px;
   background:
@@ -561,16 +569,13 @@
     font-weight: 900;
 }
 
-/* Cards: stack sections; the owned panel grows to fill the leftover height. */
+/* Cards keep their natural height; the owned panel is just another row. */
 .disc-set-entry {
-  display: flex;
-  flex-direction: column;
+  align-content: start;
 }
 
 .disc-set-owned {
   display: grid;
-  flex: 1 1 auto;
-  align-content: start;
   min-width: 0;
   gap: 8px;
   border: 1px solid color-mix(in srgb, var(--disc-rarity) 40%, transparent);

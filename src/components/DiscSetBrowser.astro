@@ -213,7 +213,7 @@ const noMentionsLabel = t(locale, 'ui', 'No disc set mentions', undefined, false
     </label>
   </div>
 
-  <div class="disc-set-grid">
+  <div class="disc-set-grid" data-disc-grid>
     {
       data.discSets.map((discSet) => (
         <article
@@ -371,4 +371,5 @@ const noMentionsLabel = t(locale, 'ui', 'No disc set mentions', undefined, false
   import '../scripts/card-filters';
   import '../scripts/disc-usage-popover';
   import '../scripts/disc-roster';
+  import '../scripts/disc-masonry';
 </script>
