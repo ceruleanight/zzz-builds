@@ -23,17 +23,10 @@
                     "items": [
                         {
                             "name": "chaos-jazz",
-                            "pieces": 2,
-                            "note": {
-                                "en": "Recommended."
-                            }
+                            "pieces": 2
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "groups": [
+                },
                 {
                     "items": [
                         {
@@ -41,7 +34,11 @@
                             "pieces": 2
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "groups": [
                 {
                     "items": [
                         {
