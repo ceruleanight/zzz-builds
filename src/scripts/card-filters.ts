@@ -6,6 +6,7 @@ const sortStorageKeys = {
     wengine: 'zzz-builds:wengine-sort',
     disc: 'zzz-builds:disc-sort',
 } as const;
+const discSetSelectionSortStorageKey = 'zzz-builds:disc-set-filter-sort';
 const highPriorityImageCount = 4;
 
 const selectors = {
@@ -76,6 +77,12 @@ if (kind) {
     const clearAllDiscSets = form?.querySelector<HTMLButtonElement>(
         '[data-disc-set-clear-all]',
     );
+    const discSetSelectionSort = form?.querySelector<HTMLSelectElement>(
+        '[data-disc-set-selection-sort]',
+    );
+    const discSetSelectionList = form?.querySelector<HTMLElement>(
+        '.disc-set-selection-list',
+    );
     let characterIndex: { id: string; name: string }[] = [];
 
     try {
@@ -110,6 +117,62 @@ if (kind) {
             ownedIds.has(id) ? selectedIds.has(id) : possibleIds.has(id),
         );
     };
+
+    const sortDiscSetSelectionOptions = () => {
+        if (!discSetSelectionSort || !discSetSelectionList) return;
+
+        const options = Array.from(
+            discSetSelectionList.querySelectorAll<HTMLElement>(
+                '.disc-set-selection-option',
+            ),
+        );
+        options.sort((left, right) => {
+            const byName = (left.dataset.name ?? '').localeCompare(
+                right.dataset.name ?? '',
+            );
+            if (discSetSelectionSort.value !== 'release') return byName;
+
+            const leftRelease = Number.parseFloat(
+                left.dataset.versionReleased ?? '',
+            ) || 0;
+            const rightRelease = Number.parseFloat(
+                right.dataset.versionReleased ?? '',
+            ) || 0;
+            return rightRelease - leftRelease || byName;
+        });
+        discSetSelectionList.append(...options);
+    };
+
+    if (discSetSelectionSort) {
+        try {
+            const savedSort = localStorage.getItem(
+                discSetSelectionSortStorageKey,
+            );
+            if (
+                savedSort &&
+                [...discSetSelectionSort.options].some(
+                    (option) => option.value === savedSort,
+                )
+            ) {
+                discSetSelectionSort.value = savedSort;
+            }
+        } catch {
+            // Sorting still works for the current visit without persistence.
+        }
+
+        sortDiscSetSelectionOptions();
+        discSetSelectionSort.addEventListener('change', () => {
+            sortDiscSetSelectionOptions();
+            try {
+                localStorage.setItem(
+                    discSetSelectionSortStorageKey,
+                    discSetSelectionSort.value,
+                );
+            } catch {
+                // Sorting still works for the current visit without persistence.
+            }
+        });
+    }
 
     if (searchInput instanceof HTMLInputElement) {
         const searchParam = new URLSearchParams(window.location.search).get('search');

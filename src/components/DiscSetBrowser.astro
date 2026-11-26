@@ -102,6 +102,12 @@ const sortOptions = [
   { value: 'name', label: `${discSetsLabel} - A-Z` },
   { value: 'release', label: `${releaseDateLabel} - ${newestLabel}` },
 ];
+const discSetSelectionEntries = [...data.discSets].sort(
+  (left, right) =>
+    Number.parseFloat(right.versionReleased || '0') -
+      Number.parseFloat(left.versionReleased || '0') ||
+    left.name.localeCompare(right.name),
+);
 const mentionedOnLabel = t(locale, 'ui', 'Disc set mentioned on', undefined, false);
 const mentionedOnTwoLabel = t(locale, 'ui', 'Disc set mentioned on 2', undefined, false);
 const ui = (id: string) => t(locale, 'ui', id, undefined, false);
@@ -233,11 +239,31 @@ const noMentionsLabel = t(locale, 'ui', 'No disc set mentions', undefined, false
         <button type="button" class="disc-roster-button" data-disc-set-clear-all>
           {clearAllDiscSetsLabel}
         </button>
+        <label class="disc-set-selection-sort">
+          <span>{sortByLabel}</span>
+          <select
+            class="home-native-select"
+            aria-label={sortByLabel}
+            data-disc-set-selection-sort
+          >
+            {
+              sortOptions.map((option) => (
+                <option value={option.value} selected={option.value === 'release'}>
+                  {option.label}
+                </option>
+              ))
+            }
+          </select>
+        </label>
       </div>
       <div class="disc-set-selection-list">
         {
-          data.discSets.map((discSet) => (
-            <label class="disc-set-selection-option is-selected">
+          discSetSelectionEntries.map((discSet) => (
+            <label
+              class="disc-set-selection-option is-selected"
+              data-name={discSet.name}
+              data-version-released={discSet.versionReleased}
+            >
               <input
                 type="checkbox"
                 name="discSet"

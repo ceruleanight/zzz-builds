@@ -1,6 +1,7 @@
 {
     "thorned-rose": {
         "rarity": 5,
+        "version_released": "3.1",
         "tags": [
             "def"
         ],
@@ -13,6 +14,7 @@
     },
     "feathered-fate": {
         "rarity": 5,
+        "version_released": "3.1",
         "tags": [
             "anomaly-stat",
             "anomaly"
@@ -26,6 +28,7 @@
     },
     "the-sky-ablaze": {
         "rarity": 5,
+        "version_released": "3.0",
         "tags": [
             "ether",
             "attack"
@@ -39,6 +42,7 @@
     },
     "wuthering-salon": {
         "rarity": 5,
+        "version_released": "3.0",
         "tags": [
             "wind",
             "anomaly"
@@ -52,6 +56,7 @@
     },
     "notes-from-the-chained": {
         "rarity": 5,
+        "version_released": "2.7",
         "tags": [
             "ice",
             "anomaly"
@@ -65,6 +70,7 @@
     },
     "bunny-in-wonderland": {
         "rarity": 5,
+        "version_released": "2.7",
         "tags": [
             "hp",
             "defense",
@@ -79,6 +85,7 @@
     },
     "shining-aria": {
         "rarity": 5,
+        "version_released": "2.5",
         "tags": [
             "ether",
             "anomaly"
@@ -92,6 +99,7 @@
     },
     "white-water-ballad": {
         "rarity": 5,
+        "version_released": "2.5",
         "tags": [
             "physical",
             "attack"
@@ -105,6 +113,7 @@
     },
     "moonlight-lullaby": {
         "rarity": 5,
+        "version_released": "2.2",
         "tags": [
             "er",
             "support"
@@ -118,6 +127,7 @@
     },
     "dawns-bloom": {
         "rarity": 5,
+        "version_released": "2.2",
         "tags": [
             "attack"
         ],
@@ -130,6 +140,7 @@
     },
     "king-of-the-summit": {
         "rarity": 5,
+        "version_released": "2.0",
         "tags": [
             "stun",
             "support"
@@ -143,6 +154,7 @@
     },
     "yunkui-tales": {
         "rarity": 5,
+        "version_released": "2.0",
         "tags": [
             "hp",
             "rupture"
@@ -156,6 +168,7 @@
     },
     "phaethons-melody": {
         "rarity": 5,
+        "version_released": "1.6",
         "tags": [
             "anomaly"
         ],
@@ -168,6 +181,7 @@
     },
     "shadow-harmony": {
         "rarity": 5,
+        "version_released": "1.6",
         "tags": [
             "attack"
         ],
@@ -180,6 +194,7 @@
     },
     "astral-voice": {
         "rarity": 5,
+        "version_released": "1.4",
         "tags": [
             "atk",
             "support"
@@ -193,6 +208,7 @@
     },
     "branch-and-blade-song": {
         "rarity": 5,
+        "version_released": "1.4",
         "tags": [
             "crit",
             "anomaly"
@@ -206,6 +222,7 @@
     },
     "fanged-metal": {
         "rarity": 5,
+        "version_released": "1.0",
         "tags": [
             "physical",
             "attack"
@@ -219,6 +236,7 @@
     },
     "polar-metal": {
         "rarity": 5,
+        "version_released": "1.0",
         "tags": [
             "ice",
             "attack"
@@ -232,6 +250,7 @@
     },
     "thunder-metal": {
         "rarity": 5,
+        "version_released": "1.0",
         "tags": [
             "electric",
             "atk"
@@ -245,6 +264,7 @@
     },
     "chaotic-metal": {
         "rarity": 5,
+        "version_released": "1.0",
         "tags": [
             "ether",
             "anomaly"
@@ -258,6 +278,7 @@
     },
     "inferno-metal": {
         "rarity": 5,
+        "version_released": "1.0",
         "tags": [
             "fire",
             "attack"
@@ -271,6 +292,7 @@
     },
     "proto-punk": {
         "rarity": 5,
+        "version_released": "1.2",
         "tags": [
             "defense",
             "support"
@@ -284,6 +306,7 @@
     },
     "chaos-jazz": {
         "rarity": 5,
+        "version_released": "1.2",
         "tags": [
             "anomaly"
         ],
@@ -296,6 +319,7 @@
     },
     "swing-jazz": {
         "rarity": 5,
+        "version_released": "1.0",
         "tags": [
             "er",
             "support"
@@ -309,6 +333,7 @@
     },
     "soul-rock": {
         "rarity": 5,
+        "version_released": "1.0",
         "tags": [
             "def",
             "defense"
@@ -322,6 +347,7 @@
     },
     "hormone-punk": {
         "rarity": 5,
+        "version_released": "1.0",
         "tags": [
             "atk",
             "attack"
@@ -335,6 +361,7 @@
     },
     "freedom-blues": {
         "rarity": 5,
+        "version_released": "1.0",
         "tags": [
             "anomaly-stat",
             "anomaly"
@@ -348,6 +375,7 @@
     },
     "shockstar-disco": {
         "rarity": 5,
+        "version_released": "1.0",
         "tags": [
             "impact",
             "stun"
@@ -361,6 +389,7 @@
     },
     "puffer-electro": {
         "rarity": 5,
+        "version_released": "1.0",
         "tags": [
             "attack"
         ],
@@ -373,6 +402,7 @@
     },
     "woodpecker-electro": {
         "rarity": 5,
+        "version_released": "1.0",
         "tags": [
             "crit",
             "attack"

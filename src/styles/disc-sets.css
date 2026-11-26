@@ -46,8 +46,23 @@
 .disc-set-selection-tools {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 6px;
   margin-top: 10px;
+}
+
+.disc-set-selection-tools .disc-set-selection-sort {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+  color: color-mix(in srgb, var(--text) 72%, transparent);
+  font-size: 0.84rem;
+  white-space: nowrap;
+}
+
+.disc-set-selection-sort select {
+  min-width: 190px;
 }
 
 .disc-set-selection-list {
