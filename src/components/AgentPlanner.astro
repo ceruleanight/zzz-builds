@@ -238,13 +238,15 @@ const rankText = (set: PlanSetOption) =>
                   {slot.stats.map((stat) => (
                     <button
                       type="button"
-                      class="plan-chip"
+                      class={`plan-chip${stat.rank > 0 ? '' : ' plan-chip-extra'}`}
                       data-plan-stat
                       data-slot={slot.key}
                       data-stat={stat.id}
                       aria-pressed="false"
                     >
-                      <strong class="plan-chip-rank">{stat.rank}</strong>
+                      {stat.rank > 0 && (
+                        <strong class="plan-chip-rank">{stat.rank}</strong>
+                      )}
                       <span>{stat.label}</span>
                     </button>
                   ))}

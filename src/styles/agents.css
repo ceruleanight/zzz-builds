@@ -207,6 +207,11 @@
   cursor: pointer;
 }
 
+.plan-chip-extra {
+  border-style: dashed;
+  color: color-mix(in srgb, var(--text) 48%, transparent);
+}
+
 .plan-chip:hover {
   border-color: color-mix(in srgb, var(--agent-accent) 70%, transparent);
 }

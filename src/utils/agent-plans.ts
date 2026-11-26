@@ -1,6 +1,6 @@
 import path from 'path';
 import { getWipNoteItems } from './build-usage';
-import { getBuildMainStatSlots, type MainStatSlot } from './build-stats';
+import { getAllBuildMainStatSlots, type MainStatSlot } from './build-stats';
 import {
   loadJSON,
   normalizeVersion,
@@ -142,7 +142,8 @@ export function getAgentPlanData(lang = 'en'): AgentPlanEntry[] {
         ...collectSetOptions(setsData, buildNotes, 4, discData, locale),
         ...collectSetOptions(setsData, buildNotes, 2, discData, locale),
       ];
-      const slots = getBuildMainStatSlots(locale, translator, build.path);
+      // All main stats per slot, the build's recommendations first.
+      const slots = getAllBuildMainStatSlots(locale, translator, build.path);
       const firstSet = (pieces: 2 | 4) =>
         sets.find((set) => set.pieces === pieces && !set.isWip)?.key;
 
@@ -172,7 +173,13 @@ export function getAgentPlanData(lang = 'en'): AgentPlanEntry[] {
             (key): key is string => !!key,
           ),
           stats: Object.fromEntries(
-            slots.map((slot) => [slot.key, slot.stats.slice(0, 1).map((s) => s.id)]),
+            slots.map((slot) => [
+              slot.key,
+              slot.stats
+                .filter((s) => s.rank > 0)
+                .slice(0, 1)
+                .map((s) => s.id),
+            ]),
           ),
         },
       };

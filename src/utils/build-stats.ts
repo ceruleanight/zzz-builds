@@ -12,8 +12,25 @@ export type MainStatOption = {
   /** Raw stat key from the build file. Language independent, safe to store. */
   id: string;
   label: string;
-  /** 1 = most recommended. */
+  /** 1 = most recommended. 0 = not recommended by the build (still selectable). */
   rank: number;
+};
+
+/** Every main stat the game allows on each variable disc slot. */
+const selectableMainStats: Record<'disc4' | 'disc5' | 'disc6', string[]> = {
+  disc4: ['atk%', 'hp%', 'def%', 'cr', 'cd', 'ap'],
+  disc5: [
+    'atk%',
+    'hp%',
+    'def%',
+    'pen',
+    'physical-dmg',
+    'fire-dmg',
+    'ice-dmg',
+    'electric-dmg',
+    'ether-dmg',
+  ],
+  disc6: ['atk%', 'hp%', 'def%', 'impact', 'am', 'er'],
 };
 
 export type MainStatSlot = {
@@ -80,4 +97,44 @@ export function getBuildMainStatSlots(
       };
     })
     .filter((slot) => slot.value);
+}
+
+/**
+ * Like getBuildMainStatSlots, but every slot offers all main stats the game
+ * allows. The build's recommendations come first, in recommendation order
+ * (rank 1, 2, ...); the remaining stats follow with rank 0.
+ * Slots are always returned, even when the build recommends nothing for them.
+ */
+export function getAllBuildMainStatSlots(
+  locale: any,
+  translator: TranslationHelper,
+  buildPath: string,
+): MainStatSlot[] {
+  const recommended = new Map(
+    getBuildMainStatSlots(locale, translator, buildPath).map((slot) => [
+      slot.key,
+      slot,
+    ]),
+  );
+
+  return mainStatSlots.map(({ key, label }) => {
+    const base = recommended.get(key);
+    const ranked = base?.stats ?? [];
+    const taken = new Set(ranked.map((stat) => stat.id));
+    const extras: MainStatOption[] = selectableMainStats[key]
+      .filter((id) => !taken.has(id))
+      .map((id) => ({
+        id,
+        label: t(locale, 'stat', id, undefined, false),
+        rank: 0,
+      }))
+      .filter((stat) => stat.label);
+
+    return {
+      key,
+      label: t(locale, 'ui', label, undefined, false),
+      stats: [...ranked, ...extras],
+      value: base?.value ?? '',
+    };
+  });
 }

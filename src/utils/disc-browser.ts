@@ -20,7 +20,11 @@ import {
   normalizeDiscSetItemId,
 } from './disc-set-items';
 import { getAgentPlanData } from './agent-plans';
-import { getBuildMainStatSlots, statName } from './build-stats';
+import {
+  getAllBuildMainStatSlots,
+  getBuildMainStatSlots,
+  statName,
+} from './build-stats';
 
 const bonusKeys = ['1p', '2p', '4p'] as const;
 
@@ -265,7 +269,9 @@ function getDiscSetEntries(
     href: usage.href,
     isWip: usage.isWip ?? false,
     pieces,
-    slots: getUsageSlots(locale, translator, usage).map(
+    // All selectable main stats, so stats a user picked on the My agents page
+    // that the build does not recommend (rank 0) still show up here.
+    slots: getAllBuildMainStatSlots(locale, translator, usage.buildPath).map(
       ({ key, label, stats }) => ({ key, label, stats }),
     ),
   });

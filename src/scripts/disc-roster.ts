@@ -43,6 +43,9 @@ type StatRow = {
 };
 export {};
 
+/** Sort/display value for stats the build does not recommend. */
+const UNRANKED = 999;
+
 const MODE_KEY = 'zzz-builds:disc-stat-mode';
 const FILTER_KEY = 'zzz-builds:disc-roster-filter';
 const NAMES_KEY = 'zzz-builds:disc-hide-names';
@@ -213,7 +216,9 @@ if (panel && form) {
                 const rows = merged.get(slot.key)!;
                 const stats = topOnly ? slot.stats.slice(0, 1) : slot.stats;
 
-                stats.forEach(({ label: stat, rank }) => {
+                stats.forEach(({ label: stat, rank: rawRank }) => {
+                    // Rank 0 = picked by the user but not recommended: sorts last.
+                    const rank = rawRank > 0 ? rawRank : UNRANKED;
                     const row = rows.get(stat) ?? {
                         stat,
                         bestRank: rank,
@@ -246,11 +251,17 @@ if (panel && form) {
                         const rowEl = el('div', 'disc-set-owned-row');
                         const who = [...row.agents.values()]
                             .sort((a, b) => a.rank - b.rank || a.name.localeCompare(b.name))
-                            .map((agent) => (agent.rank > 1 ? `${agent.name} #${agent.rank}` : agent.name))
+                            .map((agent) => (agent.rank > 1 && agent.rank !== UNRANKED
+                                    ? `${agent.name} #${agent.rank}`
+                                    : agent.name))
                             .join(', ');
 
                         rowEl.append(
-                            el('span', 'disc-set-owned-rank', String(row.bestRank)),
+                            el(
+                                'span',
+                                'disc-set-owned-rank',
+                                row.bestRank === UNRANKED ? '–' : String(row.bestRank),
+                            ),
                             el('span', 'disc-set-owned-stat', row.stat),
                         );
                         if (!hideNames) rowEl.append(el('span', 'disc-set-owned-who', who));
