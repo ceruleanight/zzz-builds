@@ -122,6 +122,10 @@
   gap: 10px;
 }
 
+.agent-card .disc-roster-button {
+  --roster-accent: var(--agent-accent);
+}
+
 .agent-card-title {
   display: grid;
   min-width: 0;

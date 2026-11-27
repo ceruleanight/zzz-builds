@@ -823,9 +823,10 @@
   display: grid;
   width: min(100%, 720px);
   justify-items: center;
-  gap: 14px;
+  align-content: center;
+  gap: 8px;
   margin: 0 auto;
-  padding: 48px 16px;
+  padding: 32px 16px;
   text-align: center;
 }
 
@@ -843,21 +844,22 @@
 }
 
 .not-found-page p {
-  max-width: 420px;
+  max-width: 500px;
   margin: 0;
   color: color-mix(in srgb, var(--text) 82%, transparent);
 }
 
 .not-found-link {
   display: inline-flex;
+  height: 36px;
   align-items: center;
   justify-content: center;
-  min-height: 42px;
   border: 1px solid color-mix(in srgb, var(--accent) 55%, transparent);
   border-radius: 8px;
-  padding: 9px 16px;
+  padding: 0 16px;
   background: rgba(0, 0, 0, 0.16);
   color: var(--accent);
+  line-height: 1;
   font-weight: 700;
 }
 

@@ -78,11 +78,13 @@ const { data, locale, agentsHref } = Astro.props as {
 const allLabel = t(locale, 'ui', 'All');
 const resultsLabel = t(locale, 'ui', 'Results');
 const noResultsLabel = t(locale, 'ui', 'No disc sets found', undefined, false);
-const searchByNameLabel = t(locale, 'ui', 'Search by name');
-const searchByCharacterNameLabel = t(
+const driveDiscSearchLabel = t(locale, 'ui', 'Drive Disc Search');
+const enterDriveDiscNameLabel = t(locale, 'ui', 'Enter drive disc name');
+const agentSearchLabel = t(locale, 'ui', 'Agent Search');
+const enterAgentNameLabel = t(
   locale,
   'ui',
-  'Search by character name',
+  'Enter agent name',
   undefined,
   false,
 );
@@ -91,7 +93,6 @@ const selectAllDiscSetsLabel = t(locale, 'ui', 'Select all disc sets', undefined
 const clearAllDiscSetsLabel = t(locale, 'ui', 'Clear all disc sets', undefined, false);
 const discSetsSelectedLabel = t(locale, 'ui', 'Disc sets selected', undefined, false);
 const rarityLabel = t(locale, 'ui', 'Rarity');
-const searchLabel = t(locale, 'ui', 'Search');
 const tagLabel = t(locale, 'ui', 'Set Effect', undefined, false);
 const discSetsLabel = t(locale, 'ui', 'Discs Sets', undefined, false);
 const previewLabel = t(locale, 'ui', 'Preview', undefined, false);
@@ -173,16 +174,16 @@ const noMentionsLabel = t(locale, 'ui', 'No disc set mentions', undefined, false
 
   <form class="home-filters disc-set-filters" id="disc-set-filters" data-disc-filters>
     <label class="home-search">
-      {searchLabel}
-      <input type="search" name="search" placeholder={searchByNameLabel} autocomplete="off" />
+      {driveDiscSearchLabel}
+      <input type="search" name="search" placeholder={enterDriveDiscNameLabel} autocomplete="off" />
     </label>
 
     <label class="home-search">
-      {searchLabel}
+      {agentSearchLabel}
       <input
         type="search"
         name="character"
-        placeholder={searchByCharacterNameLabel}
+        placeholder={enterAgentNameLabel}
         autocomplete="off"
       />
     </label>
